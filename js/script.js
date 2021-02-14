@@ -78,6 +78,30 @@ monogatari.characters ({
 	'y': {
 		name: 'Yui',
 		color: '#5bcaff'
+	},
+	'iofi': {
+		name: "Iofi"
+	},
+	'imouto': {
+		name: "Iofi's Imouto"
+	},
+	'king': {
+		name: "King"
+	},
+	'queen': {
+		name: "Queen"
+	},
+	'emperor': {
+		name: "King"
+	},
+	'advisor': {
+		name: "Royal Advisor"
+	},
+	'envoy': {
+		name: "Royal Envoy"
+	},
+	'yagoo': {
+		name: "YAGOO"
 	}
 });
 

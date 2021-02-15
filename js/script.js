@@ -80,10 +80,10 @@ monogatari.characters ({
 		color: '#5bcaff'
 	},
 	'iofi': {
-		name: "Iofi"
+		name: "Airani"
 	},
 	'imouto': {
-		name: "Iofi's Imouto"
+		name: "Airani's Imouto"
 	},
 	'king': {
 		name: "King"
@@ -92,13 +92,13 @@ monogatari.characters ({
 		name: "Queen"
 	},
 	'emperor': {
-		name: "King"
+		name: "Emperor"
 	},
 	'advisor': {
-		name: "Royal Advisor"
+		name: "Imperial Advisor"
 	},
 	'envoy': {
-		name: "Royal Envoy"
+		name: "Imperial Envoy"
 	},
 	'yagoo': {
 		name: "YAGOO"

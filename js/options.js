@@ -10,7 +10,7 @@
 'use strict';
 /* global Monogatari */
 
-const monogatari  = Monogatari.default;
+const monogatari = Monogatari.default;
 
 monogatari.settings({
 
@@ -29,7 +29,7 @@ monogatari.settings({
 	'Slots': 10,
 
 	// Change to true for a MultiLanguage GameScreen.
-	'MultiLanguage': false,
+	'MultiLanguage': true,
 
 	// If the 'Multilanguage' setting is set to `true`. This will enable a
 	// language selection screen that will be shown before the asset loading
@@ -93,7 +93,7 @@ monogatari.settings({
 	// If this value is set to 0, no skipping will be allowed but if it's set
 	// to a higher number, skipping will be allowed and that value will be taken
 	// as the speed in milliseconds with which the game will skip through the script
-	'Skip': 0,
+	'Skip': 100,
 
 	// Define the directories where the assets are located. The root directory is
 	// the holder for the other asset specific directories, this directories are
@@ -109,7 +109,8 @@ monogatari.settings({
 		'ui': 'ui',
 		'videos': 'videos',
 		'voices': 'voices',
-		'gallery': 'gallery'
+		'gallery': 'gallery',
+		'scripts': 'scripts'
 	},
 
 	// Name of the Splash Screen Label. If a name is given and a label with that
@@ -133,7 +134,7 @@ monogatari.settings({
 });
 
 // Initial Settings
-monogatari.preferences ({
+monogatari.preferences({
 
 	// Initial Language for Multilanguage Games or for the Default GUI Language.
 	'Language': 'English',
@@ -158,3 +159,92 @@ monogatari.preferences ({
 	// completely displayed.
 	'AutoPlaySpeed': 5
 });
+
+// Add Indonesian Language Metadata
+monogatari.languageMetadata ("Indonesia", {
+	"code": "id",
+	"icon": "id"
+});
+
+// Add Indonesian UI Language
+monogatari.translation('Indonesia', {
+	'AdvanceHelp': 'To advance through the game, left-click or tap anywhere on the game screen or press the space key',
+	'AllowPlayback': 'Klik disini untuk mengizinkan audio playback',
+	'Audio': 'Audio',
+	'AutoPlay': 'Otomatis',
+	'AutoPlayButton': 'Aktifkan auto play',
+	'AutoPlaySpeed': 'Kecepatan Autoplay',
+
+	'Back': 'Kembali',
+	'BackButton': 'Kembali',
+
+	'Cancel': 'Batal',
+	'Close': 'Tutup',
+	'Confirm': 'Apakah anda yakin ingin keluar?',
+	'Credits': 'Penutup',
+
+	'Delete': 'Hapus',
+	'DialogLogButton': 'Tampilkan catatan dialog',
+
+	'FullScreen': 'Full Screen',
+
+	'Gallery': 'Galeri',
+
+	'Help': 'Bantuan',
+	'Hide': 'Sembunyikan',
+	'HideButton': 'Sembunyikan kotak text',
+
+	'iOSAudioWarning': 'Settingan audio tidak didukung oleh iOS',
+
+	'KeyboardShortcuts': 'Pintasan Keyboard',
+
+	'Language': 'Bahasa',
+	'Load': 'Memuat',
+	'LoadAutoSaveSlots': 'Auto Saved Games',
+	'LoadButton': 'Buka Halaman Memuat',
+	'Loading': 'Memuat',
+	'LoadingMessage': 'Tunggu sementara aset sedang dimuat',
+	'LoadSlots': 'Saved Games',
+	'LocalStorageWarning': 'Penyimpanan lokal tidak tersedia di browser ini',
+	'Log': 'Catatan',
+
+	'Music': 'Volume Musik',
+
+	'NewContent': 'Ada konten baru yang tersedia, muat ulang halaman untuk mendapatkan versi terbaru',
+	'NoSavedGames': 'Tidak ada saved games',
+	'NoAutoSavedGames': 'Tidak ada saved games otomatis',
+	'NoDialogsAvailable': 'Tidak ada dialog yang tersedia. Dialog akan muncul di sini saat mereka muncul',
+
+	'OK': 'OK',
+	'OrientationWarning': 'Silakan putar perangkat Anda untuk bermain',
+	'Overwrite': 'Tulis Ulang',
+
+	'QuickButtons': 'Tombol Menu Cepat',
+	'QuickMenu': 'Menu Cepat',
+	'Quit': 'Keluar',
+	'QuitButton': 'Keluar dari Game',
+
+	'Resolution': 'Resolusi',
+
+	'Save': 'Simpan',
+	'SaveButton': 'Buka Halaman Penyimpanan',
+	'SaveInSlot': 'Simpan di dalam Slot',
+	'SelectYourLanguage': 'Silahkan pilih Bahasa',
+	'Settings': 'Pengaturan',
+	'SettingsButton': 'Buka Halaman Pengaturan',
+	'Show': 'Tampilkan',
+	'Skip': 'Lewatkan',
+	'SkipButton': 'Masuk mode lewatkan',
+	'SlotDeletion': 'Apakah anda yakin ingin menghapus slot ini?',
+	'SlotOverwrite': 'Apakah anda yakin ingin menulis ulang slot ini?',
+	'Sound': 'Volume Suara',
+	'Start': 'Mulai',
+	'Stop': 'Berhenti',
+
+	'TextSpeed': 'Kecepatan Teks',
+
+	'Video': 'Volume Video',
+	'Voice': 'Volume Percakapan',
+
+	'Windowed': 'Windowed'
+})

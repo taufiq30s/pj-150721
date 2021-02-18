@@ -75,7 +75,7 @@ monogatari.assets('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
-
+	'tester': 'testbg.jpg'
 });
 
 
@@ -115,9 +115,9 @@ monogatari.script({
 	// The game starts here.
 	'English':{
 		'Start': [
-			'show scene #f7f6f6 with fadeIn',
-			'show notification Welcome',
+			'show scene tester with fadeIn',
 			'y Under the supervision of Mr. Tobioka, it had become effectively impossible to carry out our club activities in the school grounds.',
+			'Wah.... Sudah mulai streamingnya.',
 			`y ${decodeScript()}`,
 			{
 				'Choice': {

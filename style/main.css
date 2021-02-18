@@ -37,6 +37,10 @@ button:hover {
 
 }
 
+.hidden{
+	visibility: hidden;
+}
+
 /**
  * ===========================
  * Main Menu Styling
@@ -99,14 +103,39 @@ button:hover {
 [data-component="text-box"] {
 	width: 80%;
 	left: 10%;
-	margin-bottom: 2%;
-	border-radius: 25px 25px 0px 0px;
+	padding-bottom: 2%;
+	border: 0;
+	background: none;
+	padding: 0;
+}
+
+[data-content="text"] {
+	border-radius: 25px;
 	padding: 1%;
+	background: url(/assets/images/textbox.png) rgba(255, 255, 255, 0.7);
+	background-size: cover;
+	background-blend-mode: multiply;
+	font-size: 30px;
+	color: #050507;
+	padding: 2% 3%;
 }
 
 /* Character Name Style */
-[data-ui="who"] {
+[data-content="name"] {
+	border-radius: 25px;
+	background: url(/assets//images/namebox.png) rgba(255, 255, 255, 0.3);
+	width: 15%;
+	margin-bottom: 5px;
+	text-align: center;
+	font-weight: bold;
+	background-size: cover;
+	background-blend-mode: multiply;
+	padding: 0.5%;
+	display: block !important;
+}
 
+[data-ui="who"] {
+	display: initial;
 }
 
 /* Style for Centered Text */
@@ -139,12 +168,13 @@ button:hover {
 	margin-bottom: 2%;
 	border-radius: 0px 0px 25px 25px;
 	padding-right: 1%;
-	padding-bottom: 1%;
+	padding-bottom: 2%;
+	background: none;
 }
 
 /* Quick Menu Buttons Style */
 [data-component="quick-menu"] span {
-
+	color: #050507;
 }
 
 /* Quick Menu Buttons Style on Hover */
@@ -153,8 +183,8 @@ button:hover {
 }
 
 /* Quick Menu Buttons Icon Style */
-[data-component="quick-menu"] > span > .fa {
-
+[data-component="quick-menu"] > button {
+	color: #050507;
 }
 
 /**

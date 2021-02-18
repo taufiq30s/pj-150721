@@ -34,5 +34,16 @@ $_ready (() => {
 	monogatari.init ('#monogatari').then (() => {
 		// 3. Inside the init function:
 
+		// Remove the Name Box during Narrator's dialogue
+		monogatari.on('didRunAction', () =>{
+			var charName = document.querySelector('text-box [data-content="character-name"]');
+			var charNameBox = document.querySelector('text-box [data-content="name"]');
+			if(charName.innerHTML == ""){
+				charNameBox.classList.toggle('hidden');
+			}
+			else{
+				charNameBox.classList.toggle('hidden');
+			}
+		});
 	});
 });

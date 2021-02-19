@@ -111,13 +111,14 @@ button:hover {
 
 [data-content="text"] {
 	border-radius: 25px;
-	padding: 1%;
-	background: url(/assets/images/textbox.png) rgba(255, 255, 255, 0.7);
-	background-size: cover;
+	background: url(/assets/images/textbox.png) rgba(255, 255, 255, 0.8);
+	background-size: 110% 140%;
 	background-blend-mode: multiply;
-	font-size: 30px;
+	font-size: 27px;
 	color: #050507;
-	padding: 2% 3%;
+	padding: 1% 9%;
+	background-position: 30% 11%;
+	background-repeat: no-repeat
 }
 
 /* Character Name Style */
@@ -170,6 +171,10 @@ button:hover {
 	padding-right: 1%;
 	padding-bottom: 2%;
 	background: none;
+}
+
+[data-action="back"] {
+	display: none;
 }
 
 /* Quick Menu Buttons Style */

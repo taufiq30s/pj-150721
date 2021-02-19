@@ -116,7 +116,7 @@ monogatari.script({
 	'English':{
 		'Start': [
 			'show scene tester with fadeIn',
-			'y Under the supervision of Mr. Tobioka, it had become effectively impossible to carry out our club activities in the school grounds.',
+			'y Under the supervision of Mr. Tobioka, it had become effectively impossible to carry out our club activities in the school grounds. Under the supervision of Mr. Tobioka, it had become effectively impossible to carry out our club activities in the school grounds.',
 			'Wah.... Sudah mulai streamingnya.',
 			`y ${decodeScript()}`,
 			{

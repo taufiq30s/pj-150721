@@ -39,10 +39,19 @@ $_ready (() => {
 			var charName = document.querySelector('text-box [data-content="character-name"]');
 			var charNameBox = document.querySelector('text-box [data-content="name"]');
 			if(charName.innerHTML == ""){
-				charNameBox.classList.toggle('hidden');
+				if(!charNameBox.classList.contains('hidden'))
+				{
+					console.log("masuk1");
+					charNameBox.classList.add('hidden');
+				}
 			}
 			else{
-				charNameBox.classList.toggle('hidden');
+				console.log(charNameBox.classList.contains('hidden'));
+				if(charNameBox.classList.contains('hidden'))
+				{
+					console.log("masuk2");
+					charNameBox.classList.remove('hidden');
+				}
 			}
 		});
 	});

@@ -85,12 +85,65 @@ monogatari.characters({
 		name: 'Yui',
 		color: '#5bcaff'
 	},
+	// General Chara Name
 	'iofi': {
 		name: "Airani"
 	},
-	'imouto': {
-		name: "Airani's Sister"
+	'yagoo': {
+		name: "YAGOO"
 	},
+	"mib1": {
+		name: "MIB 1"
+	},
+	"mib2": {
+		name: "MIB 2"
+	},
+	"mchan": {
+		name: "M-chan"
+	},
+	"unknown": {
+		name: "???"
+	},
+
+	// Indonesian Chara Name
+	'putriPertama': {
+		name: "Putri Pertama"
+	},
+	'putriKedua': {
+		name: "Putri Kedua"
+	},
+	'raja': {
+		name: "Raja"
+	},
+	'ratu': {
+		name: "Ratu"
+	},
+	'kaisar': {
+		name: "Kaisar"
+	},
+	'penasihat': {
+		name: "Penasihat Kaisar"
+	},
+	'utusan': {
+		name: "Utusan Kaisar"
+	},
+	'kuda': {
+		name: "Agen Kuda"
+	},
+	'kecoa': {
+		name: "Agen Kecoa"
+	},
+	'prajurit':{
+		name: "Prajurit"
+	},
+
+	// English Chara Name
+	'firstPricess': {
+		name: "First Princess"
+	},
+	'secondPrincess': {
+		name: "Second Princess"
+	},	
 	'king': {
 		name: "King"
 	},
@@ -106,53 +159,19 @@ monogatari.characters({
 	'envoy': {
 		name: "Imperial Envoy"
 	},
-	'yagoo': {
-		name: "YAGOO"
-	}
+	'horse': {
+		name: "Agent Kuda"
+	},
+	'coro': {
+		name: "Agen Kecoa"
+	},
+	'soldier':{
+		name: "Soldier"
+	},
 });
 
 monogatari.script({
-	// The game starts here.
-	'English':{
-		'Start': [
-			'show scene tester with fadeIn',
-			'y Under the supervision of Mr. Tobioka, it had become effectively impossible to carry out our club activities in the school grounds. Under the supervision of Mr. Tobioka, it had become effectively impossible to carry out our club activities in the school grounds.',
-			'Wah.... Sudah mulai streamingnya.',
-			`y ${decodeScript()}`,
-			{
-				'Choice': {
-					'Dialog': 'y Have you already read some documentation?',
-					'Yes': {
-						'Text': 'Yes',
-						'Do': 'jump Yes'
-					},
-					'No': {
-						'Text': 'No',
-						'Do': 'jump No'
-					}
-				}
-			}
-		],
-
-		'Yes': [
-			'y Thats awesome!',
-			'y Then you are ready to go ahead and create an amazing Game!',
-			'y I can’t wait to see what story you’ll tell!',
-			'end'
-		],
-
-		'No': [
-
-			'y You can do it now.',
-
-			'show message Help',
-
-			'y Go ahead and create an amazing Game!',
-			'y I can’t wait to see what story you’ll tell!',
-			'end'
-
-		]
-	},
+	// The game starts here.,
 	'日本語':{
 		'Start': [
 			'show scene #f7f6f6 with fadeIn',

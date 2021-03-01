@@ -108,7 +108,7 @@ button:hover {
 	margin: auto;
 	border: 0;
 	background: none;
-	min-height: 33%;
+	min-height: auto;
 	max-height: none;
 	row-gap: 5px;
 }
@@ -116,7 +116,7 @@ button:hover {
 [data-content="text"] {
 	border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.8);
-	background-image: url(/assets/images/textbox-sprite.png), url(/assets/images/textbox-sprite.png), url(/assets/images/textbox-sprite.png), url(/assets/images/textbox-sprite.png);
+	background-image: url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png);
 	background-repeat: no-repeat;
 	background-size: 346px 183px;
 	background-position: top -102px right -186px, bottom -141px right -229px, top -106px left -288px, bottom -101px left -260px;
@@ -126,7 +126,9 @@ button:hover {
 
 text-box [data-content="dialog"] {
 	font-size: 1.125rem;
-	line-height: 1.4;
+	line-height: 1.4em;
+	height: 8.4em;
+	max-height: 8.4em;
 	color: #050507;
 	padding: 0;
 }
@@ -136,7 +138,7 @@ text-box [data-content="dialog"] {
 	justify-self: start;
 	border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.3);
-	background-image: url(/assets/images/namebox-sprite.png), url(/assets/images/namebox-sprite.png);
+	background-image: url(../assets/images/namebox-sprite.png), url(../assets/images/namebox-sprite.png);
 	background-repeat: no-repeat;
 	background-size: 105px 44px;
 	background-position: top 50% right -66px, top 50% left -60px;
@@ -147,6 +149,7 @@ text-box [data-content="dialog"] {
 
 [data-ui="who"] {
 	padding: 0.5rem 0;
+	height: 2.8rem;
 }
 
 /* Style for Centered Text */
@@ -270,6 +273,8 @@ input[type=range]::-ms-fill-upper {
 	}
 	text-box [data-content="dialog"] {
 		font-size: 1.375rem;
+		height: 5.6em;
+		max-height: 5.6em;
 	}
 }
 
@@ -314,12 +319,10 @@ input[type=range]::-ms-fill-upper {
 /** Text boxes height based on screen height **/
 @media screen and (min-height: 48em) {
 	[data-component="text-box"] {
-		min-height: 30%;
 	}
 }
 
 @media screen and (min-height: 64em) {
 	[data-component="text-box"] {
-		min-height: 25%;
 	}
 }

@@ -154,7 +154,11 @@ text-box [data-content="dialog"] {
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
-
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 10px 20px;
+	color: #050507;
+	animation: fadeInLeft;
 }
 
 /* Character Images Styles */
@@ -283,6 +287,7 @@ input[type=range]::-ms-fill-upper {
 	[data-content="text"] {
 		background-position: top -148px right -256px, bottom -202px right -237px, top -159px left -416px, bottom -168px left -365px;
 		padding-top: 2rem;
+		padding-bottom: 0;
 	}
 	text-box [data-content="dialog"] {
 		font-size: 1.6875rem;

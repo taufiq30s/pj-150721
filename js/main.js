@@ -38,6 +38,7 @@ $_ready (() => {
 		monogatari.on('didRunAction', () =>{
 			var charName = document.querySelector('text-box [data-content="character-name"]');
 			var charNameBox = document.querySelector('text-box [data-content="name"]');
+			var centeredText = document.querySelector('centered-dialog');
 			if(charName.innerHTML == ""){
 				if(!charNameBox.classList.contains('hidden'))
 				{
@@ -52,6 +53,10 @@ $_ready (() => {
 					console.log("masuk2");
 					charNameBox.classList.remove('hidden');
 				}
+			}
+
+			if(centeredText != null){
+				centeredText.classList.remove('animated');
 			}
 		});
 	});

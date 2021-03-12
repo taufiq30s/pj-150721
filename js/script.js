@@ -75,7 +75,8 @@ monogatari.assets('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
-	'tester': 'testbg.jpg'
+	'tester': 'testbg.jpg',
+	'garden': 'garden.jpg'
 });
 
 
@@ -107,19 +108,34 @@ monogatari.characters({
 
 	// Indonesian Chara Name
 	'putriPertama': {
-		name: "Putri Pertama"
+		name: "Putri Pertama",
+		sprites: {
+			normal: 'first_princess_example.png'
+		}
 	},
 	'putriKedua': {
-		name: "Putri Kedua"
+		name: "Putri Kedua",
+		sprites: {
+			normal: 'second_princess_example.png'
+		}
 	},
 	'raja': {
-		name: "Raja"
+		name: "Raja",
+		sprites: {
+			normal: 'king_example.png'
+		}
 	},
 	'ratu': {
-		name: "Ratu"
+		name: "Ratu",
+		sprites: {
+			normal: 'queen_example.png'
+		}
 	},
 	'kaisar': {
-		name: "Kaisar"
+		name: "Kaisar",
+		sprites: {
+			normal: 'imperial_example.png'
+		}
 	},
 	'penasihat': {
 		name: "Penasihat Kaisar"

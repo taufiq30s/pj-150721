@@ -17,19 +17,24 @@
  * ===========================
 **/
 
+/* Change Cusor to Chiyopi */
+body, main-menu, button, button:hover, [data-action], span, svg, game-screen, credits-screen,  save-screen, settings-screen, help-screen{
+	cursor: url('../assets/cursor/test3.cur'), none !important;
+}
+
 /* General Style */
 body {
-	cursor: url('../assets/cursor/test3.png'), auto;
+	/* cursor: url('../assets/cursor/test3.png'), auto; */
 }
 
 /* Simple Button styles*/
 button {
-	cursor: url('../assets/cursor/test3.png'), auto;
+	/* cursor: url('../assets/cursor/test3.png'), auto; */
 }
 
 /* Simple Button Style on Hover */
 button:hover {
-	cursor: url('../assets/cursor/test3.png'), auto;
+	/* cursor: url('../assets/cursor/test3.png'), auto; */
 }
 
 /* General Styling for Menu Screens */
@@ -154,10 +159,7 @@ text-box [data-content="dialog"] {
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
-	border-radius: 20px;
-	background-color: rgba(255, 255, 255, 0.3);
-	padding: 10px 20px;
-	color: #050507;
+	color: #eee;
 	animation: fadeInLeft;
 }
 
@@ -291,6 +293,14 @@ input[type=range]::-ms-fill-upper {
 	}
 	text-box [data-content="dialog"] {
 		font-size: 1.6875rem;
+	}
+
+	[data-screen="game"] [data-character].left {
+		margin-left: 25%;
+	}
+
+	[data-screen="game"] [data-character].right {
+		margin-right: 25%;
 	}
 }
 

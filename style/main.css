@@ -132,8 +132,8 @@ button:hover {
 text-box [data-content="dialog"] {
 	font-size: 1.125rem;
 	line-height: 1.4em;
-	height: 8.4em;
-	max-height: 8.4em;
+	height: 4.2em;
+	max-height: 4.2em;
 	color: #050507;
 	padding: 0;
 }
@@ -278,9 +278,6 @@ input[type=range]::-ms-fill-upper {
 		padding: 1rem 4rem 2.5rem;
 	}
 	text-box [data-content="dialog"] {
-		font-size: 1.375rem;
-		height: 5.6em;
-		max-height: 5.6em;
 	}
 }
 
@@ -289,7 +286,7 @@ input[type=range]::-ms-fill-upper {
 	[data-content="text"] {
 		background-position: top -148px right -256px, bottom -202px right -237px, top -159px left -416px, bottom -168px left -365px;
 		padding-top: 2rem;
-		padding-bottom: 0;
+		padding-bottom: 2.5rem;
 	}
 	text-box [data-content="dialog"] {
 		font-size: 1.6875rem;

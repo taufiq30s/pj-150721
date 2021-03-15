@@ -76,7 +76,15 @@ monogatari.assets('images', {
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
 	'tester': 'testbg.jpg',
-	'garden': 'garden.jpg'
+	'garden': 'garden.jpg',
+	'galaxy': 'galaxy.jpg',
+	'iolyptos': 'iolyptos.jpg',
+	'iolyptos-city1': 'city1.1.jpg',
+	'iolyptos-city2': 'city1.2.jpg',
+	'iolyptos-city3': 'city1.3.jpg',
+	'emperor-throne': 'emperor-throne.jpg',
+	'iolyptos-throne-far': 'iolyptos-throne-far.jpg',
+	'iolyptos-throne-near': 'iolyptos-throne-near.jpg',
 });
 
 
@@ -138,10 +146,16 @@ monogatari.characters({
 		}
 	},
 	'penasihat': {
-		name: "Penasihat Kaisar"
+		name: "Penasihat Kaisar",
+		sprites: {
+			normal: 'advisor.png'
+		}
 	},
 	'utusan': {
-		name: "Utusan Kaisar"
+		name: "Utusan Kaisar",
+		sprites: {
+			normal: 'envoy.png'
+		}
 	},
 	'kuda': {
 		name: "Agen Kuda"

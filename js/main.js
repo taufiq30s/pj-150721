@@ -42,7 +42,6 @@ $_ready (() => {
 			if(charName.innerHTML == ""){
 				if(!charNameBox.classList.contains('hidden'))
 				{
-					console.log("masuk1");
 					charNameBox.classList.add('hidden');
 				}
 			}
@@ -50,7 +49,6 @@ $_ready (() => {
 				console.log(charNameBox.classList.contains('hidden'));
 				if(charNameBox.classList.contains('hidden'))
 				{
-					console.log("masuk2");
 					charNameBox.classList.remove('hidden');
 				}
 			}

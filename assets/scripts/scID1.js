@@ -1,5 +1,5 @@
 monogatari.script({
-  English: {
+  Indonesia: {
     'Start': [
       "show scene galaxy with fadeIn",
       "Di sebuah Galaksi nan jauh disana, ada sebuah planet bernama Iolyptos.",
@@ -121,7 +121,8 @@ monogatari.script({
       "utusan Kaisarku berniat untuk melamar Putri Pertama Iolyptos untuk dijadikan sebagai selir.",
       "hide character utusan normal with fadeOut",
       "show character raja normal with fadeIn",
-      "raja Hmm Mengingat reputasi dari Kaisarmu itu, Aku rasa mendapat restuku adalah hal yang mustahil.",
+      "raja Hmm....",
+      "raja Mengingat reputasi dari Kaisarmu itu, Aku rasa mendapat restuku adalah hal yang mustahil.",
       "hide character raja normal with fadeOut",
       "show character utusan normal with fadeIn",
       "utusan Apakah ini sebuah penghinaan untuk Kaisar kami?",

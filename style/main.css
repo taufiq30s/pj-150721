@@ -19,22 +19,19 @@
 
 /* Change Cusor to Chiyopi */
 body, main-menu, button, button:hover, [data-action], span, svg, game-screen, credits-screen,  save-screen, settings-screen, help-screen{
-	cursor: url('../assets/cursor/test3.cur'), none !important;
+	cursor: url('../assets/cursor/chiyopi.cur'), none !important;
 }
 
 /* General Style */
 body {
-	/* cursor: url('../assets/cursor/test3.png'), auto; */
 }
 
 /* Simple Button styles*/
 button {
-	/* cursor: url('../assets/cursor/test3.png'), auto; */
 }
 
 /* Simple Button Style on Hover */
 button:hover {
-	/* cursor: url('../assets/cursor/test3.png'), auto; */
 }
 
 /* General Styling for Menu Screens */

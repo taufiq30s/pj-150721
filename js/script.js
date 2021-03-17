@@ -242,7 +242,7 @@ monogatari.script({
 
 		]
 	},
-	'Indonesia':{
+	'English':{
 		'Start': [
 			'show scene #f7f6f6 with fadeIn',
 			'show notification Welcome',

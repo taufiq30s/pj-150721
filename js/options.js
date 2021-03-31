@@ -20,7 +20,7 @@ monogatari.settings({
 	'Name': 'Project Iofi Lore (Pj-150721)',
 
 	// The version of your game in semantic versioning (https://semver.org/).
-	'Version': '0.2.0-alpha.1',
+	'Version': '0.2.1-alpha.2',
 
 	// Initial Label *
 	'Label': 'Start',

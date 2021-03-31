@@ -1,11 +1,11 @@
 'use strict';
 
 // The name of your game, no spaces or special characters.
-const name = 'Monogatari';
+const name = 'Pj-150721';
 
 // The version of the cache, changing this will force everything to be cached
 // again.
-const version = '0.1.0';
+const version = '0.2.0-alpha.2';
 
 const files = [
 
@@ -30,6 +30,9 @@ const files = [
 	'js/script.js',
 	'js/main.js',
 
+	// Script Files
+	'assets/scripts/scID1.js',
+
 	// App Images
 	'favicon.ico',
 	'assets/icons/icon_48x48.png',
@@ -46,7 +49,32 @@ const files = [
 	'assets/icons/icon_192x192.png',
 	'assets/icons/icon_310x150.png',
 	'assets/icons/icon_310x310.png',
-	'assets/icons/icon_512x512.png'
+	'assets/icons/icon_512x512.png',
+
+	// Background Images
+	'assets/scenes/webp/garden.webp',
+	'assets/scenes/webp/galaxy.webp',
+	'assets/scenes/webp/iolyptos.webp',
+	'assets/scenes/webp/city1.1.webp',
+	'assets/scenes/webp/city1.2.webp',
+	'assets/scenes/webp/city1.3.webp',
+	'assets/scenes/webp/emperor-throne.webp',
+	'assets/scenes/webp/iolyptos-throne-far.webp',
+	'assets/scenes/webp/iolyptos-throne-near.webp',
+
+	// Character Images
+	'assets/characters/first_princess_example.png',
+	'assets/characters/second_princess_example.png',
+	'assets/characters/king_example.png',
+	'assets/characters/queen_example.png',
+	'assets/characters/imperial_example.png',
+	'assets/characters/advisor.png',
+	'assets/characters/envoy.png',
+
+	// Other Elements
+	'assets/images/namebox.png',
+	'assets/images/textbox(2).png',
+	'assets/cursor/chiyopi.cur',
 ];
 
 self.addEventListener ('install', (event) => {

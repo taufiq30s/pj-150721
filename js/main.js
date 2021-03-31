@@ -46,7 +46,6 @@ $_ready (() => {
 				}
 			}
 			else{
-				console.log(charNameBox.classList.contains('hidden'));
 				if(charNameBox.classList.contains('hidden'))
 				{
 					charNameBox.classList.remove('hidden');

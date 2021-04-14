@@ -335,3 +335,13 @@ input[type=range]::-ms-fill-upper {
 	[data-component="text-box"] {
 	}
 }
+
+/** Custom CSS Element **/
+#product-version {
+	align-self: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	bottom: 0;
+	padding-left: 20px;
+}

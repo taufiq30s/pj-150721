@@ -30,10 +30,17 @@ const { $_ready, $_ } = Monogatari;
 
 $_ready (() => {
 	// 2. Inside the $_ready function:
-
 	monogatari.init ('#monogatari').then (() => {
 		// 3. Inside the init function:
-
+		
+		// Remove Language selection after select language in first start
+		// All language configuration are stored in cookies.
+		monogatari.on('didLocalize', () => {
+			var language_selection_screen = $_('language-selection-screen').get(0);
+			if ( language_selection_screen && language_selection_screen.state.open ) {
+					language_selection_screen.setState({ open: false });
+			}
+		});
 		// Remove the Name Box during Narrator's dialogue
 		monogatari.on('didRunAction', () =>{
 			var charName = document.querySelector('text-box [data-content="character-name"]');
@@ -55,6 +62,15 @@ $_ready (() => {
 			if(centeredText != null){
 				centeredText.classList.remove('animated');
 			}
+		});
+
+		// Change Main Scree
+		monogatari.component('main-screen').template(() => {
+			return `
+				<h1>Project-150721</h1>
+				<main-menu></main-menu>
+				<p id="product-version">Version 0.2.3-alpha3</p>
+			`;
 		});
 	});
 });

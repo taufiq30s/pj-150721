@@ -65,7 +65,6 @@ monogatari.assets('sounds', {
 
 // Define the videos used in the game.
 monogatari.assets('videos', {
-	'test': 'tester.mp4',
 });
 
 // Define the images used in the game.
@@ -76,6 +75,7 @@ monogatari.assets('images', {
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
 	'tester': 'testbg.jpg',
+	'dummy': 'dummy.png',
 	'garden': 'webp/garden.webp',
 	'galaxy': 'webp/galaxy.webp',
 	'iolyptos': 'webp/iolyptos.webp',
@@ -85,6 +85,13 @@ monogatari.assets('scenes', {
 	'emperor-throne': 'webp/emperor-throne.webp',
 	'iolyptos-throne-far': 'webp/iolyptos-throne-far.webp',
 	'iolyptos-throne-near': 'webp/iolyptos-throne-near.webp',
+	'dining-room': 'webp/dining-room.webp',
+	'bedroom': 'webp/bedroom.webp',
+	'corridor': 'webp/corridor.webp',
+	'runway': 'webp/runway.webp',
+	'cockpit': 'webp/cockpit.webp',
+	'interrogation': 'webp/interrogation.webp',
+	'dorm': 'webp/dorm.webp',
 });
 
 
@@ -96,16 +103,29 @@ monogatari.characters({
 	},
 	// General Chara Name
 	'iofi': {
-		name: "Airani"
+		name: "Iofi",
+		sprites: {
+			normal: 'first_princess_example.png'
+		}
 	},
 	'yagoo': {
-		name: "YAGOO"
+		name: "YAGOO",
+		sprites: {
+			normal: 'mr_85.png',
+		}
 	},
 	"mib1": {
-		name: "MIB 1"
+		name: "MIB 1",
+		sprites: {
+			normal: 'mib1_netral.png',
+			shout: 'mib1_shout.png'
+		}
 	},
 	"mib2": {
-		name: "MIB 2"
+		name: "MIB 2",
+		sprites: {
+			normal: 'mib2_netral.png',
+		}
 	},
 	"mchan": {
 		name: "M-chan"
@@ -162,10 +182,27 @@ monogatari.characters({
 		}
 	},
 	'kuda': {
-		name: "Agen Kuda"
+		name: "Agen Kuda",
+		sprites: {
+			normal: 'kuda_netral.png',
+			panik: 'kuda_panik.png',
+			waspada: 'kuda_waspada.png',
+			tenang: 'kuda_tenang.png',
+			closeeye: 'kuda_closeeye.png',
+			dahi: 'kuda_dahi.png',
+			mata: 'kuda_mata.png',
+			kaget: 'kuda_kaget.png'
+		}
 	},
 	'kecoa': {
-		name: "Agen Kecoa"
+		name: "Agen Kecoa",
+		sprites: {
+			normal: 'kecoa_netral.png',
+			hypnotize: 'kecoa_hypnotized.png',
+			closeeye: 'kecoa_nod_closeeye.png',
+			menghela: 'kecoa_nod_menghela.png',
+			nod: 'kecoa_nod_normal.png',			
+		}
 	},
 	'prajurit':{
 		name: "Prajurit"
@@ -219,10 +256,27 @@ monogatari.characters({
 		}
 	},
 	'horse': {
-		name: "Agent Kuda"
+		name: "Agent Kuda",
+		sprites: {
+			normal: 'kuda_netral.png',
+			panik: 'kuda_panik.png',
+			waspada: 'kuda_waspada.png',
+			tenang: 'kuda_tenang.png',
+			closeeye: 'kuda_closeeye.png',
+			dahi: 'kuda_dahi.png',
+			mata: 'kuda_mata.png',
+			kaget: 'kuda_kaget.png'
+		}
 	},
 	'coro': {
-		name: "Agen Kecoa"
+		name: "Agen Kecoa",
+		sprites: {
+			normal: 'kecoa_netral.png',
+			hypnotize: 'kecoa_hypnotized.png',
+			closeeye: 'kecoa_nod_closeeye.png',
+			menghela: 'kecoa_nod_menghela.png',
+			nod: 'kecoa_nod_normal.png',			
+		}
 	},
 	'soldier':{
 		name: "Soldier"

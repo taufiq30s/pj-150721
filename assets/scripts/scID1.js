@@ -58,9 +58,6 @@ monogatari.script({
       "hide character putriPertama normal with fadeOut",
       "hide character putriKedua normal with fadeOut",
       "Tumbuh dalam lingkungan yang tertutup khusus untuk keluarga kerajaan yang jauh dari dunia luar, membuatnya hanya memiliki Sang Putri kedua (adik) sebagai teman dekatnya.",
-      "show scene #000 with fadeIn",
-      "centered Taman Kerajaan",
-      "show scene garden with fadeIn",
       "show character putriKedua normal at right with fadeIn",
       "show character putriPertama normal at left with fadeIn",
       "putriKedua Wajah Kakak begitu cantik, pasti nanti akan ada banyak Pangeran yang datang untuk Melamar Kakak.",
@@ -150,9 +147,7 @@ monogatari.script({
       "raja ...",
       "hide character raja normal with fadeOut",
       "Sang Raja yang tidak tau harus berbuat apa hanya mampu duduk terdiam singgasananya.",
-      "show scene #000000",
-      "centered Part 2 Coming soon",
-      "end"
+      "jump idPart2"
     ]
   },
 });

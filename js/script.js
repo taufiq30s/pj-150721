@@ -27,6 +27,12 @@ monogatari.action('notification').notifications({
 	}
 });
 
+monogatari.action ('Message').messages ({
+  'SampleWriting':{
+      body: `<img src="assets/images/hp_mainan.jpg"><br>`
+  }
+});
+
 // Define the Particles JS Configurations used in the game
 monogatari.action('particles').particles({
 
@@ -69,7 +75,7 @@ monogatari.assets('videos', {
 
 // Define the images used in the game.
 monogatari.assets('images', {
-
+	'hp_mainan' : 'hp_mainan.jpg',
 });
 
 // Define the backgrounds for each scene.

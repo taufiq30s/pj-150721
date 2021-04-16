@@ -85,6 +85,11 @@ monogatari.label('caloriebar', 'Indonesia', [
 ]);
 
 monogatari.label('idPart2-2', 'Indonesia', [
+  // Dummy
+  // "show scene cockpit with fadeIn",
+  // "show character putriPertama normal with fadeIn",
+  // 'show message SampleWriting',
+  // End Dummy
   "putriPertama Sebaiknya kusimpan didalam laci, setelah makan Aku ingin langsung istirahat",
   "hide character putriPertama normal with fadeOut",
   "Dengan pesawat Super Canggih dari Iolyptos, Sang Putri mengarungi betapa luasnya alam semesta ini tanpa tujuan jelas.",
@@ -129,7 +134,7 @@ monogatari.label('idPart2-2', 'Indonesia', [
   "hide character mib2 normal at right with fadeOut",
   "Dalam waktu yang singkat ia didatangi oleh para Agen berbaju hitam, lalu menangkapnya untuk dibawa ke Area 15 dan menginterogasinya.",
   "show scene #000",
-  "wait 2000",
+  "wait 3000",
   "show scene interrogation",
   "show character putriPertama normal with fadeIn",
   "putriPertama Mau dibawa kemana Aku? Mau diapakan Aku?",
@@ -159,16 +164,20 @@ monogatari.label('idPart2-2', 'Indonesia', [
   "show character kecoa hypnotize at right with fadeIn",
   "show character kuda kaget at left with fadeIn",
   "kuda Agen Kecoak ada apa denganmu? Sadarlah!",
+  "show character kuda kaget with slideInLeft",
+  "wait 500",
   "show character kecoa hypnotize at right with shake infinite",
   "kecoa .......",
-  "hide character kuda kaget at left with fadeOut",
-  "show character kuda closeeye at left with fadeIn",
+  "hide character kuda kaget with fadeOut",
+  "show character kuda closeeye with fadeIn",
+  "show character kecoa hypnotize at right",
   "kuda SADARLAH!!! Sepertinya ini akan menjadi sangat berbahaya jika aku biarkan. Aku akan melumpuhkan kalian berdua, maafkan Aku Agen Kecoak.",
+  "show character kuda closeeye at left with slideInRight",
   "Agen Kuda yang merasa dirinya dalam bahaya, dengan cepat berusaha melumpuhkan Agen Kecoak terlebih lebih dulu",
-  "show character putriPertama normal with fadeIn",
-  "putriPertama TIDAKKK!!!!",
   "hide character kuda closeeye at left with fadeOut",
   "hide character kecoa hypnotize at right with fadeOut",
+  "show character putriPertama normal with fadeIn",
+  "putriPertama TIDAKKK!!!!",
   "hide character putriPertama normal with fadeOut",
   "DORRR!!!!",
   "Namun peluru yang ditembakkan Agen Kuda Terhalang sesuatu, yang tak terlihat yang membuat Putri Pertama dan Agen Kuda tidak terluka.",
@@ -250,9 +259,11 @@ monogatari.label('idPart2-2', 'Indonesia', [
   "iofi dan Aku juga ingin mempelajari bahasa manusia berbeda dengan Iolyptos, manusia Bumi memiliki begitu banyak bahasa.",
   "iofi Tapi, sebelum itu mungkin harus menjual beberapa barang berharga yang kubawa dari Iolyptos.",
   "iofi Benda apa ini Aku tidak ingat pernah membawanya, kusimpan saja mungkin saja ini penting.",
+  // "show image hp_mainan center with fadeIn",
   "hide character iofi normal with fadeOut",
   "Dengan menjual barang berharga yang ia bawa dari Iolyptos ke Pasar Senen, Iofi berniat untuk belajar sebagai mahasiswi seni sambil mempelajari bahasa yang ada di Bumi.",
   "show scene #000",
   "centered GASS Langsung mau Lanjut Part 3",
   "end"
 ]);
+

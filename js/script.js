@@ -98,6 +98,11 @@ monogatari.assets('scenes', {
 	'cockpit': 'webp/cockpit.webp',
 	'interrogation': 'webp/interrogation.webp',
 	'dorm': 'webp/dorm.webp',
+	'office': 'webp/office.webp',
+	'inoffice': 'webp/inoffice.webp',
+	'ufo': 'webp/ufo.webp',
+	'sky': 'webp/sky.webp',
+	'comical': 'webp/comical.webp',
 });
 
 
@@ -134,7 +139,10 @@ monogatari.characters({
 		}
 	},
 	"mchan": {
-		name: "M-chan"
+		name: "M-chan",
+		sprites: {
+			normal: 'm chan - netral.png',
+		}
 	},
 	"unknown": {
 		name: "???"
@@ -156,7 +164,14 @@ monogatari.characters({
 	'raja': {
 		name: "Raja",
 		sprites: {
-			normal: 'king_example.png'
+			normal: 'raja-netral.png',
+			closeeye: 'raja-netral-mata-tertutup.png',
+			sedih1: 'raja-sedih-1.png',
+			sedih2: 'raja-sedih-2.png',
+			senyum: 'raja-senyum-tipis.png',
+			tegas: 'raja-tegas-kukuh.png',
+			teriak: 'raja-tegas-teriak.png',
+			marah: 'raja-marah-1.png',
 		}
 	},
 	'ratu': {
@@ -230,7 +245,14 @@ monogatari.characters({
 	'king': {
 		name: "King",
 		sprites: {
-			normal: 'king_example.png'
+			normal: 'raja-netral.png',
+			closeeye: 'raja-netral-mata-tertutup.png',
+			sedih1: 'raja-sedih-1.png',
+			sedih2: 'raja-sedih-2.png',
+			senyum: 'raja-senyum-tipis.png',
+			tegas: 'raja-tegas-kukuh.png',
+			teriak: 'raja-tegas-teriak.png',
+			marah: 'raja-marah-1.png',
 		}
 	},
 	'queen': {

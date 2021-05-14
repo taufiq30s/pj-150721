@@ -69,7 +69,7 @@ $_ready (() => {
 			return `
 				<h1>Project-150721</h1>
 				<main-menu></main-menu>
-				<p id="product-version">Version 0.2.4-alpha3</p>
+				<p id="product-version">Version 0.2.5-alpha4</p>
 			`;
 		});
 	});

@@ -172,6 +172,10 @@ monogatari.characters({
 			tegas: 'raja-tegas-kukuh.png',
 			teriak: 'raja-tegas-teriak.png',
 			marah: 'raja-marah-1.png',
+			kaget: 'raja-kaget.png',
+			teriak2: 'raja-teriak.png',
+			percaya: 'raja-mencoba-percaya-diri.png',
+			takut: 'raja-takut.png'
 		}
 	},
 	'ratu': {
@@ -253,6 +257,10 @@ monogatari.characters({
 			tegas: 'raja-tegas-kukuh.png',
 			teriak: 'raja-tegas-teriak.png',
 			marah: 'raja-marah-1.png',
+			kaget: 'raja-kaget.png',
+			teriak2: 'raja-teriak.png',
+			percaya: 'raja-mencoba-percaya-diri.png',
+			takut: 'raja-takut.png'
 		}
 	},
 	'queen': {

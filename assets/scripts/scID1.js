@@ -1,6 +1,7 @@
 monogatari.script({
   Indonesia: {
     'Start': [
+      // "jump idPart3-1",
       "show scene galaxy with fadeIn",
       "Di sebuah Galaksi nan jauh disana, ada sebuah planet bernama Iolyptos.",
       "show scene iolyptos-city3 with fadeIn",

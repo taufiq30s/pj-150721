@@ -45,7 +45,7 @@ $_ready (() => {
 		monogatari.on('didRunAction', () =>{
 			var charName = document.querySelector('text-box [data-content="character-name"]');
 			var charNameBox = document.querySelector('text-box [data-content="name"]');
-			var centeredText = document.querySelector('centered-dialog');
+			var centeredText = document.querySelector('centered-dialog [data-content="wrapper"]');
 			if(charName.innerHTML == ""){
 				if(!charNameBox.classList.contains('hidden'))
 				{
@@ -59,6 +59,7 @@ $_ready (() => {
 				}
 			}
 
+			console.log(centeredText.innerHTML);
 			if(centeredText != null){
 				centeredText.classList.remove('animated');
 			}
@@ -69,7 +70,7 @@ $_ready (() => {
 			return `
 				<h1>Project-150721</h1>
 				<main-menu></main-menu>
-				<p id="product-version">Version 0.2.5-alpha4</p>
+				<p id="product-version">Version 0.2.6-alpha5</p>
 			`;
 		});
 	});

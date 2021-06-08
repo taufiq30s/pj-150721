@@ -84,17 +84,16 @@ monogatari.assets('scenes', {
 	'dummy': 'dummy.png',
 	'garden': 'webp/garden.webp',
 	'galaxy': 'webp/galaxy.webp',
-	'iolyptos': 'webp/iolyptos.webp',
-	'iolyptos-city1': 'webp/city1.1.webp',
-	'iolyptos-city2': 'webp/city1.2.webp',
-	'iolyptos-city3': 'webp/city1.3.webp',
+	'balkon' : 'webp/balkon.webp',
+	'balkon-malam' : 'webp/balkon-malam.webp',
+	'iolyptos': 'webp/iolyptus.webp',
+	'iolyptos-city': 'webp/iolyptus-city.webp',
 	'emperor-throne': 'webp/emperor-throne.webp',
-	'iolyptos-throne-far': 'webp/iolyptos-throne-far.webp',
-	'iolyptos-throne-near': 'webp/iolyptos-throne-near.webp',
+	'iolyptos-throne': 'webp/iolyptos-throne.webp',
 	'dining-room': 'webp/dining-room.webp',
 	'bedroom': 'webp/bedroom.webp',
+	'beach' : 'webp/beach-sample.webp',
 	'corridor': 'webp/corridor.webp',
-	'runway': 'webp/runway.webp',
 	'cockpit': 'webp/cockpit.webp',
 	'interrogation': 'webp/interrogation.webp',
 	'dorm': 'webp/dorm.webp',
@@ -103,6 +102,7 @@ monogatari.assets('scenes', {
 	'ufo': 'webp/ufo.webp',
 	'sky': 'webp/sky.webp',
 	'comical': 'webp/comical.webp',
+	'earth': 'webp/earth.webp', 
 });
 
 
@@ -122,7 +122,10 @@ monogatari.characters({
 	'yagoo': {
 		name: "YAGOO",
 		sprites: {
-			normal: 'mr_85.png',
+			normal: 'mr85-netral.png',
+			shinySmile: 'mr85-senyum-bersinar.png',
+			smile: 'mr85-senyum.png',
+			cry: 'mr85-menangis.png'
 		}
 	},
 	"mib1": {

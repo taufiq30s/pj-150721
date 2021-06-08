@@ -59,7 +59,6 @@ $_ready (() => {
 				}
 			}
 
-			console.log(centeredText.innerHTML);
 			if(centeredText != null){
 				centeredText.classList.remove('animated');
 			}
@@ -68,9 +67,9 @@ $_ready (() => {
 		// Change Main Scree
 		monogatari.component('main-screen').template(() => {
 			return `
-				<h1>Project-150721</h1>
+				<h1>A New Canvas</h1>
 				<main-menu></main-menu>
-				<p id="product-version">Version 0.2.6-alpha5</p>
+				<p id="product-version">Version 0.2.7-alpha6</p>
 			`;
 		});
 	});

@@ -1,3 +1,6 @@
+/**
+ * TODO : HP (Scene)
+ */
 monogatari.label('idPart2', 'Indonesia', [
   "show scene #000000",
   "centered Suatu pagi di iolyptus",
@@ -35,6 +38,7 @@ monogatari.label('idPart2', 'Indonesia', [
   "Sang Putri malam itu juga memutuskan untuk melarikan diri dari Ioyptos dengan sebuah pesawat milik Kerajaan.",
   "show scene #000",
   "centered Balkon Kamar Pasangan Kerajaan",
+  "show scene balkon-malam with fadeIn",
   "show character ratu normal at left with fadeIn",
   "show character raja sedih2 at right with fadeIn",
   "raja Sepertinya Putri kita sudah pergi Ratuku, Aku dikenal sebagai Raja yang bijak tapi, Aku akan menjadi Raja yang bodoh jika itu tentang orang kusayangi.",
@@ -93,8 +97,8 @@ monogatari.label('idPart2-2', 'Indonesia', [
   "putriPertama Waaaa Planet Apa Itu? Indah Sekali…Seperti…",
   "putriPertama Sepertinya Aku ke planet Biru itu saja",
   "hide character putriPertama normal with fadeOut",
-  "show scene dummy with fadeIn",
-  "Setelah sekian waktu berlalu, Sang Putri akhirnya melihat sebuah planet biru nan cantik dikejauhan, dan akhirnya memutuskan planet tersebut sebagai tujuanya.",
+  "show scene earth with fadeIn",
+  "Setelah sekian waktu berlalu, Sang Putri akhirnya melihat sebuah planet biru nan cantik dikejauhan, dan akhirnya memutuskan planet tersebut sebagai tujuannya.",
   "show scene #000",
   "centered Bumi, Indonesia",
   "centered Markas Rahasia Area 15",
@@ -106,7 +110,7 @@ monogatari.label('idPart2-2', 'Indonesia', [
   "kecoa Kepada seluruh Unit yang berada dekat lokasi target terdeteksi, diharap untuk melakukan pengepungan.",
   "hide character kecoa normal with fadeOut",
   "Namun pesawat ia kendarai telah dideteksi oleh mesin pendeteksi dari Area 15.",
-  "show scene dummy with fadeIn",
+  "show scene beach with fadeIn",
   "show character putriPertama normal with fadeIn",
   "putriPertama Akhirnya Aku sampai tapi dimana ini? Mungkin Aku akan menanyakanya kepada penduduk planet, jika Aku bisa menjumpai mereka.",
   "hide character putriPertama normal with fadeOut",

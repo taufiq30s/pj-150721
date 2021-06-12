@@ -1,11 +1,4 @@
 /* global monogatari */
-
-// Decode Script from file
-function decodeScript() {
-	var decode = CryptoJS.enc.Base64.parse("44G/44KT44Gq44GM44KT44Gw44Gj44Gm44Gt772e");
-	return CryptoJS.enc.Utf8.stringify(decode);
-}
-
 // Define the messages used in the game.
 monogatari.action('message').messages({
 	'Help': {
@@ -329,7 +322,6 @@ monogatari.script({
 			'show scene #f7f6f6 with fadeIn',
 			'show notification Welcome',
 			'y Under the supervision of Mr. Tobioka, it had become effectively impossible to carry out our club activities in the school grounds.',
-			`y ${decodeScript()}`,
 			{
 				'Choice': {
 					'Dialog': 'y Have you already read some documentation?',

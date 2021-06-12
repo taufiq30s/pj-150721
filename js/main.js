@@ -27,12 +27,33 @@ const { $_ready, $_ } = Monogatari;
 
 // 1. Outside the $_ready function:
 
+// Register Enter to Next()
+monogatari.registerListener('next', {
+	keys: 'enter',
+	callback: () => {
+			monogatari.proceed ({ userInitiated: true, skip: false, autoPlay: false }).then(() => {
+			}).catch((e) => {
+				monogatari.debug.log(`Proceed Prevented\nReason: ${e}`);
+			});
+	}
+});
+
+// Add About Us into main menu
+// monogatari.component('main-menu')
+
 
 $_ready (() => {
 	// 2. Inside the $_ready function:
-	monogatari.init ('#monogatari').then (() => {
-		// 3. Inside the init function:
-		
+
+	monogatari.init ('#monogatari').then (() => {		
+		// 3. Inside the init function:		
+
+		// Revoke Backspace Action
+		monogatari.unregisterListener("back");
+
+		// Remove Back button from quick menu
+		monogatari.component('quick-menu').removeButton("Back");
+
 		// Remove Language selection after select language in first start
 		// All language configuration are stored in cookies.
 		monogatari.on('didLocalize', () => {
@@ -62,15 +83,6 @@ $_ready (() => {
 			if(centeredText != null){
 				centeredText.classList.remove('animated');
 			}
-		});
-
-		// Change Main Scree
-		monogatari.component('main-screen').template(() => {
-			return `
-				<h1>A New Canvas</h1>
-				<main-menu></main-menu>
-				<p id="product-version">Version 0.2.7-alpha6</p>
-			`;
-		});
+		});		
 	});
 });

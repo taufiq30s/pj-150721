@@ -5,7 +5,7 @@ const name = 'Pj-150721';
 
 // The version of the cache, changing this will force everything to be cached
 // again.
-const version = '0.2.7-alpha.6';
+const version = '0.2.8-alpha.7';
 
 const files = [
 

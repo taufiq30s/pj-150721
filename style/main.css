@@ -13,8 +13,8 @@
 
 /* Import External Font */
 @font-face {
-	font-family: "mikachan";
-	src: url('../assets/fonts/mikachan.ttf');
+	font-family: "metropolis";
+	src: url('../assets/fonts/Metropolis-Medium.otf');
 }
 
 /**
@@ -57,7 +57,8 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-
+	background-image: url(../assets/images/mainbg.jpg);
+	background-size: cover;	
 }
 
 /* Main Menu Buttons Styling */
@@ -139,8 +140,7 @@ text-box [data-content="dialog"] {
 	max-height: 4.2em;
 	color: #050507;
 	padding: 0;
-	font-family: "mikachan";
-	font-weight: bold;
+	font-family: "metropolis";
 }
 
 /* Character Name Style */
@@ -200,23 +200,57 @@ text-box [data-content="dialog"] {
 	justify-content: center;
 }
 
-[data-action="back"] {
-	display: none;
-}
-
 /* Quick Menu Buttons Style */
 [data-component="quick-menu"] span {
-	color: #050507;
+
 }
 
 /* Quick Menu Buttons Style on Hover */
-[data-component="quick-menu"] span:hover {
-
+[data-component="quick-menu"] > button:hover {
+	color: #f4c2c2;
 }
+
 
 /* Quick Menu Buttons Icon Style */
 [data-component="quick-menu"] > button {
 	color: #050507;
+}
+
+/**
+ * ===========================
+ * BackLog Styling
+ * ===========================
+**/
+
+[data-content=log] {
+	height: 90%;
+	max-height: 90%;
+}
+
+[data-string="Close"] {
+	border-radius: 35px;
+	background: linear-gradient(145deg, #ffd0d0, #dcafaf);
+	box-shadow:  5px 5px 10px #cfa5a5,
+            	-5px -5px 10px #ffdfdf;
+	transition: box-shadow 1s;
+}
+
+[data-string="Close"]:hover {
+	box-shadow:  15px 15px 30px #cfa5a5,
+            	-15px -15px 30px #ffdfdf;
+}
+
+[data-string="Close"]:active {
+	background: linear-gradient(145deg, #dcafaf, #ffd0d0);
+	box-shadow:  15px 15px 30px #cfa5a5,
+							-15px -15px 30px #ffdfdf;
+	border: none;
+	outline: none;
+}
+
+[data-string="Close"]:focus {
+	border: none;
+	outline: none;
 }
 
 /**
@@ -296,7 +330,7 @@ input[type=range]::-ms-fill-upper {
 		padding-bottom: 2.5rem;
 	}
 	text-box [data-content="dialog"] {
-		font-size: 1.7875rem;
+		font-size: 1.55rem;
 	}
 
 	[data-screen="game"] [data-character].left {
@@ -310,7 +344,7 @@ input[type=range]::-ms-fill-upper {
 
 /** Full HD Screen, Large Devices, Wide Screens, Large Desktops (1920px) **/
 @media screen and (min-width: 120em) {
-
+	
 }
 
 /** Retina Screen , Large Devices, Wide Screens(2560px) **/
@@ -347,11 +381,18 @@ input[type=range]::-ms-fill-upper {
 }
 
 /** Custom CSS Element **/
-#product-version {
+#footer {
 	align-self: flex-start;
 	flex-direction: column;
 	align-items: flex-start;
 	position: absolute;
 	bottom: 0;
 	padding-left: 20px;
+	text-align: left;
+	padding-bottom: 15px;
+	color:#eee;
+}
+
+#footer p{
+	margin: 0px;
 }

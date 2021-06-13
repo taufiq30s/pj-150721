@@ -1,14 +1,14 @@
 {
-  "name": "my-game",
-  "productName": "My Game",
-  "version": "0.1.0",
+  "name": "a-new-canvas",
+  "productName": "A New Canvas",
+  "version": "0.2.8",
   "main": "engine/electron/index.js",
-  "description": "A description of your game",
-  "author": "Your Name",
+  "description": "Iofi's Lore Visual Novel",
+  "author": "pj-150721 Team",
   "license": "MIT",
-  "homepage": "https://example.com",
+  "homepage": "https://anewcanvas.id",
   "build": {
-    "appId": "com.example.mygame",
+    "appId": "com.moonchild.anewcanvas",
     "win": {
       "target": [
         "nsis"

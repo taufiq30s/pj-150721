@@ -38,18 +38,38 @@ monogatari.registerListener('next', {
 	}
 });
 
-// Add About Us into main menu
-// monogatari.component('main-menu')
-
-
 $_ready (() => {
 	// 2. Inside the $_ready function:
+
+	// Register About Us to Translation System
+	monogatari.translation('Indonesia')["About"] = "Tentang";
+	monogatari.translation('English')["About"] = "About";
+	monogatari.translation('日本語')["About"] = "について";
 
 	monogatari.init ('#monogatari').then (() => {		
 		// 3. Inside the init function:		
 
-		// Revoke Backspace Action
+		// Add About Us into main menu
+		monogatari.component('main-menu').addButton({
+			string: "About",
+			data: {
+				action: "open-screen",
+				open: "about"
+			}
+		});		
+
+		// Change Backspace Action to open Dialog Log
 		monogatari.unregisterListener("back");
+		
+		monogatari.registerListener('log', {
+			keys: 'left',
+			callback: () => {
+					$_('dialog-log').get(0).setState({active: true}).then(() => {
+					}).catch((e) => {
+						monogatari.debug.log(`Proceed Prevented\nReason: ${e}`);
+					});
+			}
+		});
 
 		// Remove Back button from quick menu
 		monogatari.component('quick-menu').removeButton("Back");
@@ -66,7 +86,6 @@ $_ready (() => {
 		monogatari.on('didRunAction', () =>{
 			var charName = document.querySelector('text-box [data-content="character-name"]');
 			var charNameBox = document.querySelector('text-box [data-content="name"]');
-			var centeredText = document.querySelector('centered-dialog [data-content="wrapper"]');
 			if(charName.innerHTML == ""){
 				if(!charNameBox.classList.contains('hidden'))
 				{
@@ -79,10 +98,14 @@ $_ready (() => {
 					charNameBox.classList.remove('hidden');
 				}
 			}
-
-			if(centeredText != null){
-				centeredText.classList.remove('animated');
+			if(document.querySelector('centered-dialog') == null 
+			&& document.querySelector('text-box').style.display == "none"){
+				document.querySelector('quick-menu').style.display = "none";
 			}
+			else{
+				document.querySelector('quick-menu').style.display = "block";
+			}
+			
 		});		
 	});
 });

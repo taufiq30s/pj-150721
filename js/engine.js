@@ -25,3 +25,17 @@ monogatari.component('main-screen').template(() => {
     </div>
   `;
 });
+
+monogatari.component('dialog-log').template(() => {
+  return `
+			<div class="modal__content acrylic">
+        <div data-content="backlog">
+          <h3>Backlog</h3>
+          <div data-content="log">
+            <div class="text--center padded" data-string="NoDialogsAvailable" data-content="placeholder">No dialogs available. Dialogs will appear here as they show up.</div>
+          </div>
+        </div>
+        <button data-string="Close" data-action="dialog-log">Close</button>
+			</div>
+		`;
+});

@@ -31,10 +31,53 @@ const { $_ready, $_ } = Monogatari;
 monogatari.registerListener('next', {
 	keys: 'enter',
 	callback: () => {
-			monogatari.proceed ({ userInitiated: true, skip: false, autoPlay: false }).then(() => {
-			}).catch((e) => {
-				monogatari.debug.log(`Proceed Prevented\nReason: ${e}`);
-			});
+		if(monogatari.global('distraction_free') === true) {
+      monogatari.distractionFree();
+    }
+		monogatari.proceed ({ userInitiated: true, skip: false, autoPlay: false }).then(() => {
+		}).catch((e) => {
+			monogatari.debug.log(`Proceed Prevented\nReason: ${e}`);
+		});
+	}
+});
+
+// Add action on shortcut to open Backlog
+monogatari.registerListener('logUp', {
+	keys: 'up',
+	callback: () => {
+		if(!$_('dialog-log').get(0).state.active) {
+			$_('dialog-log').get(0).setState({active: true});
+		}
+	}
+});
+
+monogatari.registerListener('logDown', {
+	keys: 'down',
+	callback: () => {
+		if(!$_('dialog-log').get(0).state.active) {
+			$_('dialog-log').get(0).setState({active: true});
+		}
+	}
+});
+
+// Add shortcut to run auto mode
+monogatari.registerListener('auto', {
+	keys: 'shift',
+	callback: () => {
+		this.autoPlay (this.global ('_auto_play_timer') === null);
+	}
+});
+
+// Add shortcut to hide window/close the backlog window
+monogatari.registerListener('escKey', {
+	keys: 'esc',
+	callback: () => {
+		if($_('dialog-log').get(0).state.active){
+			$_('dialog-log').get(0).setState({active: false});
+		}
+		else{
+			monogatari.distractionFree();
+		}
 	}
 });
 
@@ -49,7 +92,7 @@ $_ready (() => {
 	monogatari.init ('#monogatari').then (() => {		
 		// 3. Inside the init function:		
 
-		// Add About Us into main menu
+		// Add About us into main menu
 		monogatari.component('main-menu').addButton({
 			string: "About",
 			data: {
@@ -58,22 +101,19 @@ $_ready (() => {
 			}
 		});		
 
-		// Change Backspace Action to open Dialog Log
+		// Remove action on left key shortcut
 		monogatari.unregisterListener("back");
-		
-		monogatari.registerListener('log', {
-			keys: 'left',
-			callback: () => {
-					$_('dialog-log').get(0).setState({active: true}).then(() => {
-					}).catch((e) => {
-						monogatari.debug.log(`Proceed Prevented\nReason: ${e}`);
-					});
-			}
-		});
 
 		// Remove Back button from quick menu
 		monogatari.component('quick-menu').removeButton("Back");
 
+		// Set backlog status false when user click Close Button
+		monogatari.on('click', '[data-string="Close"]', () => {
+			if($_('dialog-log').get(0).state.active){
+				$_('dialog-log').get(0).setState({active: false});
+			}
+		});
+		
 		// Remove Language selection after select language in first start
 		// All language configuration are stored in cookies.
 		monogatari.on('didLocalize', () => {
@@ -97,15 +137,12 @@ $_ready (() => {
 				{
 					charNameBox.classList.remove('hidden');
 				}
-			}
-			if(document.querySelector('centered-dialog') == null 
-			&& document.querySelector('text-box').style.display == "none"){
-				document.querySelector('quick-menu').style.display = "none";
-			}
-			else{
-				document.querySelector('quick-menu').style.display = "block";
-			}
-			
-		});		
+			}			
+		});
+		
+		// Show a icon when typing was finished
+		monogatari.on('didFinishTyping', () => {
+
+		});
 	});
 });

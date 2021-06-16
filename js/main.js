@@ -113,7 +113,7 @@ $_ready (() => {
 				$_('dialog-log').get(0).setState({active: false});
 			}
 		});
-		
+
 		// Remove Language selection after select language in first start
 		// All language configuration are stored in cookies.
 		monogatari.on('didLocalize', () => {

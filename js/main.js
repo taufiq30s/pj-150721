@@ -28,31 +28,108 @@ const { $_ready, $_ } = Monogatari;
 // 1. Outside the $_ready function:
 
 // Register Enter to Next()
-monogatari.registerListener('next', {
+monogatari.registerListener('enterKey', {
 	keys: 'enter',
 	callback: () => {
-			monogatari.proceed ({ userInitiated: true, skip: false, autoPlay: false }).then(() => {
-			}).catch((e) => {
-				monogatari.debug.log(`Proceed Prevented\nReason: ${e}`);
-			});
+		if(monogatari.global('distraction_free') === true) {
+      monogatari.distractionFree();
+    }
+		monogatari.proceed ({ userInitiated: true, skip: false, autoPlay: false }).then(() => {
+		}).catch((e) => {
+			monogatari.debug.log(`Proceed Prevented\nReason: ${e}`);
+		});
 	}
 });
 
-// Add About Us into main menu
-// monogatari.component('main-menu')
+// Add action on shortcut to open Backlog
+monogatari.registerListener('arrowUpKey', {
+	keys: 'up',
+	callback: () => {
+		if(!$_('dialog-log').get(0).state.active) {
+			$_('dialog-log').get(0).setState({active: true});
+		}
+	}
+});
 
+monogatari.registerListener('arrowDownKey', {
+	keys: 'down',
+	callback: () => {
+		if(!$_('dialog-log').get(0).state.active) {
+			$_('dialog-log').get(0).setState({active: true});
+		}
+	}
+});
+
+// Add shortcut to run auto mode
+monogatari.registerListener('shiftKey', {
+	keys: 'shift',
+	callback: () => {
+		this.autoPlay (this.global ('_auto_play_timer') === null);
+	}
+});
+
+// Add shortcut to hide window/close the backlog window
+monogatari.registerListener('escKey', {
+	keys: 'esc',
+	callback: () => {
+		if($_('dialog-log').get(0).state.active){
+			$_('dialog-log').get(0).setState({active: false});
+		}
+		else{
+			monogatari.distractionFree();
+		}
+	}
+});
 
 $_ready (() => {
 	// 2. Inside the $_ready function:
 
+	// Register About Us to Translation System
+	monogatari.translation('Indonesia')["About"] = "Tentang";
+	monogatari.translation('English')["About"] = "About";
+	monogatari.translation('日本語')["About"] = "について";
+	monogatari.translation('Indonesia')["Feedback"] = "Send Issue";
+	monogatari.translation('English')["Feedback"] = "Send Issue";
+	monogatari.translation('日本語')["Feedback"] = "課題の送信";
+
 	monogatari.init ('#monogatari').then (() => {		
 		// 3. Inside the init function:		
 
-		// Revoke Backspace Action
+		// Add About us into main menu
+		monogatari.component('main-menu').addButton({
+			string: "About",
+			data: {
+				action: "open-screen",
+				open: "about"
+			}
+		});	
+		
+		// Add Issue button
+		monogatari.component('main-menu').addButton({
+			string: "Feedback"
+		});
+
+		monogatari.component('quick-menu').addButton({
+			icon: "ri-feedback-fill",
+			string: "Feedback"
+		});
+
+		monogatari.on('click', '[string="Feedback"]', () => {			
+			window.open('https://github.com/taufiq30s/anewcanvas-bugs/issues');
+		});
+
+		// Remove action on left key shortcut
 		monogatari.unregisterListener("back");
 
 		// Remove Back button from quick menu
 		monogatari.component('quick-menu').removeButton("Back");
+
+		// Set backlog status false when user click Close Button
+		monogatari.on('click', '[data-string="Close"]', () => {
+			if($_('dialog-log').get(0).state.active){
+				$_('dialog-log').get(0).setState({active: false});
+			}
+		});
 
 		// Remove Language selection after select language in first start
 		// All language configuration are stored in cookies.
@@ -66,7 +143,6 @@ $_ready (() => {
 		monogatari.on('didRunAction', () =>{
 			var charName = document.querySelector('text-box [data-content="character-name"]');
 			var charNameBox = document.querySelector('text-box [data-content="name"]');
-			var centeredText = document.querySelector('centered-dialog [data-content="wrapper"]');
 			if(charName.innerHTML == ""){
 				if(!charNameBox.classList.contains('hidden'))
 				{
@@ -78,11 +154,12 @@ $_ready (() => {
 				{
 					charNameBox.classList.remove('hidden');
 				}
-			}
+			}			
+		});
+		
+		// Show a icon when typing was finished
+		monogatari.on('didFinishTyping', () => {
 
-			if(centeredText != null){
-				centeredText.classList.remove('animated');
-			}
-		});		
+		});
 	});
 });

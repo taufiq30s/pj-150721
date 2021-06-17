@@ -1,8 +1,8 @@
 {
-	"short_name": "pj-150721",
-	"name": "Projek 150721 Iofi's Birthday Visual Novel",
+	"short_name": "a-new-canvas",
+	"name": "A New Canvas",
 	"background_color": "#F7F7F7",
-	"theme_color": "#F7F7F7",
+	"theme_color": "#f4c2c2",
 	"orientation": "landscape",
 	"display": "fullscreen",
 	"start_url": "index.html",

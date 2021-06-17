@@ -1,11 +1,11 @@
 'use strict';
 
 // The name of your game, no spaces or special characters.
-const name = 'Pj-150721';
+const name = 'A New Canvas';
 
 // The version of the cache, changing this will force everything to be cached
 // again.
-const version = '0.2.8-alpha.7';
+const version = '0.3.0-beta.1';
 
 const files = [
 

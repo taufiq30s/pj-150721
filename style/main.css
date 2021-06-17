@@ -380,7 +380,6 @@ dialog-log > .modal__content{
 }
 
 .name, .dialog, [data-string="Confirm"]{
-	font-family: 'Poppins', sans-serif;
 	font-size: 1.5rem !important;
 	color:#fff !important;
 	font-weight: bold;

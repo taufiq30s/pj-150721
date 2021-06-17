@@ -88,6 +88,9 @@ $_ready (() => {
 	monogatari.translation('Indonesia')["About"] = "Tentang";
 	monogatari.translation('English')["About"] = "About";
 	monogatari.translation('日本語')["About"] = "について";
+	monogatari.translation('Indonesia')["Feedback"] = "Send Issue";
+	monogatari.translation('English')["Feedback"] = "Send Issue";
+	monogatari.translation('日本語')["Feedback"] = "課題の送信";
 
 	monogatari.init ('#monogatari').then (() => {		
 		// 3. Inside the init function:		
@@ -99,7 +102,21 @@ $_ready (() => {
 				action: "open-screen",
 				open: "about"
 			}
-		});		
+		});	
+		
+		// Add Issue button
+		monogatari.component('main-menu').addButton({
+			string: "Feedback"
+		});
+
+		monogatari.component('quick-menu').addButton({
+			icon: "ri-feedback-fill",
+			string: "Feedback"
+		});
+
+		monogatari.on('click', '[string="Feedback"]', () => {			
+			window.open('https://github.com/taufiq30s/anewcanvas-bugs/issues');
+		});
 
 		// Remove action on left key shortcut
 		monogatari.unregisterListener("back");

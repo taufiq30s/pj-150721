@@ -97,6 +97,8 @@ monogatari.assets('scenes', {
 	'comical': 'webp/comical.webp',
 	'earth': 'webp/earth.webp', 
 	'test' : 'tes.png',
+	'sus1' : 'webp/sus-yagoo.webp',
+	'sus2' : 'webp/sus-yagoo-bg.webp'
 });
 
 
@@ -120,6 +122,12 @@ monogatari.characters({
 			shinySmile: 'mr85-senyum-bersinar.png',
 			smile: 'mr85-senyum.png',
 			cry: 'mr85-menangis.png'
+		}
+	},	
+	'susyagoo': {
+		name: "YAGOO?",
+		sprites: {
+			shinySmile: 'mr85-senyum-bersinar.png',
 		}
 	},
 	"mib1": {
@@ -313,5 +321,115 @@ monogatari.characters({
 	},
 	'soldier':{
 		name: "Soldier"
+	},
+
+	// Japan Chara Name
+	'firstPricessJP': {
+		name: "長女",
+		sprites: {
+			normal: 'first_princess_example.png'
+		}
+	},
+	'secondPrincessJP': {
+		name: "次女",
+		sprites: {
+			normal: 'second_princess_example.png'
+		}
+	},	
+	'kingJP': {
+		name: "王",
+		sprites: {
+			normal: 'raja-netral.png',
+			closeeye: 'raja-netral-mata-tertutup.png',
+			sedih1: 'raja-sedih-1.png',
+			sedih2: 'raja-sedih-2.png',
+			senyum: 'raja-senyum-tipis.png',
+			tegas: 'raja-tegas-kukuh.png',
+			teriak: 'raja-tegas-teriak.png',
+			marah: 'raja-marah-1.png',
+			kaget: 'raja-kaget.png',
+			teriak2: 'raja-teriak.png',
+			percaya: 'raja-mencoba-percaya-diri.png',
+			takut: 'raja-takut.png'
+		}
+	},
+	'queenJP': {
+		name: "王女",
+		sprites: {
+			normal: 'queen_example.png'
+		}
+	},
+	'emperorJP': {
+		name: "皇帝",
+		sprites: {
+			normal: 'imperial_example.png'
+		}
+	},
+	'advisorJP': {
+		name: "アドバイザー",
+		sprites: {
+			bingung: 'advisor_bingung.png',
+			licik: 'advisor_senyum_licik.png',
+		}
+	},
+	'envoyJP': {
+		name: "使節",
+		sprites: {
+			normal: 'envoy_netral.png',
+			bingung: 'envoy_doubt.png',
+			panik: 'envoy_panik.png',
+			licik: 'envoy_senyum_licik.png',
+		}
+	},
+	'horseJP': {
+		name: "クダエージェント",
+		sprites: {
+			normal: 'kuda_netral.png',
+			panik: 'kuda_panik.png',
+			waspada: 'kuda_waspada.png',
+			tenang: 'kuda_tenang.png',
+			closeeye: 'kuda_closeeye.png',
+			dahi: 'kuda_dahi.png',
+			mata: 'kuda_mata.png',
+			kaget: 'kuda_kaget.png'
+		}
+	},
+	'coroJP': {
+		name: "ゴキエージェント",
+		sprites: {
+			normal: 'kecoa_netral.png',
+			hypnotize: 'kecoa_hypnotized.png',
+			closeeye: 'kecoa_nod_closeeye.png',
+			menghela: 'kecoa_nod_menghela.png',
+			nod: 'kecoa_nod_normal.png',			
+		}
+	},
+	'soldier':{
+		name: "Soldier"
+	},
+	'iofiJP': {
+		name: "イオフィ",
+		sprites: {
+			normal: 'first_princess_example.png'
+		}
+	},
+	'susyagooJP': {
+		name: "怪しいYAGOO",
+		sprites: {
+			shinySmile: 'mr85-senyum-bersinar.png',
+		}
+	},
+	"mib1JP": {
+		name: "黒服の人一号",
+		sprites: {
+			normal: 'mib1_netral.png',
+			shout: 'mib1_shout.png'
+		}
+	},
+	"mib2JP": {
+		name: "黒服の人二号",
+		sprites: {
+			normal: 'mib2_netral.png',
+		}
 	},
 });

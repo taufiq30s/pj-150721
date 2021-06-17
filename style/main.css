@@ -17,6 +17,11 @@
 	src: url('../assets/fonts/Metropolis-Medium.otf');
 }
 
+@font-face {
+	font-family: "poppins";
+	src: url('../assets/fonts/Poppins-Medium.ttf');
+}
+
 /**
  * ===========================
  * General Styling
@@ -227,6 +232,7 @@ text-box [data-content="dialog"] {
 [data-ui="who"] {
 	padding: 0.5rem 0;
 	height: 2.8rem;
+	font-family: 'poppins';
 	color: #005051 !important;
 }
 

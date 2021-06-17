@@ -68,6 +68,15 @@ button:hover {
 	border-radius: 20px !important;
 }
 
+.fancy-error > .modal__content {
+	background-color: rgba(255,255,255, 0.85);
+	background-image: url('../assets/images/iocry.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-blend-mode: hue;
+	background-position: center;
+}
+
 .modal {
 	background: rgba(0,0,0,.2);
 }
@@ -266,6 +275,33 @@ text-box [data-content="dialog"] {
 /* Quick Menu Buttons Style on Hover */
 [data-component="quick-menu"] > button:hover, [data-component="quick-menu"] > button:focus {
 	color: #f4c2c2;
+	border-bottom: 0px;
+}
+
+[data-component="quick-menu"] > button:after {
+	content: " ";
+  display: block;
+  border-top: 2px solid #f19c9c;
+  border-bottom: 2px solid #f19c9c;
+  border-radius: 2px;
+	width: 0;
+	transition: 0.5s;
+  margin: 0 auto;
+}
+
+[data-component="quick-menu"] > button:hover:after {
+	width: 95%;
+	transition: 0.5s;
+}
+
+[data-component="quick-menu"] > button:focus:after {
+	content: " ";
+  display: block;
+  border-top: 2px solid #585858;
+  border-bottom: 2px solid #585858;
+  border-radius: 2px;
+	transition: 0.5s;
+	width: 5%;
 }
 
 
@@ -493,4 +529,16 @@ input[type=range]::-ms-fill-upper {
 
 [data-action="quit"] {
 	margin-right: 5%;
+}
+
+[data-ui="extend-background"] {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+[data-ui=background] {
+	position: absolute;
 }

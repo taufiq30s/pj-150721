@@ -96,6 +96,7 @@ monogatari.assets('scenes', {
 	'sky': 'webp/sky.webp',
 	'comical': 'webp/comical.webp',
 	'earth': 'webp/earth.webp', 
+	'test' : 'tes.png',
 });
 
 

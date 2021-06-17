@@ -1,3 +1,4 @@
+// error();
 /* 
   Create New Components
 */
@@ -40,35 +41,143 @@ class ClearAll extends Monogatari.Action {
   }
 
   didApply () {
-    const textBox = monogatari.element ().find ('[data-component="text-box"]').get (0);
+    const textBox = $_('[data-component="text-box"]').get (0);
     monogatari.history ('clear').push (textBox.props.mode);
     return Promise.resolve ({ advance: true });
   }
+}
 
-  willRevert () {
-    if (monogatari.history ('clear').length > 0) {
-      return Promise.resolve ();
-    }
-    return Promise.reject ('No items left on the clear history to revert it.');
-  }
+// Create Extends Background Action
+class ExtendBackground extends Monogatari.Action {
+	static setup () {
+		monogatari.history ('background');
 
-  revert () {
-    const last = monogatari.history ('clear').pop ();
+		monogatari.state ({
+			background: ''
+		});
 
-    if (last === 'nvl') {
-      monogatari.global ('_should_restore_nvl', true);
-    }
+		monogatari.global ('_scene_history_cleared_by_background', false);
 
-    return Promise.resolve ();
-  }
+		return Promise.resolve ();
+	}
 
-  didRevert () {
-    return Promise.resolve ({ advance: true, step: true });
-  }
+	static onLoad () {
+		const { background, scene } = monogatari.state ();
+		if (typeof background === 'string' && background !== '' && scene === '') {
+			const action = monogatari.prepareAction (background, { cycle: 'Application' });
+			return action.willApply ().then (() => {
+				return action.apply ().then (() => {
+					return action.didApply ({ updateHistory: false, updateState: false });
+				});
+			});
+		} else {
+			return Promise.resolve ();
+		}
+	}
+
+	static reset () {
+		const extBackground = $_('[data-ui="extend-background"]');
+
+		extBackground.style ('background-image', 'initial');
+		extBackground.style ('background-color', 'initial');
+
+		monogatari.state ({
+			extBackground: ''
+		});
+
+		return Promise.resolve ();
+	}
+
+	static matchString ([ show, type ]) {
+		return show === 'show' && type === 'ext-background';
+	}
+
+	constructor ([ show, type, background, ...classes ]) {
+		super ();
+		this.extBackground = background;
+		this.property = 'background-image';
+		if (typeof monogatari.asset ('scenes', background) !== 'undefined') {
+			this.value = `url(${monogatari.setting ('AssetsPath').root}/${monogatari.setting ('AssetsPath').scenes}/${monogatari.asset ('scenes', background)})`;
+		} else {
+			const rest = [background, ...classes].join (' ');
+			if (classes.indexOf ('with') > -1) {
+				this.value = Text.prefix ('with', rest);
+			} else {
+				this.value = rest;
+			}
+
+			const isColorProperty = ['#', 'rgb', 'hsl'].findIndex ((color) => {
+				return this.value.indexOf (color) === 0;
+			}) > -1;
+
+			const isNamed = this.value.indexOf (' ') > -1 ? false : new RegExp(/\w+/).test (this.value) && !(new RegExp (/(url|gradient)\(/).test (this.value));
+
+			if (isColorProperty === true || isNamed === true) {
+				this.property = 'background-color';
+			}
+		}
+
+		if (typeof classes !== 'undefined') {
+			this.classes = ['animated', ...classes];
+		} 
+		else if(classes !== 'remove') {
+			this.reset();
+		}
+		else {
+			this.classes = [];
+		}
+	}
+
+	willApply () {
+		const background = $_('[data-ui="extend-background"]');
+
+		background.removeClass ();
+		void background.get (0).offsetWidth;
+
+		return Promise.resolve ();
+	}
+
+	apply () {
+		const background = $_('[data-ui="extend-background"]');
+
+		$_('[data-ui="extend-background"]').style ('background-image', 'initial');
+		$_('[data-ui="extend-background"]').style ('background-color', 'initial');
+		$_('[data-ui="extend-background"]').style ('animation-duration', '');
+
+		$_('[data-ui="extend-background"]').style (this.property, this.value);
+
+		const durationPosition = this.classes.indexOf ('duration');
+
+		if (durationPosition > -1) {
+			background.style ('animation-duration', this.classes[durationPosition + 1]);
+		}
+
+		for (const newClass of this.classes) {
+			background.addClass (newClass);
+		}
+
+		return Promise.resolve ();
+	}
+
+	didApply ({ updateHistory = true, updateState = true } = {}) {
+		if (updateState === true) {
+			monogatari.state ({
+				background: this._statement
+			});
+		}
+
+		if (updateHistory === true) {
+			monogatari.history ('background').push (this._statement);
+		}
+
+		return Promise.resolve ({ advance: true });
+	}
 }
 
 ClearAll.id = 'ClearAll';
+ExtendBackground.id = 'ExtendBackground';
 monogatari.registerAction (ClearAll);
+monogatari.registerAction (ExtendBackground);
 
 /* 
   Modify Exists Components
@@ -77,7 +186,7 @@ monogatari.registerAction (ClearAll);
 class GameScreen extends Monogatari.ScreenComponent {
 
 	static shouldProceed () {
-		if (monogatari.element ().find ('[data-screen="game"]').isVisible ()) {
+		if ($_('[data-screen="game"]').isVisible ()) {
 			return Promise.resolve ();
 		}
 		return Promise.reject ('Game screen is not visible.');
@@ -118,12 +227,13 @@ class GameScreen extends Monogatari.ScreenComponent {
 			<div data-content="visuals">
 				<div id="tsparticles" data-ui="particles"></div>
 				<div id="background" data-ui="background"></div>
+				<div id="extend-background" data-ui="extend-background"></div>
 			</div>
 		`;
 	}
 }
 
-// Backlog (Testing)
+// Backlog Component
 class DialogLog extends Monogatari.Component {
   static setup () {
 		monogatari.component ('quick-menu').addButtonAfter ('Hide', {
@@ -312,7 +422,7 @@ monogatari.component('main-screen').template(() => {
     <h1>A New Canvas</h1>
     <main-menu></main-menu>
     <div id="footer">
-      <p id="product-version">Version 0.2.9-alpha8</p>
+      <p id="product-version">Version 0.3.0-beta1</p>
       <p id="copy">This background is used for testing purposes only</p>
     </div>
   `;
@@ -326,18 +436,18 @@ monogatari.distractionFree = () => {
   if (monogatari.global ('playing')) {
     // Check if the distraction free is currently enabled
     if (monogatari.global ('distraction_free') === true) {
-      monogatari.element ().find ('[data-component="quick-menu"] [data-action="distraction-free"] [data-string]').text (monogatari.string ('Hide'));
-      monogatari.element ().find ('[data-component="quick-menu"] [data-action="distraction-free"] [data-icon]').replaceWith ('<span class="fas fa-eye" data-action="distraction-free"></span>');
-      monogatari.element ().find ('[data-component="quick-menu"]').removeClass ('transparent');
+      $_('[data-component="quick-menu"] [data-action="distraction-free"] [data-string]').text (monogatari.string ('Hide'));
+      $_('[data-component="quick-menu"] [data-action="distraction-free"] [data-icon]').replaceWith ('<span class="fas fa-eye" data-action="distraction-free"></span>');
+      $_('[data-component="quick-menu"]').removeClass ('transparent');
       document.querySelector('[data-component="text-box"]').style.display = "grid";
-      monogatari.element ().find ('[data-component="quick-menu').show();
+      $_('[data-component="quick-menu').show();
       monogatari.global ('distraction_free', false);
     } else {
-      monogatari.element ().find ('[data-component="quick-menu"] [data-action="distraction-free"] [data-string]').text (monogatari.string ('Show'));
-      monogatari.element ().find ('[data-component="quick-menu"] [data-action="distraction-free"] [data-icon]').replaceWith ('<span class="fas fa-eye-slash" data-action="distraction-free"></span>');
-      monogatari.element ().find ('[data-component="quick-menu"]').addClass ('transparent');
-      monogatari.element ().find ('[data-component="text-box"]').hide();
-      monogatari.element ().find ('[data-component="quick-menu').hide();
+      $_('[data-component="quick-menu"] [data-action="distraction-free"] [data-string]').text (monogatari.string ('Show'));
+      $_('[data-component="quick-menu"] [data-action="distraction-free"] [data-icon]').replaceWith ('<span class="fas fa-eye-slash" data-action="distraction-free"></span>');
+      $_('[data-component="quick-menu"]').addClass ('transparent');
+      $_('[data-component="text-box"]').hide();
+      $_('[data-component="quick-menu').hide();
       monogatari.global ('distraction_free', true);
     }
   }

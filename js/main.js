@@ -28,7 +28,7 @@ const { $_ready, $_ } = Monogatari;
 // 1. Outside the $_ready function:
 
 // Register Enter to Next()
-monogatari.registerListener('next', {
+monogatari.registerListener('enterKey', {
 	keys: 'enter',
 	callback: () => {
 		if(monogatari.global('distraction_free') === true) {
@@ -42,7 +42,7 @@ monogatari.registerListener('next', {
 });
 
 // Add action on shortcut to open Backlog
-monogatari.registerListener('logUp', {
+monogatari.registerListener('arrowUpKey', {
 	keys: 'up',
 	callback: () => {
 		if(!$_('dialog-log').get(0).state.active) {
@@ -51,7 +51,7 @@ monogatari.registerListener('logUp', {
 	}
 });
 
-monogatari.registerListener('logDown', {
+monogatari.registerListener('arrowDownKey', {
 	keys: 'down',
 	callback: () => {
 		if(!$_('dialog-log').get(0).state.active) {
@@ -61,7 +61,7 @@ monogatari.registerListener('logDown', {
 });
 
 // Add shortcut to run auto mode
-monogatari.registerListener('auto', {
+monogatari.registerListener('shiftKey', {
 	keys: 'shift',
 	callback: () => {
 		this.autoPlay (this.global ('_auto_play_timer') === null);

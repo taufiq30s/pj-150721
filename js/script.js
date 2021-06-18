@@ -324,7 +324,7 @@ monogatari.characters({
 	},
 
 	// Japan Chara Name
-	'firstPricessJP': {
+	'firstPrincessJP': {
 		name: "長女",
 		sprites: {
 			normal: 'first_princess_example.png'

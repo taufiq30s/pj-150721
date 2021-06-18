@@ -115,7 +115,7 @@ $_ready (() => {
 		});
 
 		monogatari.on('click', '[string="Feedback"]', () => {			
-			window.open('https://github.com/taufiq30s/anewcanvas-bugs/issues');
+			window.open('https://s.id/bug-issue');
 		});
 
 		// Remove action on left key shortcut

@@ -65,7 +65,7 @@ monogatari.script({
       "hide character firstPricess normal with fadeOut",
       "hide character secondPrincess normal with fadeOut",
       "The First Princess has a dream to explore this vast world, while hoping she could make a lot of friends along the way.",
-      "show character raja sedih1 with fadeIn",
+      "show character king sedih1 with fadeIn",
       "king <i>I'm sorry my daughter. i couldn't able to fulfill your dreams, the outside world are not as good as you think</i>",
       "hide character king sedih1 with fadeOut",
       "The King accidentally overheard the conversation between his two daughters",

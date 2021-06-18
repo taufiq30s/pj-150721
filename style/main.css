@@ -252,6 +252,79 @@ text-box [data-content="dialog"] {
 
 }
 
+credits-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	z-index: 50;
+	color: #fff;
+	font-size: 20px;
+}
+
+credits-container.credit-fade {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+credits-container .credit-section {
+	margin: 0;
+	text-align: center;
+}
+
+credits-container .credit-section h1 {
+	font-size: 32px;
+	margin: 0 0 30px;
+}
+
+credits-container .credit-section dl {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+credits-container .credit-section dl dt {
+	flex: 1 50%;
+	padding: 0 15px 15px 0;
+	text-align: right;
+	color: #ddd;
+}
+
+credits-container .credit-section dl dd {
+	flex: 1 100%;
+	margin: 0;
+	padding: 0 0 15px;
+}
+
+credits-container .credit-section dl dt + dd {
+	flex: 1 50%;
+	padding: 0 0 15px 15px;
+	text-align: left;
+}
+
+credits-container .credit-section dl dd p {
+	margin: 0 0 5px;
+}
+
+credits-container .credit-section p {
+	margin: 0 0 30px;
+}
+
+credits-container.credit-scroll .wrapper {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+credits-container.credit-scroll .credit-section {
+	margin: 0 0 60px;
+}
+
 /**
  * ===========================
  * Quick Menu Styling

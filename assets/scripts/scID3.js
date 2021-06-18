@@ -77,7 +77,122 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'Dengan segala kemampuan yang ia miliki, dan mungkin sedikit "Brainwash" akhirnya ia bisa lolos sebagai talent Hololive Indonesia.',
   'show scene #000',
   'wait 1000',
-  'centered Credit',
+  {
+    'Credit': {
+      'fade' : [
+        {
+          'title': "Project Initiator",
+          'content': "Para Haluforia"
+        },
+        {
+          'title': "Cast",
+          'list': {
+            'King': "Jatmiko",
+            'Queen': "Zuvanix",
+            'Imouto': "Api Atsu"
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'Envoy': "Khateas Raktea",
+            'Advisor': "Iofi's Personal Chair",
+            'Emperor': "Dr.Eronekoparagigante"
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'M-chan': "Api Atsu",
+            'Agen Kuda': "Papah Minyak Kuda",
+            'Agen Kecoa': "Mamah Vesera"
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'MIB 1': "Yuta",
+            'MIB 2': "Enterprise",
+            'YAGOO': "Hitsuji-san"
+          }
+        }
+      ],
+      'scroll': [
+        {
+          'title': "Cast",
+          'list': {
+            'Raja': "Jatmiko",
+            'Ratu': "Yuta",
+            'Putri Kedua': "Api",
+            'Kaisar': "Dokutah",
+            'Penasihat': "",
+            'Utusan': "Raktea",
+            'Agen Kuda': "Minyak Kuda",
+            'Agen Kecoa': "Vesera",
+            'MIB 1': "Zuvanix",
+            'MIB 2': "Enterprise",
+            'Yagoo': "Hitsuji-san",
+            'M-chan': "Api",
+          }
+        },
+        {
+          'title': "Story",
+          'list': {
+            'Originally Written By': "Rudi Hermawan",
+            'Translated By': [
+              "Vesera (EN)",
+              "Reiko (JP)"
+            ],
+            'Editor and Quality Check': [
+              "Yuta Zoka",
+              "Khateas Raktea",
+              "Dr. Nergigante",
+              "Minyak Sayur",
+              "Hitsuji"
+            ]
+          }
+        },
+        {
+          'title': "Background Department",
+          'list': [
+            "Transenponsan",
+            "Yugen",
+            "Laeventien",
+            "PunPun Iofi's Personal Chair"
+          ]
+        },
+        {
+          'title': "Characters and Illustration Department",
+          'list': [
+            "JeffriArt",
+            "Chassy Sant",
+            "Laeventien",
+            "Haloclo 18",
+            "Jatmiko"
+          ]
+        },
+        {
+          'title': "Programming Department" ,
+          'list': [
+            "Moonchild",
+            "Zainokta Rakei",
+            "JeffriArt"
+          ]
+        },
+        {
+          'title': "Special Thanks",
+          'content': [
+            "Zad, Binyo Boss, GrilledCheez, Melon Juice, Rarana, Zuvanix, Kyarudesu",
+            "And All Beloved Ioforia..."
+          ]
+        },
+        {
+          'title': "",
+          'content': ""
+        }
+      ]
+    }
+  },
   'centered Beberapa Bulan Kemudian',
   'show scene galaxy with fadeIn',
   'show character raja takut with fadeIn',

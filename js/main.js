@@ -81,6 +81,8 @@ monogatari.registerListener('escKey', {
 	}
 });
 
+monogatari.registerAction( Credit );
+
 $_ready (() => {
 	// 2. Inside the $_ready function:
 

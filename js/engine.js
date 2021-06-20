@@ -357,7 +357,7 @@ class Wait extends Monogatari.Action{
 			this.time = parseInt (time);
 		} else {
 			if (typeof time !== 'undefined') {
-				FancyError.show (
+				Monogatari.FancyError.show (
 					'The specified time was not an integer',
 					'Monogatari attempted to transform the given time into an integer value but failed.',
 					{

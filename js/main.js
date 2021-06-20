@@ -84,6 +84,8 @@ monogatari.registerListener('escKey', {
 $_ready (() => {
 	// 2. Inside the $_ready function:
 
+	
+
 	// Register About Us to Translation System
 	monogatari.translation('Indonesia')["About"] = "Tentang";
 	monogatari.translation('English')["About"] = "About";
@@ -94,6 +96,38 @@ $_ready (() => {
 
 	monogatari.init ('#monogatari').then (() => {		
 		// 3. Inside the init function:		
+
+		// Check browser suport WebP format
+		var elem = document.createElement('canvas');
+
+		if (!(elem.getContext && elem.getContext('2d')) || !(elem.toDataURL('image/webp').indexOf('data:image/webp') == 0))
+		{
+			console.log("error");
+			Monogatari.FancyError.show (
+				'A New Canvas cannot run on your browser',
+				'Your browser not support WebP format. Please use another browser.',
+				{
+					'List of browser that support WebP': 
+						[
+							'Google Chrome (Desktop) 32+',
+							'Microsoft Edge (Legacy) 18+',
+							'Microsoft Edge (Chromium) 79+',
+							'Mozilla Firefox 65+',
+							'Safari (Desktop / MacOS Big Sur) 14.1+',
+							'Opera 19+',
+							'Safari (iOS) 14.4+',
+							'Opera (Mobile) 12+',
+							'UC Browser 12.2+',
+							'Samsung Internet 4+',
+						]
+				}
+			);			
+			document.getElementsByClassName('fancy-error')[0].getElementsByClassName('modal__content')[0].classList.add('modal__content_nowebp')
+			document.getElementsByClassName('fancy-error')[0].getElementsByClassName('modal__content')[0].classList.remove('modal__content')
+		}
+		else{
+			console.log("OK");
+		}
 
 		// Add About us into main menu
 		monogatari.component('main-menu').addButton({

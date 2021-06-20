@@ -73,13 +73,34 @@ button:hover {
 	border-radius: 20px !important;
 }
 
-.fancy-error > .modal__content {
+.fancy-error > .modal__content  {
 	background-color: rgba(255,255,255, 0.85);
-	background-image: url('../assets/images/iocry.png');
+	background-image: url('../assets/images/iocry.webp');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-blend-mode: hue;
 	background-position: center;
+}
+
+.fancy-error > .modal__content_nowebp {
+	background-color: rgba(255,255,255, 0.85);
+	background-image: url('../assets/images/iocry.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-blend-mode: color-dodge;
+	background-position: center;
+	height: auto;
+	width: 90%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	position: absolute;
+	padding: 1rem;
+	max-height: 100%;
+	text-align: center;
+	width: 90%;
+	overflow: auto;
 }
 
 .modal {

@@ -173,6 +173,7 @@ $_ready (() => {
 			var language_selection_screen = $_('language-selection-screen').get(0);
 			if ( language_selection_screen && language_selection_screen.state.open ) {
 					language_selection_screen.setState({ open: false });
+					$_('[data-content="language-selector"]').value (monogatari.preference('Language'));
 			}
 		});
 		// Remove the Name Box during Narrator's dialogue

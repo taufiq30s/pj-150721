@@ -24,8 +24,6 @@ monogatari.script({
       "hide character secondPrincess normal with fadeOut",
       "show character firstPricess normal with fadeIn",
       "firstPricess Come catch me if you can.",
-      "wait 1500",
-      "firstPricess Good afternoon.",
       "hide character firstPricess normal with fadeOut",
       "show character firstPricess normal at left with fadeIn",
       "show character secondPrincess normal at right with fadeIn",

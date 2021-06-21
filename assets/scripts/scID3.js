@@ -104,8 +104,8 @@ monogatari.label('idPart3-1', 'Indonesia', [
           'title': "",
           'list': {
             'M-chan': "Api Atsu",
-            'Agen Kuda': "Papah Minyak Kuda",
-            'Agen Kecoa': "Mamah Vesera"
+            'Agen Kuda': "Minyak Kuda",
+            'Agen Kecoa': "Vesera"
           }
         },
         {
@@ -175,8 +175,14 @@ monogatari.label('idPart3-1', 'Indonesia', [
           'title': "Programming Department" ,
           'list': [
             "Moonchild",
+            "JeffriArt",
             "Zainokta Rakei",
-            "JeffriArt"
+          ]
+        },
+        {
+          'title': "Tester",
+          'list' : [
+            "[Your name will be put here!😆]"
           ]
         },
         {

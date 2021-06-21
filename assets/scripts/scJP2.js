@@ -1,7 +1,7 @@
 /**
  * TODO : HP (Scene)
  */
- monogatari.label('jpPart2', '日本語', [
+monogatari.label('jpPart2', '日本語', [
   "show scene dining-room with fadeIn",
   "show character kingJP closeeye at left with fadeIn",
   "show character queenJP normal at right with fadeIn",
@@ -252,7 +252,7 @@ monogatari.label('jpPart2-2', '日本語', [
   "iofiJP うん？なにこれ？こんなの持ったっけ…？まあいっか、一個ぐらいなら保管しよう、思い出にもなるし…",
   // "show image hp_mainan center with fadeIn",
   "hide character iofiJP normal with fadeOut",
-  "Iolyptosから大事な物を売るイオフィは、この世界でVCD大学生として勉強と言語を学んだ",
+  "Iolyptosから大事な物を売るイオフィは、この世界でVCD大学生として勉強と言語を学んだ", 
   "jump jpPart3",
 ]);
 

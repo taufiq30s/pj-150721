@@ -218,7 +218,7 @@ dialog-log .modal__content [data-content=log] [data-spoke] {
 [data-content="text"] {
 	border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.95);
-	background-image: url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png);
+	background-image: url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp);
 	background-repeat: no-repeat;
 	background-size: 346px 183px;
 	background-position: top -102px right -186px, bottom -141px right -229px, top -106px left -288px, bottom -101px left -260px;
@@ -241,7 +241,7 @@ text-box [data-content="dialog"] {
 	justify-self: start;
 	border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.9);
-	background-image: url(../assets/images/namebox-sprite.png), url(../assets/images/namebox-sprite.png);
+	background-image: url(../assets/images/namebox-sprite.webp), url(../assets/images/namebox-sprite.webp);
 	background-repeat: no-repeat;
 	background-size: 105px 44px;
 	background-position: top 50% right -66px, top 50% left -60px;

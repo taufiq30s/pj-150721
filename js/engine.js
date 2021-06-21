@@ -422,7 +422,7 @@ monogatari.component('main-screen').template(() => {
     <h1>A New Canvas</h1>
     <main-menu></main-menu>
     <div id="footer">
-      <p id="product-version">Version 0.3.0-beta1</p>
+      <p id="product-version">Version 0.3.0-beta2</p>
       <p id="copy">This background is used for testing purposes only</p>
     </div>
   `;

@@ -74,8 +74,10 @@ monogatari.label('caloriebar', 'English', [
 ]);
 
 monogatari.label('enPart2-2', 'English', [
+  'hide character putriPertama normal with fadeOut',
+  'show image phone center hp with fadeIn',
   "firstPricess Let’s just put it on the drawer now, after eating I want to take a rest",
-  "hide character putriPertama normal with fadeOut",
+  'hide image phone center hp with fadeOut',
   "With the advanced technology from Iolyptos, the Princess sailed through the vast universe without any destinations in her mind.",
   "show character putriPertama normal with fadeIn",
   "firstPricess Woaaah…..what is that Planet? It looks so pretty… Looks like…",
@@ -241,9 +243,10 @@ monogatari.label('enPart2-2', 'English', [
   "iofi But I’m not that good with mathematics.. Maybe I’ll learn arts! If someday I travel around the world I can paint the views that I’m seeing!",
   "iofi Also I want to learn the languages that humans use, it’s different from Iolyptos, they have so many languages.",
   "iofi Also I want to learn the languages that humans use, it’s different from Iolyptos, they have so many languages.",
-  "iofi But before that, maybe I should sell some valuable things that I brought from Iolyptos.",
-  // "show image hp_mainan center with fadeIn",
   "hide character iofi normal with fadeOut",
+  'show image phone center hp with fadeIn',
+  "iofi But before that, maybe I should sell some valuable things that I brought from Iolyptos.",
+  'hide image phone center hp with fadeOut',
   "With selling some valuable items that she brought from Iolyptos to Pasar Senen, Iofi intended to study as an art college student while learning all kinds of language that humans on Earth use.",
   "jump enPart3",
 ]);

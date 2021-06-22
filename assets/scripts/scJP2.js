@@ -77,14 +77,11 @@ monogatari.label('caloriebar', '日本語', [
   "jump jpPart2-2",
 ]);
 
-monogatari.label('jpPart2-2', '日本語', [
-  // Dummy
-  // "show scene cockpit with fadeIn",
-  // "show character putriPertama normal with fadeIn",
-  // 'show message SampleWriting',
-  // End Dummy
+monogatari.label('jpPart2-2', '日本語', [  
+  'hide character putriPertama normal with fadeOut',
+  'show image phone center hp with fadeIn',
   "firstPrincessJP まあ、とりあず今は机に置いて、早速めしだ～そして寝る！",
-  "hide character putriPertama normal with fadeOut",
+  'hide image phone center hp with fadeOut',
   "長女はIolyptosのUFOのお陰で、様々なところを見ていた。なんの目的もなく、ただ飛んでいた。",
   "show character putriPertama normal with fadeIn",
   "firstPrincessJP すっごおおいい！あの惑星とても綺麗～まるで…",
@@ -249,9 +246,10 @@ monogatari.label('jpPart2-2', '日本語', [
   "iofiJP この世界の知識もっと学びたい！数学はこの世界で一番難しいって聞いたことある、私にも難しい。",
   "iofiJP そう、美術も学びたい！いつか世界中に旅できるなら、そのときの景色を真白なキャンバスで描きたい！それに、この世界っていろんな言語があるんだね。",
   "iofiJP 私ももしできたらいろんな言語を学びたい！でもその前にお金というもの必要。だから、Iolyptosから物を売るしかない…",
-  "iofiJP うん？なにこれ？こんなの持ったっけ…？まあいっか、一個ぐらいなら保管しよう、思い出にもなるし…",
-  // "show image hp_mainan center with fadeIn",
   "hide character iofi normal with fadeOut",
+  'show image phone center hp with fadeIn',
+  "iofiJP うん？なにこれ？こんなの持ったっけ…？まあいっか、一個ぐらいなら保管しよう、思い出にもなるし…",
+  'hide image phone center hp with fadeOut',
   "Iolyptosから大事な物を売るイオフィは、この世界でVCD大学生として勉強と言語を学んだ", 
   "jump jpPart3",
 ]);

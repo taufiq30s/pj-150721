@@ -68,7 +68,7 @@ monogatari.assets('videos', {
 
 // Define the images used in the game.
 monogatari.assets('images', {
-	'hp_mainan' : 'hp_mainan.jpg',
+	'phone' : 'phone.webp',
 });
 
 // Define the backgrounds for each scene.
@@ -112,41 +112,41 @@ monogatari.characters({
 	'iofi': {
 		name: "Iofi",
 		sprites: {
-			normal: 'first_princess_example.png'
+			normal: 'first_princess_example.webp'
 		}
 	},
 	'yagoo': {
 		name: "YAGOO",
 		sprites: {
-			normal: 'mr85-netral.png',
-			shinySmile: 'mr85-senyum-bersinar.png',
-			smile: 'mr85-senyum.png',
-			cry: 'mr85-menangis.png'
+			normal: 'mr85-netral.webp',
+			shinySmile: 'mr85-senyum-bersinar.webp',
+			smile: 'mr85-senyum.webp',
+			cry: 'mr85-menangis.webp'
 		}
 	},	
 	'susyagoo': {
 		name: "YAGOO?",
 		sprites: {
-			shinySmile: 'mr85-senyum-bersinar.png',
+			shinySmile: 'mr85-senyum-bersinar.webp',
 		}
 	},
 	"mib1": {
 		name: "MIB 1",
 		sprites: {
-			normal: 'mib1_netral.png',
-			shout: 'mib1_shout.png'
+			normal: 'mib1_netral.webp',
+			shout: 'mib1_shout.webp'
 		}
 	},
 	"mib2": {
 		name: "MIB 2",
 		sprites: {
-			normal: 'mib2_netral.png',
+			normal: 'mib2_netral.webp',
 		}
 	},
 	"mchan": {
 		name: "M-chan",
 		sprites: {
-			normal: 'm chan - netral.png',
+			normal: 'm chan - netral.webp',
 		}
 	},
 	"unknown": {
@@ -157,81 +157,81 @@ monogatari.characters({
 	'putriPertama': {
 		name: "Putri Pertama",
 		sprites: {
-			normal: 'first_princess_example.png'
+			normal: 'first_princess_example.webp'
 		}
 	},
 	'putriKedua': {
 		name: "Putri Kedua",
 		sprites: {
-			normal: 'second_princess_example.png'
+			normal: 'second_princess_example.webp'
 		}
 	},
 	'raja': {
 		name: "Raja",
 		sprites: {
-			normal: 'raja-netral.png',
-			closeeye: 'raja-netral-mata-tertutup.png',
-			sedih1: 'raja-sedih-1.png',
-			sedih2: 'raja-sedih-2.png',
-			senyum: 'raja-senyum-tipis.png',
-			tegas: 'raja-tegas-kukuh.png',
-			teriak: 'raja-tegas-teriak.png',
-			marah: 'raja-marah-1.png',
-			kaget: 'raja-kaget.png',
-			teriak2: 'raja-teriak.png',
-			percaya: 'raja-mencoba-percaya-diri.png',
-			takut: 'raja-takut.png'
+			normal: 'raja-netral.webp',
+			closeeye: 'raja-netral-mata-tertutup.webp',
+			sedih1: 'raja-sedih-1.webp',
+			sedih2: 'raja-sedih-2.webp',
+			senyum: 'raja-senyum-tipis.webp',
+			tegas: 'raja-tegas-kukuh.webp',
+			teriak: 'raja-tegas-teriak.webp',
+			marah: 'raja-marah-1.webp',
+			kaget: 'raja-kaget.webp',
+			teriak2: 'raja-teriak.webp',
+			percaya: 'raja-mencoba-percaya-diri.webp',
+			takut: 'raja-takut.webp'
 		}
 	},
 	'ratu': {
 		name: "Ratu",
 		sprites: {
-			normal: 'queen_example.png'
+			normal: 'queen_example.webp'
 		}
 	},
 	'kaisar': {
 		name: "Kaisar",
 		sprites: {
-			normal: 'imperial_example.png'
+			normal: 'imperial_example.webp'
 		}
 	},
 	'penasihat': {
 		name: "Penasihat Kaisar",
 		sprites: {
-			bingung: 'advisor_bingung.png',
-			licik: 'advisor_senyum_licik.png',
+			bingung: 'advisor_bingung.webp',
+			licik: 'advisor_senyum_licik.webp',
 		}
 	},
 	'utusan': {
 		name: "Utusan Kaisar",
 		sprites: {
-			normal: 'envoy_netral.png',
-			bingung: 'envoy_doubt.png',
-			panik: 'envoy_panik.png',
-			licik: 'envoy_senyum_licik.png',
+			normal: 'envoy_netral.webp',
+			bingung: 'envoy_doubt.webp',
+			panik: 'envoy_panik.webp',
+			licik: 'envoy_senyum_licik.webp',
 		}
 	},
 	'kuda': {
 		name: "Agen Kuda",
 		sprites: {
-			normal: 'kuda_netral.png',
-			panik: 'kuda_panik.png',
-			waspada: 'kuda_waspada.png',
-			tenang: 'kuda_tenang.png',
-			closeeye: 'kuda_closeeye.png',
-			dahi: 'kuda_dahi.png',
-			mata: 'kuda_mata.png',
-			kaget: 'kuda_kaget.png'
+			normal: 'kuda_netral.webp',
+			panik: 'kuda_panik.webp',
+			waspada: 'kuda_waspada.webp',
+			tenang: 'kuda_tenang.webp',
+			closeeye: 'kuda_closeeye.webp',
+			dahi: 'kuda_dahi.webp',
+			mata: 'kuda_mata.webp',
+			kaget: 'kuda_kaget.webp'
 		}
 	},
 	'kecoa': {
-		name: "Agen Kecoa",
+		name: "Agen Kecoak",
 		sprites: {
-			normal: 'kecoa_netral.png',
-			hypnotize: 'kecoa_hypnotized.png',
-			closeeye: 'kecoa_nod_closeeye.png',
-			menghela: 'kecoa_nod_menghela.png',
-			nod: 'kecoa_nod_normal.png',			
+			normal: 'kecoa_netral.webp',
+			hypnotize: 'kecoa_hypnotized.webp',
+			closeeye: 'kecoa_nod_closeeye.webp',
+			menghela: 'kecoa_nod_menghela.webp',
+			nod: 'kecoa_nod_normal.webp',			
 		}
 	},
 	'prajurit':{
@@ -241,83 +241,30 @@ monogatari.characters({
 	// English Chara Name
 	'firstPricess': {
 		name: "First Princess",
-		sprites: {
-			normal: 'first_princess_example.png'
-		}
 	},
 	'secondPrincess': {
 		name: "Second Princess",
-		sprites: {
-			normal: 'second_princess_example.png'
-		}
 	},	
 	'king': {
 		name: "King",
-		sprites: {
-			normal: 'raja-netral.png',
-			closeeye: 'raja-netral-mata-tertutup.png',
-			sedih1: 'raja-sedih-1.png',
-			sedih2: 'raja-sedih-2.png',
-			senyum: 'raja-senyum-tipis.png',
-			tegas: 'raja-tegas-kukuh.png',
-			teriak: 'raja-tegas-teriak.png',
-			marah: 'raja-marah-1.png',
-			kaget: 'raja-kaget.png',
-			teriak2: 'raja-teriak.png',
-			percaya: 'raja-mencoba-percaya-diri.png',
-			takut: 'raja-takut.png'
-		}
 	},
 	'queen': {
 		name: "Queen",
-		sprites: {
-			normal: 'queen_example.png'
-		}
 	},
 	'emperor': {
 		name: "Emperor",
-		sprites: {
-			normal: 'imperial_example.png'
-		}
 	},
 	'advisor': {
 		name: "Imperial Advisor",
-		sprites: {
-			bingung: 'advisor_bingung.png',
-			licik: 'advisor_senyum_licik.png',
-		}
 	},
 	'envoy': {
 		name: "Imperial Envoy",
-		sprites: {
-			normal: 'envoy_netral.png',
-			bingung: 'envoy_doubt.png',
-			panik: 'envoy_panik.png',
-			licik: 'envoy_senyum_licik.png',
-		}
 	},
 	'horse': {
 		name: "Agent Kuda",
-		sprites: {
-			normal: 'kuda_netral.png',
-			panik: 'kuda_panik.png',
-			waspada: 'kuda_waspada.png',
-			tenang: 'kuda_tenang.png',
-			closeeye: 'kuda_closeeye.png',
-			dahi: 'kuda_dahi.png',
-			mata: 'kuda_mata.png',
-			kaget: 'kuda_kaget.png'
-		}
 	},
 	'coro': {
 		name: "Agen Kecoa",
-		sprites: {
-			normal: 'kecoa_netral.png',
-			hypnotize: 'kecoa_hypnotized.png',
-			closeeye: 'kecoa_nod_closeeye.png',
-			menghela: 'kecoa_nod_menghela.png',
-			nod: 'kecoa_nod_normal.png',			
-		}
 	},
 	'soldier':{
 		name: "Soldier"
@@ -326,110 +273,53 @@ monogatari.characters({
 	// Japan Chara Name
 	'firstPrincessJP': {
 		name: "長女",
-		sprites: {
-			normal: 'first_princess_example.png'
-		}
 	},
 	'secondPrincessJP': {
 		name: "次女",
-		sprites: {
-			normal: 'second_princess_example.png'
-		}
 	},	
 	'kingJP': {
 		name: "王",
-		sprites: {
-			normal: 'raja-netral.png',
-			closeeye: 'raja-netral-mata-tertutup.png',
-			sedih1: 'raja-sedih-1.png',
-			sedih2: 'raja-sedih-2.png',
-			senyum: 'raja-senyum-tipis.png',
-			tegas: 'raja-tegas-kukuh.png',
-			teriak: 'raja-tegas-teriak.png',
-			marah: 'raja-marah-1.png',
-			kaget: 'raja-kaget.png',
-			teriak2: 'raja-teriak.png',
-			percaya: 'raja-mencoba-percaya-diri.png',
-			takut: 'raja-takut.png'
-		}
 	},
 	'queenJP': {
 		name: "王女",
 		sprites: {
-			normal: 'queen_example.png'
+			normal: 'queen_example.webp'
 		}
 	},
 	'emperorJP': {
 		name: "皇帝",
-		sprites: {
-			normal: 'imperial_example.png'
-		}
 	},
 	'advisorJP': {
 		name: "アドバイザー",
-		sprites: {
-			bingung: 'advisor_bingung.png',
-			licik: 'advisor_senyum_licik.png',
-		}
 	},
 	'envoyJP': {
 		name: "使節",
-		sprites: {
-			normal: 'envoy_netral.png',
-			bingung: 'envoy_doubt.png',
-			panik: 'envoy_panik.png',
-			licik: 'envoy_senyum_licik.png',
-		}
 	},
 	'horseJP': {
 		name: "クダエージェント",
-		sprites: {
-			normal: 'kuda_netral.png',
-			panik: 'kuda_panik.png',
-			waspada: 'kuda_waspada.png',
-			tenang: 'kuda_tenang.png',
-			closeeye: 'kuda_closeeye.png',
-			dahi: 'kuda_dahi.png',
-			mata: 'kuda_mata.png',
-			kaget: 'kuda_kaget.png'
-		}
 	},
 	'coroJP': {
 		name: "ゴキエージェント",
-		sprites: {
-			normal: 'kecoa_netral.png',
-			hypnotize: 'kecoa_hypnotized.png',
-			closeeye: 'kecoa_nod_closeeye.png',
-			menghela: 'kecoa_nod_menghela.png',
-			nod: 'kecoa_nod_normal.png',			
-		}
 	},
 	'soldier':{
 		name: "Soldier"
+	},	
+	'soldierJP':{
+		name: "兵士"
 	},
 	'iofiJP': {
 		name: "イオフィ",
-		sprites: {
-			normal: 'first_princess_example.png'
-		}
 	},
 	'susyagooJP': {
 		name: "怪しいYAGOO",
-		sprites: {
-			shinySmile: 'mr85-senyum-bersinar.png',
-		}
 	},
 	"mib1JP": {
 		name: "黒服の人一号",
-		sprites: {
-			normal: 'mib1_netral.png',
-			shout: 'mib1_shout.png'
-		}
 	},
 	"mib2JP": {
 		name: "黒服の人二号",
-		sprites: {
-			normal: 'mib2_netral.png',
-		}
+	},
+	"mchanJP": {
+		name: "Mちゃん",
 	},
 });

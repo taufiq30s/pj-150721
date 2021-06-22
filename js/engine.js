@@ -197,16 +197,20 @@ class GameScreen extends Monogatari.ScreenComponent {
 
 		monogatari.on ('click', '[data-screen="game"] *:not([data-choice])', function () {
 			self.engine.debug.debug ('Next Statement Listener');
-      if(monogatari.global('distraction_free') === true) {
-        monogatari.distractionFree();
-      }
-			self.engine.proceed ({ userInitiated: true, skip: false, autoPlay: false }).then (() => {
-				// Nothing to do here
-			}).catch ((e) => {
-				self.engine.debug.log (`Proceed Prevented\nReason: ${e}`);
-				// An action waiting for user interaction or something else
-				// is blocking the game.
-			});
+			if(!$('dialog-log').get(0).state.active){				
+				if(monogatari.global('distraction_free') === true) {
+					monogatari.distractionFree();
+				}
+				else{
+					self.engine.proceed ({ userInitiated: true, skip: false, autoPlay: false }).then (() => {
+						// Nothing to do here
+					}).catch ((e) => {
+						self.engine.debug.log (`Proceed Prevented\nReason: ${e}`);
+						// An action waiting for user interaction or something else
+						// is blocking the game.
+					});
+				}				
+			}			
 		});
 
 		return Promise.resolve ();
@@ -288,11 +292,6 @@ class DialogLog extends Monogatari.Component {
     `);
 	}
 
-	pop () {
-		const last = $_('[data-content="log"]').find ('[data-spoke]').last ();
-		last.remove ();
-	}
-
 	constructor () {
 		super ();
 
@@ -307,7 +306,7 @@ class DialogLog extends Monogatari.Component {
       monogatari.distractionFree();
 
 			if (newValue === true) {
-				this.scrollTop = this.scrollHeight;
+				$_('[data-content="log"]').get(0).scrollTop = $_('[data-content="log"]').get(0).scrollHeight
 			}
 		}
 		return Promise.resolve ();
@@ -357,7 +356,7 @@ class Wait extends Monogatari.Action{
 			this.time = parseInt (time);
 		} else {
 			if (typeof time !== 'undefined') {
-				FancyError.show (
+				Monogatari.FancyError.show (
 					'The specified time was not an integer',
 					'Monogatari attempted to transform the given time into an integer value but failed.',
 					{
@@ -422,7 +421,7 @@ monogatari.component('main-screen').template(() => {
     <h1>A New Canvas</h1>
     <main-menu></main-menu>
     <div id="footer">
-      <p id="product-version">Version 0.3.0-beta1</p>
+      <p id="product-version">Version 0.3.0-beta2</p>
       <p id="copy">This background is used for testing purposes only</p>
     </div>
   `;
@@ -452,3 +451,4 @@ monogatari.distractionFree = () => {
     }
   }
 }
+

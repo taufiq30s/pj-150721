@@ -11,7 +11,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'show character yagoo cry',
   'yagoo Sepertinya Aku tidak bisa mengharapkan mereka untuk mewujudkan impianku membentuk V-Idol yang setara dengan AKB-48, mereka sekarang banyak orang bahkan menyebut mereka sebagai AK-47.',
   'show character yagoo normal',
-  'yagoo Tapi kudengar di Indonesia banyak talent yang sangat berbabakat.',
+  'yagoo Tapi kudengar di Indonesia banyak talent yang sangat berbakat.',
   'show character yagoo smile',
   'yagoo Mungkin disana Aku akan menemukan talent yang dapat menjadi Idol yang sangat Ideal yang dapat mewujudkan impianku',
   'show character yagoo shinySmile',
@@ -21,12 +21,12 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'Pada akhirnya mencoba peruntungan untuk mencari talent di Negara yang bernama Indonesia.',  
   'show scene sky with fadeIn',
   'Iofi sedang berjalan pulang dari tempat kuliahnya di Universitas Asacoco Cabang Pancoran Pinggir Dalam.',
-  'show background sus1 with fadeIn',
+  'show background sus1 with fadeIn bg-sus',
   'Saat Iofi Berjalan dia melihat sebuah Stand yang membagikan sebuah selebaran yang bertuliskan "Hololive Indonesia"',
-  'show background sus2',
+  'show background sus2 bg-sus',
   'show character iofi normal with fadeIn',
   'iofi Hololive? Bukannya itu agensi V-tuber yang dari Jepang itu? Apakah Hololive membuka cabang di Indonesia?',
-  'iofi Bolehkah saya meminta satu selembaranya?',
+  'iofi Bolehkah saya meminta satu selebarannya?',
   'hide character iofi normal with fadeOut',
   'show character susyagoo shinySmile with fadeIn',
   'susyagoo Tentu saja nona manis~ Silahkan ambil ini.',
@@ -104,8 +104,8 @@ monogatari.label('idPart3-1', 'Indonesia', [
           'title': "",
           'list': {
             'M-chan': "Api Atsu",
-            'Agen Kuda': "Papah Minyak Kuda",
-            'Agen Kecoa': "Mamah Vesera"
+            'Agen Kuda': "Minyak Kuda",
+            'Agen Kecoa': "Vesera"
           }
         },
         {
@@ -175,8 +175,14 @@ monogatari.label('idPart3-1', 'Indonesia', [
           'title': "Programming Department" ,
           'list': [
             "Moonchild",
+            "JeffriArt",
             "Zainokta Rakei",
-            "JeffriArt"
+          ]
+        },
+        {
+          'title': "Tester",
+          'list' : [
+            "[Your name will be put here!😆]"
           ]
         },
         {

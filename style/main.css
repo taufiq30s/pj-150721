@@ -47,14 +47,14 @@ button:hover {
 
 /* General Styling for Menu Screens */
 [data-screen] {
-
+	overflow: hidden;
 }
 
 .hidden{
 	visibility: hidden;
 }
 
-.modal__content {
+.modal__content, .wrapper-image {
 	/* Parent background + Gaussian blur */
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
@@ -73,13 +73,34 @@ button:hover {
 	border-radius: 20px !important;
 }
 
-.fancy-error > .modal__content {
+.fancy-error > .modal__content  {
 	background-color: rgba(255,255,255, 0.85);
-	background-image: url('../assets/images/iocry.png');
+	background-image: url('../assets/images/iocry.webp');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-blend-mode: hue;
 	background-position: center;
+}
+
+.fancy-error > .modal__content_nowebp {
+	background-color: rgba(255,255,255, 0.85);
+	background-image: url('../assets/images/iocry.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-blend-mode: color-dodge;
+	background-position: center;
+	height: auto;
+	width: 90%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	position: absolute;
+	padding: 1rem;
+	max-height: 100%;
+	text-align: center;
+	width: 90%;
+	overflow: auto;
 }
 
 .modal {
@@ -197,7 +218,7 @@ dialog-log .modal__content [data-content=log] [data-spoke] {
 [data-content="text"] {
 	border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.95);
-	background-image: url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png), url(../assets/images/textbox-sprite.png);
+	background-image: url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp);
 	background-repeat: no-repeat;
 	background-size: 346px 183px;
 	background-position: top -102px right -186px, bottom -141px right -229px, top -106px left -288px, bottom -101px left -260px;
@@ -220,7 +241,7 @@ text-box [data-content="dialog"] {
 	justify-self: start;
 	border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.9);
-	background-image: url(../assets/images/namebox-sprite.png), url(../assets/images/namebox-sprite.png);
+	background-image: url(../assets/images/namebox-sprite.webp), url(../assets/images/namebox-sprite.webp);
 	background-repeat: no-repeat;
 	background-size: 105px 44px;
 	background-position: top 50% right -66px, top 50% left -60px;
@@ -244,7 +265,76 @@ text-box [data-content="dialog"] {
 
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
+	bottom: -25vh;
+	max-height: 120vh;
+}
 
+[data-screen="game"] [data-character].left {
+	left: 15vw;
+}
+
+[data-screen="game"] [data-character].right {
+	right: 15vw;
+}
+
+[data-screen="game"] [data-character=iofi],
+[data-screen="game"] [data-character=putriPertama] {
+	height: 94.7vh; /* 150cm (145+5) */
+}
+
+[data-screen="game"] [data-character=yagoo],
+[data-screen="game"] [data-character=susyagoo] {
+	height: 108.6vh; /* 172cm */
+}
+
+[data-screen="game"] [data-character=mib1] {
+	height: 101.1vh; /* 160cm */
+}
+
+[data-screen="game"] [data-character=mib2] {
+	height: 101.1vh; /* 160cm */
+}
+
+[data-screen="game"] [data-character=mchan] {
+	height: 97.9vh; /* 155cm */
+}
+[data-screen="game"] [data-character=mchan].left {
+	margin-left: -10vw;
+}
+
+[data-screen="game"] [data-character=putriKedua] {
+	height: 88.4vh; /* 140cm */
+}
+
+[data-screen="game"] [data-character=raja] {
+	height: 109.9vh; /* 174cm */
+}
+
+[data-screen="game"] [data-character=ratu] {
+	height: 101.1vh; /* 160cm */
+}
+
+[data-screen="game"] [data-character=kaisar] {
+	height: 116.8vh; /* 185cm */
+}
+
+[data-screen="game"] [data-character=penasihat] {
+	height: 97.9vh; /* 155cm */
+}
+
+[data-screen="game"] [data-character=utusan] {
+	height: 107.4vh; /* 170cm */
+}
+
+[data-screen="game"] [data-character=kuda] {
+	height: 120vh; /* 190cm */
+}
+[data-screen="game"] [data-character=kuda].left {
+	margin-left: -5vw;
+}
+
+[data-screen="game"] [data-character=kecoa] {
+	height: 113.7vh; /* 180cm */
 }
 
 /* Other Images Styles */
@@ -252,6 +342,7 @@ text-box [data-content="dialog"] {
 
 }
 
+/* Credit Styles */
 credits-container {
 	position: fixed;
 	top: 0;
@@ -324,6 +415,8 @@ credits-container.credit-scroll .wrapper {
 credits-container.credit-scroll .credit-section {
 	margin: 0 0 60px;
 }
+
+
 
 /**
  * ===========================
@@ -536,26 +629,46 @@ input[type=range]::-ms-fill-upper {
 		padding-top: 2rem;
 		padding-bottom: 2.5rem;
 	}
-	text-box [data-content="dialog"] {
+	[data-component="centered-dialog"] {
 		font-size: 1.55rem;
 	}
-
-	[data-screen="game"] [data-character].left {
-		margin-left: 25%;
-	}
-
-	[data-screen="game"] [data-character].right {
-		margin-right: 25%;
+	text-box [data-content="dialog"] {
+		font-size: 1.55rem;
 	}
 }
 
 /** Full HD Screen, Large Devices, Wide Screens, Large Desktops (1920px) **/
 @media screen and (min-width: 120em) {
-	
+	[data-component="text-box"] {
+		width: 85%;
+	}
+	[data-content="name"] {
+		background-size: 138px 58px;
+		padding: 0 7rem;
+	}
+	[data-content="text"] {
+		padding: 2.5rem 5rem 3rem;
+	}
+	[data-ui="who"] {
+		font-size: 2rem;
+		height: 3.6rem;
+	}
+	[data-component="centered-dialog"] {
+		font-size: 1.875rem;
+	}
+	text-box [data-content="dialog"] {
+		font-size: 1.875rem;
+	}
+	[data-component="quick-menu"] > button {
+		font-size: 1.375rem;
+	}
 }
 
 /** Retina Screen , Large Devices, Wide Screens(2560px) **/
 @media screen and (min-width: 160em) {
+	[data-component="centered-dialog"] {
+		font-size: 2rem;
+	}
 	text-box [data-content="dialog"] {
 		font-size: 2rem;
 	}
@@ -619,4 +732,25 @@ input[type=range]::-ms-fill-upper {
 
 [data-ui=background] {
 	position: absolute;
+}
+
+.hp {
+	position: initial !important;
+}
+
+.wrapper-image{
+	position: absolute !important;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 25vmax;
+	height: 25vmax;
+	background-color: rgba(255, 255, 255, 0.55);
+	margin: auto;
+	padding: 1%;
+}
+
+[data-ui=background].bg-sus {
+	background-position: 50% 100%;
 }

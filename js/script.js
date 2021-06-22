@@ -241,83 +241,30 @@ monogatari.characters({
 	// English Chara Name
 	'firstPricess': {
 		name: "First Princess",
-		sprites: {
-			normal: 'first_princess_example.webp'
-		}
 	},
 	'secondPrincess': {
 		name: "Second Princess",
-		sprites: {
-			normal: 'second_princess_example.webp'
-		}
 	},	
 	'king': {
 		name: "King",
-		sprites: {
-			normal: 'raja-netral.webp',
-			closeeye: 'raja-netral-mata-tertutup.webp',
-			sedih1: 'raja-sedih-1.webp',
-			sedih2: 'raja-sedih-2.webp',
-			senyum: 'raja-senyum-tipis.webp',
-			tegas: 'raja-tegas-kukuh.webp',
-			teriak: 'raja-tegas-teriak.webp',
-			marah: 'raja-marah-1.webp',
-			kaget: 'raja-kaget.webp',
-			teriak2: 'raja-teriak.webp',
-			percaya: 'raja-mencoba-percaya-diri.webp',
-			takut: 'raja-takut.webp'
-		}
 	},
 	'queen': {
 		name: "Queen",
-		sprites: {
-			normal: 'queen_example.webp'
-		}
 	},
 	'emperor': {
 		name: "Emperor",
-		sprites: {
-			normal: 'imperial_example.webp'
-		}
 	},
 	'advisor': {
 		name: "Imperial Advisor",
-		sprites: {
-			bingung: 'advisor_bingung.webp',
-			licik: 'advisor_senyum_licik.webp',
-		}
 	},
 	'envoy': {
 		name: "Imperial Envoy",
-		sprites: {
-			normal: 'envoy_netral.webp',
-			bingung: 'envoy_doubt.webp',
-			panik: 'envoy_panik.webp',
-			licik: 'envoy_senyum_licik.webp',
-		}
 	},
 	'horse': {
 		name: "Agent Kuda",
-		sprites: {
-			normal: 'kuda_netral.webp',
-			panik: 'kuda_panik.webp',
-			waspada: 'kuda_waspada.webp',
-			tenang: 'kuda_tenang.webp',
-			closeeye: 'kuda_closeeye.webp',
-			dahi: 'kuda_dahi.webp',
-			mata: 'kuda_mata.webp',
-			kaget: 'kuda_kaget.webp'
-		}
 	},
 	'coro': {
 		name: "Agen Kecoa",
-		sprites: {
-			normal: 'kecoa_netral.webp',
-			hypnotize: 'kecoa_hypnotized.webp',
-			closeeye: 'kecoa_nod_closeeye.webp',
-			menghela: 'kecoa_nod_menghela.webp',
-			nod: 'kecoa_nod_normal.webp',			
-		}
 	},
 	'soldier':{
 		name: "Soldier"
@@ -326,32 +273,12 @@ monogatari.characters({
 	// Japan Chara Name
 	'firstPrincessJP': {
 		name: "長女",
-		sprites: {
-			normal: 'first_princess_example.webp'
-		}
 	},
 	'secondPrincessJP': {
 		name: "次女",
-		sprites: {
-			normal: 'second_princess_example.webp'
-		}
 	},	
 	'kingJP': {
 		name: "王",
-		sprites: {
-			normal: 'raja-netral.webp',
-			closeeye: 'raja-netral-mata-tertutup.webp',
-			sedih1: 'raja-sedih-1.webp',
-			sedih2: 'raja-sedih-2.webp',
-			senyum: 'raja-senyum-tipis.webp',
-			tegas: 'raja-tegas-kukuh.webp',
-			teriak: 'raja-tegas-teriak.webp',
-			marah: 'raja-marah-1.webp',
-			kaget: 'raja-kaget.webp',
-			teriak2: 'raja-teriak.webp',
-			percaya: 'raja-mencoba-percaya-diri.webp',
-			takut: 'raja-takut.webp'
-		}
 	},
 	'queenJP': {
 		name: "王女",
@@ -361,48 +288,18 @@ monogatari.characters({
 	},
 	'emperorJP': {
 		name: "皇帝",
-		sprites: {
-			normal: 'imperial_example.webp'
-		}
 	},
 	'advisorJP': {
 		name: "アドバイザー",
-		sprites: {
-			bingung: 'advisor_bingung.webp',
-			licik: 'advisor_senyum_licik.webp',
-		}
 	},
 	'envoyJP': {
 		name: "使節",
-		sprites: {
-			normal: 'envoy_netral.webp',
-			bingung: 'envoy_doubt.webp',
-			panik: 'envoy_panik.webp',
-			licik: 'envoy_senyum_licik.webp',
-		}
 	},
 	'horseJP': {
 		name: "クダエージェント",
-		sprites: {
-			normal: 'kuda_netral.webp',
-			panik: 'kuda_panik.webp',
-			waspada: 'kuda_waspada.webp',
-			tenang: 'kuda_tenang.webp',
-			closeeye: 'kuda_closeeye.webp',
-			dahi: 'kuda_dahi.webp',
-			mata: 'kuda_mata.webp',
-			kaget: 'kuda_kaget.webp'
-		}
 	},
 	'coroJP': {
 		name: "ゴキエージェント",
-		sprites: {
-			normal: 'kecoa_netral.webp',
-			hypnotize: 'kecoa_hypnotized.webp',
-			closeeye: 'kecoa_nod_closeeye.webp',
-			menghela: 'kecoa_nod_menghela.webp',
-			nod: 'kecoa_nod_normal.webp',			
-		}
 	},
 	'soldier':{
 		name: "Soldier"
@@ -412,33 +309,17 @@ monogatari.characters({
 	},
 	'iofiJP': {
 		name: "イオフィ",
-		sprites: {
-			normal: 'first_princess_example.webp'
-		}
 	},
 	'susyagooJP': {
 		name: "怪しいYAGOO",
-		sprites: {
-			shinySmile: 'mr85-senyum-bersinar.webp',
-		}
 	},
 	"mib1JP": {
 		name: "黒服の人一号",
-		sprites: {
-			normal: 'mib1_netral.webp',
-			shout: 'mib1_shout.webp'
-		}
 	},
 	"mib2JP": {
 		name: "黒服の人二号",
-		sprites: {
-			normal: 'mib2_netral.webp',
-		}
 	},
 	"mchanJP": {
 		name: "Mちゃん",
-		sprites: {
-			normal: 'm chan - netral.webp',
-		}
 	},
 });

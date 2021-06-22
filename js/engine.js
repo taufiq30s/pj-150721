@@ -279,13 +279,20 @@ class DialogLog extends Monogatari.Component {
 					<p class="dialog">${dialog}</p>
 				</div>
 			`);
-		} else {
+		 } else if (id == 'narrator') {
 			$_('[data-content="log"]').append (`
-        <div data-spoke="${id}" class="unnamed backlog-container">
-          <span class="name"></span>
-          <p class="dialog">${dialog}</p>
-        </div>
-      `);
+				<div data-spoke="${id}" class="unnamed backlog-container">
+					<span class="name"></span>
+					<p class="dialog" style="color:#fff">${dialog}</p>
+				</div>
+      		`)
+		 } else {
+			$_('[data-content="log"]').append (`
+        		<div data-spoke="${id}" class="unnamed backlog-container">
+          			<span class="name"></span>
+          			<p class="dialog">${dialog}</p>
+        		</div>
+      		`);
 		}
     $_('[data-content="log"]').append (`
       <span class="hr"></span>

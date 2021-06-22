@@ -111,12 +111,14 @@ monogatari.characters({
 	// General Chara Name
 	'iofi': {
 		name: "Iofi",
+		color: "#005051",
 		sprites: {
 			normal: 'first_princess_example.webp'
 		}
 	},
 	'yagoo': {
 		name: "YAGOO",
+		color: "#005051",
 		sprites: {
 			normal: 'mr85-netral.webp',
 			shinySmile: 'mr85-senyum-bersinar.webp',
@@ -126,12 +128,14 @@ monogatari.characters({
 	},	
 	'susyagoo': {
 		name: "YAGOO?",
+		color: "#005051",
 		sprites: {
 			shinySmile: 'mr85-senyum-bersinar.webp',
 		}
 	},
 	"mib1": {
 		name: "MIB 1",
+		color: "#005051",
 		sprites: {
 			normal: 'mib1_netral.webp',
 			shout: 'mib1_shout.webp'
@@ -139,35 +143,41 @@ monogatari.characters({
 	},
 	"mib2": {
 		name: "MIB 2",
+		color: "#005051",
 		sprites: {
 			normal: 'mib2_netral.webp',
 		}
 	},
 	"mchan": {
 		name: "M-chan",
+		color: "#005051",
 		sprites: {
 			normal: 'm chan - netral.webp',
 		}
 	},
 	"unknown": {
-		name: "???"
+		name: "???",
+		color: "#005051",
 	},
 
 	// Indonesian Chara Name
 	'putriPertama': {
 		name: "Putri Pertama",
+		color: "#005051",
 		sprites: {
 			normal: 'first_princess_example.webp'
 		}
 	},
 	'putriKedua': {
 		name: "Putri Kedua",
+		color: "#005051",
 		sprites: {
 			normal: 'second_princess_example.webp'
 		}
 	},
 	'raja': {
 		name: "Raja",
+		color: "#0000ff",
 		sprites: {
 			normal: 'raja-netral.webp',
 			closeeye: 'raja-netral-mata-tertutup.webp',
@@ -185,18 +195,21 @@ monogatari.characters({
 	},
 	'ratu': {
 		name: "Ratu",
+		color: "#ff0000",
 		sprites: {
 			normal: 'queen_example.webp'
 		}
 	},
 	'kaisar': {
 		name: "Kaisar",
+		color: "#005051",
 		sprites: {
 			normal: 'imperial_example.webp'
 		}
 	},
 	'penasihat': {
 		name: "Penasihat Kaisar",
+		color: "#005051",
 		sprites: {
 			bingung: 'advisor_bingung.webp',
 			licik: 'advisor_senyum_licik.webp',
@@ -204,6 +217,7 @@ monogatari.characters({
 	},
 	'utusan': {
 		name: "Utusan Kaisar",
+		color: "#005051",
 		sprites: {
 			normal: 'envoy_netral.webp',
 			bingung: 'envoy_doubt.webp',
@@ -213,6 +227,7 @@ monogatari.characters({
 	},
 	'kuda': {
 		name: "Agen Kuda",
+		color: "#005051",
 		sprites: {
 			normal: 'kuda_netral.webp',
 			panik: 'kuda_panik.webp',
@@ -226,6 +241,7 @@ monogatari.characters({
 	},
 	'kecoa': {
 		name: "Agen Kecoak",
+		color: "#005051",
 		sprites: {
 			normal: 'kecoa_netral.webp',
 			hypnotize: 'kecoa_hypnotized.webp',
@@ -235,91 +251,118 @@ monogatari.characters({
 		}
 	},
 	'prajurit':{
-		name: "Prajurit"
+		name: "Prajurit",
+		color: "#005051",
 	},
 
 	// English Chara Name
 	'firstPricess': {
 		name: "First Princess",
+		color: "#005051",
 	},
 	'secondPrincess': {
 		name: "Second Princess",
+		color: "#005051",
 	},	
 	'king': {
 		name: "King",
+		color: "#005051",
 	},
 	'queen': {
 		name: "Queen",
+		color: "#005051",
 	},
 	'emperor': {
 		name: "Emperor",
+		color: "#005051",
 	},
 	'advisor': {
 		name: "Imperial Advisor",
+		color: "#005051",
 	},
 	'envoy': {
 		name: "Imperial Envoy",
+		color: "#005051",
 	},
 	'horse': {
 		name: "Agent Kuda",
+		color: "#005051",
 	},
 	'coro': {
 		name: "Agen Kecoa",
+		color: "#005051",
 	},
 	'soldier':{
-		name: "Soldier"
+		name: "Soldier",
+		color: "#005051",
 	},
 
 	// Japan Chara Name
 	'firstPrincessJP': {
 		name: "長女",
+		color: "#005051",
 	},
 	'secondPrincessJP': {
 		name: "次女",
+		color: "#005051",
 	},	
 	'kingJP': {
 		name: "王",
+		color: "#005051",
 	},
 	'queenJP': {
 		name: "王女",
+		color: "#005051",
 		sprites: {
 			normal: 'queen_example.webp'
 		}
 	},
 	'emperorJP': {
 		name: "皇帝",
+		color: "#005051",
 	},
 	'advisorJP': {
 		name: "アドバイザー",
+		color: "#005051",
 	},
 	'envoyJP': {
 		name: "使節",
+		color: "#005051",
 	},
 	'horseJP': {
 		name: "クダエージェント",
+		color: "#005051",
 	},
 	'coroJP': {
 		name: "ゴキエージェント",
+		color: "#005051",
 	},
 	'soldier':{
-		name: "Soldier"
+		name: "Soldier",
+		color: "#005051",
 	},	
 	'soldierJP':{
-		name: "兵士"
+		name: "兵士",
+		color: "#005051",
 	},
 	'iofiJP': {
 		name: "イオフィ",
+		color: "#005051",
 	},
 	'susyagooJP': {
 		name: "怪しいYAGOO",
+		color: "#005051",
 	},
 	"mib1JP": {
 		name: "黒服の人一号",
+		color: "#005051",
 	},
 	"mib2JP": {
 		name: "黒服の人二号",
+		color: "#005051",
 	},
 	"mchanJP": {
 		name: "Mちゃん",
+		color: "#005051",
 	},
 });

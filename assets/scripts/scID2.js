@@ -79,13 +79,10 @@ monogatari.label('caloriebar', 'Indonesia', [
 ]);
 
 monogatari.label('idPart2-2', 'Indonesia', [
-  // Dummy
-  // "show scene cockpit with fadeIn",
-  // "show character putriPertama normal with fadeIn",
-  // 'show message SampleWriting',
-  // End Dummy
+  'hide character putriPertama normal with fadeOut',
+  'show image phone center hp with fadeIn',
   "putriPertama Sebaiknya kusimpan didalam laci, setelah makan Aku ingin langsung istirahat",
-  "hide character putriPertama normal with fadeOut",
+  'hide image phone center hp with fadeOut',
   "Dengan pesawat Super Canggih dari Iolyptos, Sang Putri mengarungi betapa luasnya alam semesta ini tanpa tujuan jelas.",
   "show character putriPertama normal with fadeIn",
   "putriPertama Waaaa Planet Apa Itu? Indah Sekali…Seperti…",
@@ -125,7 +122,7 @@ monogatari.label('idPart2-2', 'Indonesia', [
   "hide character mib2 normal at right with fadeOut",
   "Dalam waktu yang singkat ia didatangi oleh para Agen berbaju hitam, lalu menangkapnya untuk dibawa ke Area 15 dan menginterogasinya.",
   "show scene #000",
-  "clear",
+  "clearall",
   "next",
   "wait 3000",
   "show scene interrogation",
@@ -253,9 +250,10 @@ monogatari.label('idPart2-2', 'Indonesia', [
   "iofi tapi Aku tidak pandai dalam matematika, mungkin Aku akan mempelajari seni, jika suatu hari nanti aku dapat mengelilingi dunia Aku bisa melukis pemandangan indah yang Aku lihat.",
   "iofi dan Aku juga ingin mempelajari bahasa manusia berbeda dengan Iolyptos, manusia Bumi memiliki begitu banyak bahasa.",
   "iofi Tapi, sebelum itu mungkin harus menjual beberapa barang berharga yang kubawa dari Iolyptos.",
-  "iofi Benda apa ini Aku tidak ingat pernah membawanya, kusimpan saja mungkin saja ini penting.",
-  // "show image hp_mainan center with fadeIn",
   "hide character iofi normal with fadeOut",
+  'show image phone center hp with fadeIn',
+  "iofi Benda apa ini Aku tidak ingat pernah membawanya, kusimpan saja mungkin saja ini penting.",
+  'hide image phone center hp with fadeOut',
   "Dengan menjual barang berharga yang ia bawa dari Iolyptos ke Pasar Senen, Iofi berniat untuk belajar sebagai mahasiswi seni sambil mempelajari bahasa yang ada di Bumi.",
   "show scene #000",
   "jump idPart3-1",

@@ -68,7 +68,7 @@ monogatari.assets('videos', {
 
 // Define the images used in the game.
 monogatari.assets('images', {
-	'hp_mainan' : 'hp_mainan.jpg',
+	'phone' : 'phone.webp',
 });
 
 // Define the backgrounds for each scene.

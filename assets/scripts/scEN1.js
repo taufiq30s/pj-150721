@@ -3,7 +3,7 @@ monogatari.script({
     'Start': [
       "show scene galaxy with fadeIn",
       "In a galaxy far away, there is a planet named Iolyptos.",
-      "show scene iolyptos-city3 with fadeIn",
+      "show scene iolyptos with fadeIn",
       "Iolyptos is a beautiful and peaceful planet, with overwhelming natural resources, that is being ruled by a wise King and an elegant Queen.",
       "show scene iolyptos-city with fadeIn",
       "wait 3500",

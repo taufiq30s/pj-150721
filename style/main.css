@@ -54,7 +54,7 @@ button:hover {
 	visibility: hidden;
 }
 
-.modal__content {
+.modal__content, .wrapper-image {
 	/* Parent background + Gaussian blur */
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
@@ -640,4 +640,21 @@ input[type=range]::-ms-fill-upper {
 
 [data-ui=background] {
 	position: absolute;
+}
+
+.hp {
+	position: initial !important;
+}
+
+.wrapper-image{
+	position: absolute !important;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 25vmax;
+	height: 25vmax;
+	background-color: rgba(255, 255, 255, 0.55);
+	margin: auto;
+	padding: 1%;
 }

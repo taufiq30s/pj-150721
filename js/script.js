@@ -111,14 +111,14 @@ monogatari.characters({
 	// General Chara Name
 	'iofi': {
 		name: "Iofi",
-		color: "#005051",
+		color: "#71DA2B",
 		sprites: {
 			normal: 'first_princess_example.webp'
 		}
 	},
 	'yagoo': {
 		name: "YAGOO",
-		color: "#005051",
+		color: "#071220",
 		sprites: {
 			normal: 'mr85-netral.webp',
 			shinySmile: 'mr85-senyum-bersinar.webp',
@@ -128,14 +128,14 @@ monogatari.characters({
 	},	
 	'susyagoo': {
 		name: "YAGOO?",
-		color: "#005051",
+		color: "#071220",
 		sprites: {
 			shinySmile: 'mr85-senyum-bersinar.webp',
 		}
 	},
 	"mib1": {
 		name: "MIB 1",
-		color: "#005051",
+		color: "#949494",
 		sprites: {
 			normal: 'mib1_netral.webp',
 			shout: 'mib1_shout.webp'
@@ -143,14 +143,14 @@ monogatari.characters({
 	},
 	"mib2": {
 		name: "MIB 2",
-		color: "#005051",
+		color: "#AEAEAE",
 		sprites: {
 			normal: 'mib2_netral.webp',
 		}
 	},
 	"mchan": {
 		name: "M-chan",
-		color: "#005051",
+		color: "#FFB449",
 		sprites: {
 			normal: 'm chan - netral.webp',
 		}
@@ -163,21 +163,21 @@ monogatari.characters({
 	// Indonesian Chara Name
 	'putriPertama': {
 		name: "Putri Pertama",
-		color: "#005051",
+		color: "#71DA2B",
 		sprites: {
 			normal: 'first_princess_example.webp'
 		}
 	},
 	'putriKedua': {
 		name: "Putri Kedua",
-		color: "#005051",
+		color: "#1FD6CD",
 		sprites: {
 			normal: 'second_princess_example.webp'
 		}
 	},
 	'raja': {
 		name: "Raja",
-		color: "#0000ff",
+		color: "#317FDB",
 		sprites: {
 			normal: 'raja-netral.webp',
 			closeeye: 'raja-netral-mata-tertutup.webp',
@@ -195,21 +195,21 @@ monogatari.characters({
 	},
 	'ratu': {
 		name: "Ratu",
-		color: "#ff0000",
+		color: "#ED9082",
 		sprites: {
 			normal: 'queen_example.webp'
 		}
 	},
 	'kaisar': {
 		name: "Kaisar",
-		color: "#005051",
+		color: "#CA6A68",
 		sprites: {
 			normal: 'imperial_example.webp'
 		}
 	},
 	'penasihat': {
 		name: "Penasihat Kaisar",
-		color: "#005051",
+		color: "#AA74A9",
 		sprites: {
 			bingung: 'advisor_bingung.webp',
 			licik: 'advisor_senyum_licik.webp',
@@ -217,7 +217,7 @@ monogatari.characters({
 	},
 	'utusan': {
 		name: "Utusan Kaisar",
-		color: "#005051",
+		color: "#98C743",
 		sprites: {
 			normal: 'envoy_netral.webp',
 			bingung: 'envoy_doubt.webp',
@@ -227,7 +227,7 @@ monogatari.characters({
 	},
 	'kuda': {
 		name: "Agen Kuda",
-		color: "#005051",
+		color: "#A37A52",
 		sprites: {
 			normal: 'kuda_netral.webp',
 			panik: 'kuda_panik.webp',
@@ -241,7 +241,7 @@ monogatari.characters({
 	},
 	'kecoa': {
 		name: "Agen Kecoak",
-		color: "#005051",
+		color: "#8D9150",
 		sprites: {
 			normal: 'kecoa_netral.webp',
 			hypnotize: 'kecoa_hypnotized.webp',

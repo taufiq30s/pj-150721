@@ -111,7 +111,7 @@ monogatari.characters({
 	// General Chara Name
 	'iofi': {
 		name: "Iofi",
-		color: "#71DA2B",
+		color: "#F46383",
 		sprites: {
 			normal: 'first_princess_example.webp'
 		}
@@ -163,14 +163,14 @@ monogatari.characters({
 	// Indonesian Chara Name
 	'putriPertama': {
 		name: "Putri Pertama",
-		color: "#71DA2B",
+		color: "#F46383",
 		sprites: {
 			normal: 'first_princess_example.webp'
 		}
 	},
 	'putriKedua': {
 		name: "Putri Kedua",
-		color: "#1FD6CD",
+		color: "#19B3AB",
 		sprites: {
 			normal: 'second_princess_example.webp'
 		}
@@ -258,39 +258,39 @@ monogatari.characters({
 	// English Chara Name
 	'firstPricess': {
 		name: "First Princess",
-		color: "#005051",
+		color: "#F46383",
 	},
 	'secondPrincess': {
 		name: "Second Princess",
-		color: "#005051",
+		color: "#19B3AB",
 	},	
 	'king': {
 		name: "King",
-		color: "#005051",
+		color: "#317FDB",
 	},
 	'queen': {
 		name: "Queen",
-		color: "#005051",
+		color: "#ED9082",
 	},
 	'emperor': {
 		name: "Emperor",
-		color: "#005051",
+		color: "#CA6A68",
 	},
 	'advisor': {
 		name: "Imperial Advisor",
-		color: "#005051",
+		color: "#AA74A9",
 	},
 	'envoy': {
 		name: "Imperial Envoy",
-		color: "#005051",
+		color: "#98C743",
 	},
 	'horse': {
 		name: "Agent Kuda",
-		color: "#005051",
+		color: "#A37A52",
 	},
 	'coro': {
 		name: "Agen Kecoa",
-		color: "#005051",
+		color: "#8D9150",
 	},
 	'soldier':{
 		name: "Soldier",
@@ -300,38 +300,38 @@ monogatari.characters({
 	// Japan Chara Name
 	'firstPrincessJP': {
 		name: "長女",
-		color: "#005051",
+		color: "#F46383",
 	},
 	'secondPrincessJP': {
 		name: "次女",
-		color: "#005051",
+		color: "#19B3AB",
 	},	
 	'kingJP': {
 		name: "王",
-		color: "#005051",
+		color: "#317FDB",
 	},
 	'queenJP': {
 		name: "王女",
-		color: "#005051",
+		color: "#ED9082",
 		sprites: {
 			normal: 'queen_example.webp'
 		}
 	},
 	'emperorJP': {
 		name: "皇帝",
-		color: "#005051",
+		color: "#CA6A68",
 	},
 	'advisorJP': {
 		name: "アドバイザー",
-		color: "#005051",
+		color: "#AA74A9",
 	},
 	'envoyJP': {
 		name: "使節",
-		color: "#005051",
+		color: "#98C743",
 	},
 	'horseJP': {
 		name: "クダエージェント",
-		color: "#005051",
+		color: "#A37A52",
 	},
 	'coroJP': {
 		name: "ゴキエージェント",
@@ -339,7 +339,7 @@ monogatari.characters({
 	},
 	'soldier':{
 		name: "Soldier",
-		color: "#005051",
+		color: "#8D9150",
 	},	
 	'soldierJP':{
 		name: "兵士",
@@ -351,18 +351,18 @@ monogatari.characters({
 	},
 	'susyagooJP': {
 		name: "怪しいYAGOO",
-		color: "#005051",
+		color: "#071220",
 	},
 	"mib1JP": {
 		name: "黒服の人一号",
-		color: "#005051",
+		color: "#949494",
 	},
 	"mib2JP": {
 		name: "黒服の人二号",
-		color: "#005051",
+		color: "#AEAEAE",
 	},
 	"mchanJP": {
 		name: "Mちゃん",
-		color: "#005051",
+		color: "#FFB449",
 	},
 });

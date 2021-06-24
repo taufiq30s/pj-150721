@@ -1,4 +1,5 @@
 'use strict';
+// import Monogatari from '@monogatari/core';
 /* global Monogatari */
 /* global monogatari */
 

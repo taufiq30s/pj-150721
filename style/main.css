@@ -254,7 +254,7 @@ text-box [data-content="dialog"] {
 	padding: 0.5rem 0;
 	height: 2.8rem;
 	font-family: 'poppins';
-	color: #005051 !important;
+	color: #005051;
 }
 
 /* Style for Centered Text */
@@ -547,7 +547,7 @@ dialog-log > .modal__content{
 
 .name, .dialog, [data-string="Confirm"]{
 	font-size: 1.5rem !important;
-	color:#fff !important;
+	color:#fff;
 	font-weight: bold;
 	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: #545454;

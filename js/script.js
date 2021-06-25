@@ -48,8 +48,6 @@ monogatari.assets('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
-	'tester': 'testbg.jpg',
-	'dummy': 'dummy.png',
 	'garden': 'webp/garden.webp',
 	'galaxy': 'webp/galaxy.webp',
 	'balkon' : 'webp/balkon.webp',
@@ -71,7 +69,6 @@ monogatari.assets('scenes', {
 	'sky': 'webp/sky.webp',
 	'comical': 'webp/comical.webp',
 	'earth': 'webp/earth.webp', 
-	'test' : 'tes.png',
 	'sus1' : 'webp/sus-yagoo.webp',
 	'sus2' : 'webp/sus-yagoo-bg.webp'
 });

@@ -8,7 +8,7 @@ monogatari.component('main-screen').template(() => {
     <h1>A New Canvas</h1>
     <main-menu></main-menu>
     <div id="footer">
-      <p id="product-version">Version 0.3.0-beta2</p>
+      <p id="product-version">Version 0.3.0-beta3</p>
       <p id="copy">This background is used for testing purposes only</p>
     </div>
   `;
@@ -39,3 +39,31 @@ monogatari.distractionFree = () => {
   }
 }
 
+// Change Loading Screen
+monogatari.component('loading-screen').template(() => {
+  return `
+    <div data-content="disclaimer wrapper">
+      <h1 data-string="disclaimer" data-content="header">Disclaimer</h1>
+      <p data-string="disclaimer-message" data-content="message">This is a fan work.</p>
+    </div>
+    <div data-content="loading wrapper">
+      <h5 data-string="Loading" data-content="title">Loading Assets</h5>
+      <progress value="0" max="100" data-content="progress"></progress>
+    </div>
+  `;
+});
+
+monogatari.component('text-box').template(() => {
+  return `
+  <div data-content="name">
+    <span data-ui="who" data-content="character-name"></span>
+  </div>
+  <div data-content="side-image">
+    <img data-ui="face" alt="" data-content="character-expression">
+  </div>
+  <div data-content="text">
+    <p data-ui="say" data-content="dialog"></p>
+    <img src="../assets/images/next.png" id="next" style="display:none;">
+  </div>
+  `
+})

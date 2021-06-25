@@ -17,11 +17,6 @@
 	src: url('../assets/fonts/Metropolis-Medium.otf');
 }
 
-@font-face {
-	font-family: "poppins";
-	src: url('../assets/fonts/Poppins-Medium.ttf');
-}
-
 /**
  * ===========================
  * General Styling
@@ -141,6 +136,27 @@ dialog-log .modal__content [data-content=log] [data-spoke] {
   animation: bar 15s linear infinite;
 }
 
+/**
+ * ===========================
+ * Loading Screen Styling
+ * ===========================
+**/
+
+loading-screen {
+	background-color: black;
+	color: white;
+}
+
+loading-screen div {
+	width: 100%;
+}
+
+[data-content="loading wrapper"] {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 25%;
+}
 
 /**
  * ===========================
@@ -236,6 +252,13 @@ text-box [data-content="dialog"] {
 	font-family: "metropolis";
 }
 
+#next {
+	width: 5%;
+	position: absolute;
+	right: 5%;
+	bottom: 15%;
+}
+
 /* Character Name Style */
 [data-content="name"] {
 	justify-self: start;
@@ -253,7 +276,7 @@ text-box [data-content="dialog"] {
 [data-ui="who"] {
 	padding: 0.5rem 0;
 	height: 2.8rem;
-	font-family: 'poppins';
+	font-family: 'Poppins';
 	color: #005051;
 }
 
@@ -754,3 +777,4 @@ input[type=range]::-ms-fill-upper {
 [data-ui=background].bg-sus {
 	background-position: 50% 100%;
 }
+

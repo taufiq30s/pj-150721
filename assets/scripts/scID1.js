@@ -8,7 +8,7 @@ monogatari.script({
       "Iolyptos adalah planet indah dan damai, dengan sumber daya melimpah, yang dipimpin oleh seorang Raja yang bijaksana bersama Ratunya yang anggun.",
       "show background iolyptos-city with fadeIn",
       "clearall",
-      "wait 1000",
+      "wait",
       "show scene balkon with fadeIn",
       "show character raja normal at left with fadeIn",
       "raja Ratuku, lihatlah betapa damainya Iolyptos, rakyatnya dapat tersenyum lepas tanpa harus takut akan kelaparan.",
@@ -74,12 +74,10 @@ monogatari.script({
       "Rumor akan kecantikannya tersebar, bahkan sampai ke Galaksi yang sangat jauh.",
       "Seumpama luar angkasa adalah tempat dimana bintang akan bersinar terang, pasti akan ada kegelapan yang mendampingi.",
       "show scene emperor-throne with fadeIn",
-      "show character kaisar normal with fadeIn",
-      "kaisar Aku mendengar kabar bahwa ada planet yang kaya akan sumber daya yang bernama Iolyptos.",
-      "kaisar Dan kudengar bahwa Putri Pertama dari planet itu sangat cantik, apakah kau tau akan hal ini?",
-      "hide character kaisar normal with fadeOut",
       "show character kaisar normal at left with fadeIn",
       "show character penasihat bingung at right with fadeIn",
+      "kaisar Aku mendengar kabar bahwa ada planet yang kaya akan sumber daya yang bernama Iolyptos.",
+      "kaisar Dan kudengar bahwa Putri Pertama dari planet itu sangat cantik, apakah kau tau akan hal ini?",
       "penasihat Apakah Yang Mulia ingin menginvasi planet itu?",
       "kaisar Aku punya tujuan itu, tapi kita sudah terlalu banyak membuka medan perang.",
       "hide character penasihat bingung at right with fadeOut",
@@ -142,6 +140,7 @@ monogatari.script({
       "raja ...",
       "hide character raja marah with fadeOut",
       "Sang Raja yang tidak tau harus berbuat apa hanya mampu duduk terdiam singgasananya.",
+      // "show scene #000 with "
       "jump idPart2"
     ]
   },

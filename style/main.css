@@ -166,7 +166,7 @@ loading-screen div {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-	background-image: url(../assets/images/mainbg.jpg);
+	background: url(../assets/images/main1.png) no-repeat top fixed;
 	background-size: cover;	
 }
 
@@ -253,7 +253,7 @@ text-box [data-content="dialog"] {
 }
 
 #next {
-	width: 5%;
+	width: 4.5%;
 	position: absolute;
 	right: 5%;
 	bottom: 15%;

@@ -5,11 +5,10 @@
 // Change Main Screen
 monogatari.component('main-screen').template(() => {
   return `
-    <h1>A New Canvas</h1>
     <main-menu></main-menu>
     <div id="footer">
       <p id="product-version">Version 0.3.0-beta3</p>
-      <p id="copy">This background is used for testing purposes only</p>
+      <p id="copy">&copy; 2021 Pj-150721 Team</p>
     </div>
   `;
 });

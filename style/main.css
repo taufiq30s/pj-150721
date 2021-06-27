@@ -166,7 +166,7 @@ loading-screen div {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-	background: url(../assets/images/main1.png) no-repeat top fixed;
+	background: url(../assets/images/main1.webp) no-repeat top fixed;
 	background-size: cover;	
 }
 

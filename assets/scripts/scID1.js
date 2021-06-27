@@ -1,13 +1,14 @@
 monogatari.script({
   Indonesia: {
     'Start': [
+      // "jump idPart3-1",
       "show scene galaxy with fadeIn",
       "Di sebuah Galaksi nun jauh disana, ada sebuah planet bernama Iolyptos.",
       "show scene iolyptos with fadeIn",
       "Iolyptos adalah planet indah dan damai, dengan sumber daya melimpah, yang dipimpin oleh seorang Raja yang bijaksana bersama Ratunya yang anggun.",
       "show background iolyptos-city with fadeIn",
       "clearall",
-      "wait 1000",
+      "wait",
       "show scene balkon with fadeIn",
       "show character raja normal at left with fadeIn",
       "play voice King_01",
@@ -78,13 +79,11 @@ monogatari.script({
       "Rumor akan kecantikannya tersebar, bahkan sampai ke Galaksi yang sangat jauh.",
       "Seumpama luar angkasa adalah tempat dimana bintang akan bersinar terang, pasti akan ada kegelapan yang mendampingi.",
       "show scene emperor-throne with fadeIn",
-      "show character kaisar normal with fadeIn",
+      "show character kaisar normal at left with fadeIn",
+      "show character penasihat bingung at right with fadeIn",
       "play voice Emperor_01",
       "kaisar Aku mendengar kabar bahwa ada planet yang kaya akan sumber daya yang bernama Iolyptos.",
       "kaisar Dan kudengar bahwa Putri Pertama dari planet itu sangat cantik, apakah kau tau akan hal ini?",
-      "hide character kaisar normal with fadeOut",
-      "show character kaisar normal at left with fadeIn",
-      "show character penasihat bingung at right with fadeIn",
       "play voice Advisor_01",
       "penasihat Apakah Yang Mulia ingin menginvasi planet itu?",
       "play voice Emperor_02",
@@ -165,6 +164,7 @@ monogatari.script({
       "raja ...",
       "hide character raja marah with fadeOut",
       "Sang Raja yang tidak tau harus berbuat apa hanya mampu duduk terdiam singgasananya.",
+      // "show scene #000 with "
       "jump idPart2"
     ]
   },

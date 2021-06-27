@@ -8,7 +8,7 @@
 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'  'unsafe-eval' ajax.cloudflare.com static.cloudflareinsights.com">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' fonts.googleapis.com cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' ajax.cloudflare.com static.cloudflareinsights.com code.jquery.com ;font-src 'self' fonts.gstatic.com cdn.jsdelivr.net ">
 		<meta name="description" content="A Visual Novel project as Iofi's birthday present from Ioforia"> <!--Page description. No longer than 155 characters.-->
 		<meta name="keywords" content="Iofi, VN, Lore, Slice-of-life">
 		<meta name="author" content="Team 150721"> <!--Name of the author.-->
@@ -73,11 +73,13 @@
 
 		<!-- Monogatari CSS Libraries -->
 		<link rel="stylesheet" href="./engine/core/monogatari.css">
-		<link rel="stylesheet" href="./style/main.css">	
+		<link rel="stylesheet" href="./style/main.css?v=0.3.0-beta3">	
 
 		<!-- External Fonts -->
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="stylesheet" href="./style/remixicon/remixicon.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -102,8 +104,6 @@
 					<text-box></text-box>
 					<quick-menu></quick-menu>
 				</game-screen>
-				<gallery-screen></gallery-screen>
-				<credits-screen></credits-screen>
 				<load-screen></load-screen>
 				<save-screen></save-screen>
 				<settings-screen></settings-screen>
@@ -113,28 +113,33 @@
 		</div>
 
 		<!-- Third Party JavaScript Libraries -->
-		<script src="./js/vendor/jquery.min.js"></script>
-
+		<script defer src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 		<!-- Monogatari JavaScript Libraries -->
-		<script src="./engine/debug/debug.js"></script>
+		<!-- <script src="./engine/debug/debug.js"></script> -->
 		<script src="./engine/core/monogatari.js"></script>
-		<script src="./js/options.js"></script>
-		<script src="./js/actions/credit.js"></script>
-		<script src="./js/actions/ShowImage.js"></script>
-		<script src="./js/actions/HideImage.js"></script>
-		<script src="./js/fancyError.js"></script>
-		<script src="./js/storage.js"></script>
-		<script src="./js/script.js"></script>
-		<script src="./js/main.js"></script>
-		<script src="./assets/scripts/scID1.js"></script>
-		<script src="./assets/scripts/scID2.js"></script>
-		<script src="./assets/scripts/scID3.js"></script>
-		<script src="./assets/scripts/scEN1.js"></script>
-		<script src="./assets/scripts/scEN2.js"></script>
-		<script src="./assets/scripts/scJP1.js"></script>
-		<script src="./assets/scripts/scJP2.js"></script>
-		<script src="./assets/scripts/scJP3.js"></script>
-		<script src="./js/engine.js"></script>
+		<script defer src="./js/options.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/actions/credit.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/actions/ShowImage.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/actions/HideImage.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/actions/ClearAll.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/actions/ExtendBackground.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/actions/Wait.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/components/AboutScreen.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/components/Backlog.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/components/GameScreen.min.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/fancyError.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/storage.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/script.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/main.js?v=0.3.0-beta3"></script>
+		<script defer src="./assets/scripts/scID1.js?v=0.3.0-beta3"></script>
+		<script defer src="./assets/scripts/scID2.js?v=0.3.0-beta3"></script>
+		<script defer src="./assets/scripts/scID3.js?v=0.3.0-beta3"></script>
+		<script defer src="./assets/scripts/scEN1.js?v=0.3.0-beta3"></script>
+		<script defer src="./assets/scripts/scEN2.js?v=0.3.0-beta3"></script>
+		<script defer src="./assets/scripts/scJP1.js?v=0.3.0-beta3"></script>
+		<script defer src="./assets/scripts/scJP2.js?v=0.3.0-beta3"></script>
+		<script defer src="./assets/scripts/scJP3.js?v=0.3.0-beta3"></script>
+		<script defer src="./js/engine.min.js?v=0.3.0-beta3"></script>
 	</body>
 
 </html>

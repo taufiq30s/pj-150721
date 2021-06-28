@@ -209,7 +209,34 @@ loading-screen div {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
+	border-radius: 35px;
+	background: linear-gradient(145deg, #ffd0d0, #dcafaf);
+	box-shadow:  5px 5px 10px #cfa5a5,
+            	-5px -5px 10px #ffdfdf;
+	transition: box-shadow 1s;
+	color: #123622;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	padding: 2%;
+	width: 100%;
+}
 
+[data-component="choice-container"] button:hover {
+	box-shadow:  15px 15px 30px #cfa5a5,
+            	-15px -15px 30px #ffdfdf;
+}
+
+[data-component="choice-container"] button:active {
+	background: linear-gradient(145deg, #dcafaf, #ffd0d0);
+	box-shadow:  15px 15px 30px #cfa5a5,
+							-15px -15px 30px #ffdfdf;
+	border: none;
+	outline: none;
+}
+
+[data-component="choice-container"] button:focus {
+	border: none;
+	outline: none;
 }
 
 /* Choice Button Style on Hover */

@@ -170,6 +170,18 @@ loading-screen div {
 	background-size: cover;	
 }
 
+[data-screen="main"].active {
+	display: table;
+	border-spacing: 5vmax;
+}
+
+[data-component="main-menu"] {
+	position: initial;
+	display: table-cell;
+	vertical-align: bottom;
+	margin-bottom: 10vmax;
+}
+
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
 
@@ -464,6 +476,10 @@ credits-container.credit-scroll .wrapper {
 
 credits-container.credit-scroll .credit-section {
 	margin: 0 0 60px;
+}
+
+#source {
+	text-align: right;
 }
 
 

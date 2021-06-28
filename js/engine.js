@@ -3,13 +3,18 @@
   Modify HTML of Components
 */
 // Change Main Screen
-monogatari.component('main-screen').template(() => {
-  return `
-    <main-menu></main-menu>
-    <div id="footer">
+
+/* TODO Footer */
+/*
+  <div id="footer">
       <p id="product-version">Version 0.3.0-beta3</p>
       <p id="copy">&copy; 2021 Pj-150721 Team</p>
     </div>
+*/
+monogatari.component('main-screen').template(() => {
+  return `
+    <main-menu></main-menu>
+    
   `;
 });
 

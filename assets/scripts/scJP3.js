@@ -173,6 +173,7 @@ monogatari.label('jpPart3', '日本語', [
             "Moonchild",
             "JeffriArt",
             "Zainokta Rakei",
+            "KucingLaut",
           ]
         },
         {
@@ -183,16 +184,22 @@ monogatari.label('jpPart3', '日本語', [
         },
         {
           'title': "Special Thanks",
-          'content': [
-            "Zad, Binyo Boss, GrilledCheez, Melon Juice, Rarana, Zuvanix, Kyarudesu",
+          'list': [
+            "Zad",
+            "Binyo Boss", 
+            "GrilledCheez",
+            "Melon Juice", 
+            "Rarana", 
+            "Zuvanix", 
+            "Kyarudesu",
             "And All Beloved Ioforia..."
           ]
         },
-        {
-          'title': "",
-          'content': ""
-        }
-      ]
+      ],
+      'quote': {
+        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+        'source': "Agnes Jessica"
+      }
     }
   },
   'centered そして数ヶ月後ーー',

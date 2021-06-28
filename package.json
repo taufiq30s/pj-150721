@@ -1,7 +1,7 @@
 {
   "name": "a-new-canvas",
   "productName": "A New Canvas",
-  "version": "0.3.0-beta3",
+  "version": "0.2.8",
   "main": "engine/electron/index.js",
   "description": "Iofi's Lore Visual Novel",
   "author": "pj-150721 Team",

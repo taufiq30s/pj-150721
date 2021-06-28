@@ -17,6 +17,11 @@
 	src: url('../assets/fonts/Metropolis-Medium.otf');
 }
 
+@font-face {
+	font-family: "poppins";
+	src: url('../assets/fonts/Poppins-Medium.ttf');
+}
+
 /**
  * ===========================
  * General Styling
@@ -136,27 +141,6 @@ dialog-log .modal__content [data-content=log] [data-spoke] {
   animation: bar 15s linear infinite;
 }
 
-/**
- * ===========================
- * Loading Screen Styling
- * ===========================
-**/
-
-loading-screen {
-	background-color: black;
-	color: white;
-}
-
-loading-screen div {
-	width: 100%;
-}
-
-[data-content="loading wrapper"] {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 25%;
-}
 
 /**
  * ===========================
@@ -166,7 +150,7 @@ loading-screen div {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-	background: url(../assets/images/main1.webp) no-repeat top fixed;
+	background-image: url(../assets/images/mainbg.jpg);
 	background-size: cover;	
 }
 
@@ -219,10 +203,10 @@ loading-screen div {
 
 /* Text Box styling */
 [data-component="text-box"] {
-	width: 95%;
+	width: 90%;
 	left: 0;
 	right: 0;
-	bottom: 0.5rem;
+	bottom: 2.5rem;
 	margin: auto;
 	border: 0;
 	background: none;
@@ -234,16 +218,16 @@ loading-screen div {
 [data-content="text"] {
 	border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.95);
-	background-image: url(../assets/images/textbox-splash-sprite.webp), url(../assets/images/textbox-splash-sprite.webp);
+	background-image: url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp), url(../assets/images/textbox-sprite.webp);
 	background-repeat: no-repeat;
-	background-size: 149px 195px;
-	background-position: top -66px right -64px, top -43px left -92px;
+	background-size: 346px 183px;
+	background-position: top -102px right -186px, bottom -141px right -229px, top -106px left -288px, bottom -101px left -260px;
 	background-blend-mode: multiply;
-	padding: 0.875rem 2.5rem 2.5rem;
+	padding: 1rem 2.5rem 2.5rem;
 }
 
 text-box [data-content="dialog"] {
-	font-size: 0.875rem;
+	font-size: 1.5rem;
 	line-height: 1.4em;
 	height: 4.2em;
 	max-height: 4.2em;
@@ -252,31 +236,24 @@ text-box [data-content="dialog"] {
 	font-family: "metropolis";
 }
 
-#next {
-	width: 4.5%;
-	position: absolute;
-	right: 5%;
-	bottom: 15%;
-}
-
 /* Character Name Style */
 [data-content="name"] {
 	justify-self: start;
 	border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.9);
-	background-image: url(../assets/images/textbox-splash-sprite.webp), url(../assets/images/textbox-splash-sprite.webp);
+	background-image: url(../assets/images/namebox-sprite.webp), url(../assets/images/namebox-sprite.webp);
 	background-repeat: no-repeat;
-	background-size: 149px 195px;
-	background-position: top -5px right -67px, top -14px left -92px;
+	background-size: 105px 44px;
+	background-position: top 50% right -66px, top 50% left -60px;
 	background-blend-mode: multiply;
 	font-weight: bold;
 	padding: 0 5rem;
 }
 
 [data-ui="who"] {
-	padding: 0.1rem 0;
-	height: 1.7rem;
-	font-family: 'Poppins';
+	padding: 0.5rem 0;
+	height: 2.8rem;
+	font-family: 'poppins';
 	color: #005051;
 }
 
@@ -455,7 +432,7 @@ credits-container.credit-scroll .credit-section {
 	left: 0;
 	right: 0;
 	top: auto;
-	bottom: 0.5rem;
+	bottom: 2.5rem;
 	margin: auto;
 	padding: 0 2rem 0 0;
 	background: none;
@@ -465,10 +442,6 @@ credits-container.credit-scroll .credit-section {
 /* Quick Menu Buttons Style */
 [data-component="quick-menu"] span {
 
-}
-
-[data-component="quick-menu"] > button {
-	font-size: 0.875rem;
 }
 
 /* Quick Menu Buttons Style on Hover */
@@ -617,39 +590,20 @@ input[type=range]::-ms-fill-upper {
 
 /** Medium Screens, Phablets (601px) **/
 @media screen and (min-width: 37.56255em) {
-	[data-component="text-box"] {
-		bottom: 1rem;
-	}
-	
-	[data-content="name"] {
-		background-position: top 0px right -67px, top -3px left -92px;
-	}
-	
-	[data-ui="who"] {
-		padding: 0.3rem 0;
-		height: 2.25rem;
-	}
-	
 	[data-content="text"] {
-	}
-	
-	text-box [data-content="dialog"] {
-		font-size: 1rem;
+		background-size: auto;
+		background-position: top -155px right -270px, bottom -222px right -253px, top -164px left -433px, bottom -186px left -385px;
 	}
 	/* Styles for the desktop version of the Quick Menu */
 
 	/* Quick Menu Style */
 	[data-component="quick-menu"] {
-		bottom: 1rem;
+
 	}
 
 	/* Quick Menu Buttons Style */
 	[data-component="quick-menu"] span {
 
-	}
-	
-	[data-component="quick-menu"] span[data-string] {
-		display: none;
 	}
 
 	/* Quick Menu Buttons Style on Hover */
@@ -660,86 +614,26 @@ input[type=range]::-ms-fill-upper {
 
 /** Medium Devices, Tablets (992px)**/
 @media screen and (min-width: 62em) {
-	[data-component="text-box"] {
-		width: 90%;
-		bottom: 2.5rem;
-	}
-	
-	[data-content="name"] {
-		background-size: 198px 259px;
-		background-position: top -3px right -92px, top -20px left -118px;
-		padding: 0 6rem;
-	}
-
-	[data-ui="who"] {
-		padding: 0.5rem 0;
-		height: 2.8rem;
-	}
-	
 	[data-content="text"] {
-		background-size: 198px 259px;
-		background-position: top -114px right -85px, top -64px left -118px;
+		background-position: top -158px right -260px, bottom -220px right -249px, top -164px left -431px, bottom -186px left -366px;
 		padding: 1rem 4rem 2.5rem;
 	}
-	
 	text-box [data-content="dialog"] {
-		font-size: 1.125rem;
-	}
-
-	[data-component="quick-menu"] {
-		bottom: 2.5rem;
-	}
-	[data-component="quick-menu"] span.ri-feedback-fill {
-		position: relative;
-		top: 2px;
-	}
-	[data-component="quick-menu"] span[data-string] {
-		display: inline-block;
 	}
 }
 
 /** HD Screen, Large Devices, Wide Screens, Desktop (1200px) **/
 @media screen and (min-width: 75em) {
-	[data-ui="who"] {
-		padding: 0.3rem 0;
-		height: 2.8rem;
-	}
-	
 	[data-content="text"] {
-		background-position: top -97px right -85px, top -64px left -118px;
-		padding: 1.25rem 4rem 2.5rem;
+		background-position: top -148px right -256px, bottom -202px right -237px, top -159px left -416px, bottom -168px left -365px;
+		padding-top: 2rem;
+		padding-bottom: 2.5rem;
 	}
-	
 	[data-component="centered-dialog"] {
-		font-size: 1.5rem;
+		font-size: 1.55rem;
 	}
-	
 	text-box [data-content="dialog"] {
-		font-size: 1.375rem;
-	}
-	
-	[data-component="quick-menu"] > button {
-		font-size: 1rem;
-	}
-}
-
-/** 1440px screen */
-@media screen and (min-width: 90em) {
-	[data-content="text"] {
-		background-position: top -86px right -85px, top -64px left -118px;
-		padding: 1.5rem 4.5rem 2.5rem;
-	}
-
-	[data-component="centered-dialog"] {
-		font-size: 1.75rem;
-	}
-
-	text-box [data-content="dialog"] {
-		font-size: 1.5rem;
-	}
-
-	[data-component="quick-menu"] > button {
-		font-size: 1.25rem;
+		font-size: 1.55rem;
 	}
 }
 
@@ -749,14 +643,11 @@ input[type=range]::-ms-fill-upper {
 		width: 85%;
 	}
 	[data-content="name"] {
-		background-size: 297px 389px;
-		background-position: top -5px right -140px, top -37px left -190px;
+		background-size: 138px 58px;
 		padding: 0 7rem;
 	}
 	[data-content="text"] {
-		background-size: 297px 389px;
-		background-position: top -167px right -128px, top -97px left -190px;
-		padding: 1.75rem 6rem 3rem;
+		padding: 2.5rem 5rem 3rem;
 	}
 	[data-ui="who"] {
 		font-size: 2rem;
@@ -775,11 +666,8 @@ input[type=range]::-ms-fill-upper {
 
 /** Retina Screen , Large Devices, Wide Screens(2560px) **/
 @media screen and (min-width: 160em) {
-	[data-component="text-box"] {
-		width: 80%;
-	}
 	[data-component="centered-dialog"] {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	text-box [data-content="dialog"] {
 		font-size: 2rem;
@@ -866,4 +754,3 @@ input[type=range]::-ms-fill-upper {
 [data-ui=background].bg-sus {
 	background-position: 50% 100%;
 }
-

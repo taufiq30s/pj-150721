@@ -1,6 +1,6 @@
 monogatari.label('enPart3', 'English', [
   'show scene sky with fadeIn',
-  'In a country called Japan, a man with the name YAGOO who is the CEO of COVER Corporation, owner of a VTuber Agency called Hololive, are worried because his dreams are crushed by the talents he have right now.',  
+  'In a country called Japan, a man named YAGOO, who is the CEO of COVER Corporation and the owner of a vtuber agency called Hololive, is worried, because his dreams are being crushed by the Talents he have right now.',  
   'show scene office with fadeIn',
   'clearall',
   // 'wait',
@@ -14,9 +14,9 @@ monogatari.label('enPart3', 'English', [
   'yagoo I don’t think they are able to realize my dream of V-Idol that looks like AKB-48, even people started calling them AK-47.',
   'show character yagoo normal',
   "play voice Yagoo_02",
-  'yagoo I heard that in Indonesia there are a lot of talented people.',
+  'yagoo I heard that in Indonesia there are many talented people.',
   'show character yagoo smile',
-  'yagoo Maybe there I could find Talents who can become an ideal Idol who can make my dream come true',
+  'yagoo Maybe there I could find talents who can become perfect Idols, who can make my dream come true.',
   'show character yagoo shinySmile',
   'clearall',
   'wait 2000',
@@ -44,7 +44,7 @@ monogatari.label('enPart3', 'English', [
   'show character iofi normal with fadeIn',
   'iofi So I have to send a short video about the talents I have?',
   'iofi After reading this flyer, why has my self confidence just disappear?',
-  'iofi No, no, no Iofi. You must think positively.',
+  'iofi No, no, no, Iofi. You must think positively.',
   'iofi Okay Iofi you can do it! Even if you are only good at drawing and learning new languages, you can do it!',
   'hide character iofi normal with fadeOut',
   'After gathering up her self confidence, Iofi brave herself to make a short video about her talents and sends them to Hololive ID.',
@@ -156,17 +156,19 @@ monogatari.label('enPart3', 'English', [
               "Khateas Raktea",
               "Dr. Nergigante",
               "Minyak Sayur",
-              "Hitsuji"
+              "Hitsuji",
+              "LegoVW"
             ]
           }
         },
         {
-          'title': "Background Department",
+          'title': "Background",
           'list': [
             "Transenponsan",
             "Yugen",
             "Laeventien",
-            "PunPun Iofi's Personal Chair"
+            "PunPun Iofi's Personal Chair",
+            "Hacto_17"
           ]
         },
         {
@@ -180,7 +182,7 @@ monogatari.label('enPart3', 'English', [
           ]
         },
         {
-          'title': "Programming Department" ,
+          'title': "Programming" ,
           'list': [
             "Moonchild",
             "JeffriArt",
@@ -191,7 +193,20 @@ monogatari.label('enPart3', 'English', [
         {
           'title': "Tester",
           'list' : [
-            "[Your name will be put here!😆]"
+            "Asukiri",
+            "Chero",
+            "KucingLaut",
+            "LegoVW",
+            "Pika",
+            "Ryokhan",
+            "Arcana",
+            "Chumacera",
+            "Feeltis catcus",
+            "Kisaragi Ryuu",
+            "Rad",
+            "Rediffract",
+            "Ryokhan",
+            "Yugen"
           ]
         },
         {
@@ -204,6 +219,7 @@ monogatari.label('enPart3', 'English', [
             "Rarana", 
             "Zuvanix", 
             "Kyarudesu",
+            "Mas Ittou",
             "And All Beloved Ioforia..."
           ]
         },

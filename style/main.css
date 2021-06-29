@@ -170,21 +170,55 @@ loading-screen div {
 	background-size: cover;	
 }
 
-[data-screen="main"].active {
-	display: table;
-	border-spacing: 5vmax;
-}
-
 [data-component="main-menu"] {
 	position: initial;
-	display: table-cell;
-	vertical-align: bottom;
-	margin-bottom: 10vmax;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	align-items: center;
+	margin-bottom: auto;
+	position: absolute;
+	bottom: 20vmin;
 }
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
 
+}
+
+#logo {
+	width: 20vmax;
+}
+
+.wrapper-logo {
+	display: flex;
+	padding: 2vmax;
+}
+
+.wrapper-copy {
+	position: absolute;
+	left: 1vmax;
+	bottom: 0;
+	text-align: left;
+	color: #eee;
+}
+
+.wrapper-version {
+	position: absolute;
+	right: 1vmax;
+	bottom: 0;
+	text-align: right;
+	color: #eee;
+}
+
+.wrapper-copy > p, .wrapper-version > p {
+	margin: 0;
+	padding: 0;
+	size: 5vmin;
+}
+
+.wrapper-copy > p:last-child, .wrapper-version > p:last-child {
+	padding-bottom: 1.5vmax;
 }
 
 /**

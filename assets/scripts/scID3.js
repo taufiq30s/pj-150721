@@ -156,12 +156,13 @@ monogatari.label('idPart3-1', 'Indonesia', [
               "Khateas Raktea",
               "Dr. Nergigante",
               "Minyak Sayur",
-              "Hitsuji"
+              "Hitsuji",
+              "LegoVW"
             ]
           }
         },
         {
-          'title': "Background Department",
+          'title': "Background",
           'list': [
             "Transenponsan",
             "Yugen",
@@ -170,17 +171,18 @@ monogatari.label('idPart3-1', 'Indonesia', [
           ]
         },
         {
-          'title': "Characters and Illustration Department",
+          'title': "Characters and Illustration",
           'list': [
             "JeffriArt",
             "Chassy Sant",
             "Laeventien",
             "Haloclo 18",
-            "Jatmiko"
+            "Jatmiko",
+            "Hacto_17"
           ]
         },
         {
-          'title': "Programming Department" ,
+          'title': "Programming" ,
           'list': [
             "Moonchild",
             "JeffriArt",
@@ -191,7 +193,20 @@ monogatari.label('idPart3-1', 'Indonesia', [
         {
           'title': "Tester",
           'list' : [
-            "[Your name will be put here!😆]"
+            "Asukiri",
+            "Chero",
+            "KucingLaut",
+            "LegoVW",
+            "Pika",
+            "Ryokhan",
+            "Arcana",
+            "Chumacera",
+            "Feeltis catcus",
+            "Kisaragi Ryuu",
+            "Rad",
+            "Rediffract",
+            "Ryokhan",
+            "Yugen"
           ]
         },
         {
@@ -204,6 +219,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
             "Rarana", 
             "Zuvanix", 
             "Kyarudesu",
+            "Mas Ittou",
             "And All Beloved Ioforia..."
           ]
         },

@@ -13,8 +13,20 @@
 */
 monogatari.component('main-screen').template(() => {
   return `
+    <div class="wrapper-logo">
+      <img id="logo" src="../assets/images/anewcanvas.webp">
+    </div>
     <main-menu></main-menu>
-    
+    <div class="wrapper-footer">
+      <div class="wrapper-copy">
+        <p id="copy">&copy; 2021 Pj-150721 Team</p>
+        <p id="product-version">This game using multiple license. See About for details.</p>
+      </div>
+      <div class="wrapper-version">
+        <p id="product-version">Version 0.3.0-beta3</p>
+        <p id="copy">Illust by <a href="https://twitter.com/hacto_17" target="_blank">Hacto_17</a> from <a href="https://twitter.com/SMiaww19" target="_blank">FluffyART Studio</a></p>
+      </div>
+    </div>
   `;
 });
 
@@ -70,4 +82,48 @@ monogatari.component('text-box').template(() => {
     <img src="../assets/images/next.png" id="next" style="display:none;">
   </div>
   `
+});
+
+monogatari.component('setting-screen').template(() => {
+  return `
+			<button class="top left" data-action="back"><span class="fas fa-arrow-left"></span></button>
+			<h2 data-string="Settings">Settings</h2>
+			<div class="row row--spaced padded text---center">
+				<div class="row__column row__column--12 row__column--phone--12 row__column--phablet--12 row__column--tablet--6 row__column--desktop--6 row__column--desktop-large--6 row__column--retina--6">
+					<div data-settings="audio" class="vertical vertical--center text--center" data-content="audio-settings">
+						<h3 data-string="Audio">Audio</h3>
+						<span data-string="Music">Music Volume:</span>
+						<input type="range" min="0.0" max="1.0" step="0.1" data-action="set-volume" data-target="music">
+            <div data-target="music-value" class="value"></div>
+						<span data-string="Sound">Sound Volume:</span>
+						<input type="range" min="0.0" max="1.0" step="0.1" data-action="set-volume" data-target="sound">
+						<span data-string="Voice">Voice Volume:</span>
+						<input type="range" min="0.0" max="1.0" step="0.1" data-action="set-volume" data-target="voice">
+						<span data-string="Video">Video Volume:</span>
+						<input type="range" min="0.0" max="1.0" step="0.1" data-action="set-volume" data-target="video">
+					</div>
+				</div>
+				<div class="row__column row__column--12 row__column--phone--12 row__column--phablet--12 row__column--tablet--6 row__column--desktop--6 row__column--desktop-large--6 row__column--retina--6">
+					<div data-settings="text-speed">
+						<h3 data-string="TextSpeed">Text Speed</h3>
+						<input type="range" min="1" max="50" step="1" data-action="set-text-speed">
+					</div>
+					<div data-settings="auto-play-speed">
+						<h3 data-string="AutoPlaySpeed">Auto Play Speed</h3>
+						<input type="range" min="0" max="60" step="1" data-action="set-auto-play-speed" data-content="auto-play-speed-controller">
+					</div>
+					<div data-settings="language" data-content="language-settings">
+						<h3 data-string="Language">Language</h3>
+						<div class="horizontal horizontal--center" data-content="wrapper"></div>
+					</div>
+					<div data-settings="resolution" data-platform="electron">
+						<h3 data-string="Resolution">Resolution</h3>
+						<div class="horizontal">
+							<select data-action="set-resolution"></select>
+							<span class="fas fa-sort" data-select="set-resolution"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		`;
 })

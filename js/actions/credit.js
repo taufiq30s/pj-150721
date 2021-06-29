@@ -9,6 +9,7 @@ class Credit extends Monogatari.Action {
         this.statement = statement.Credit;
         this.fade_interval = 3000; // in ms
         this.scroll_speed = 1500; // in ms, per 100 pixels
+        this.quote_interval = 7000;
     }
     
     apply () {
@@ -42,11 +43,13 @@ class Credit extends Monogatari.Action {
     }
     
     runCredit () {
-        if ( 'fade' in this.statement && 'scroll' in this.statement ) {
+        if ( 'fade' in this.statement && 'scroll' in this.statement && 'quote' in this.statement ) {
             return new Promise( resolve => {
                 this.fadeStart( this.statement.fade ).then( () => {
                     this.scrollStart( this.statement.scroll ).then( () => {
-                        resolve();
+                        this.fadeQuoteStart( this.statement.quote ).then( () => {
+                            resolve();
+                        } );                        
                     } );
                 });
             } );
@@ -57,7 +60,48 @@ class Credit extends Monogatari.Action {
         else if ( 'scroll' in this.statement ) {
             return this.scrollStart( this.statement.scroll );
         }
+        else if ( 'quote' in this.statement ) {
+            return this.fadeQuoteStart( this.statement.fade );
+        }
         return Promise.resolve();
+    }
+
+    fadeQuoteStart ( contents ){
+        this.container.classList.remove( 'credit-scroll' );
+        this.container.classList.add( 'credit-fade' );
+        // console.log(contents);
+
+        return new Promise ( resolve => {
+            this.fadeQuote ( contents.content, contents.source, resolve );
+        } );
+    }
+
+    fadeQuote ( content, actor, resolve ) {
+        this.fadeQuoteContent( content, actor ).then( () => {
+            resolve();
+            return;
+        } );
+    }
+
+    fadeQuoteContent ( content, actor ) {
+        this.wrapper.innerHTML = '';
+        this.wrapper.style.removeProperty( 'transition' );
+        this.wrapper.style.removeProperty( 'transform' );
+        let element = this.createElementQuote( content, actor );
+        element.classList.add( 'animated', 'fadeIn' );
+        
+        this.wrapper.append( element );
+        
+        return new Promise( resolve => {
+            setTimeout( () => {
+                element.classList.remove( 'fadeIn' );
+                element.classList.add( 'fadeOut' );
+                element.addEventListener( 'animationend', () => {
+                    element.remove();
+                    resolve(); 
+                } );
+            }, this.quote_interval );
+        } );
     }
     
     fadeStart ( contents ) {
@@ -83,6 +127,11 @@ class Credit extends Monogatari.Action {
         }
         else if ( 'list' in content ) {
             this.fadeList( content.title, content.list ).then( () => {
+                this.fade( contents, i + 1, resolve );
+            } );
+        }
+        else if ( 'quote' in this.statement ) {
+            this.fadeContent( content.content, content.source ).then( () => {
                 this.fade( contents, i + 1, resolve );
             } );
         }
@@ -161,10 +210,10 @@ class Credit extends Monogatari.Action {
     createElementContent ( title, content ) {
         let content_arr = Array.isArray( content ) ? content : [ content ];
         let element = document.createElement( 'div' );
-        let title_element = document.createElement( 'h1' );
-        let content_element = document.createElement( 'div' );
 
         element.className = 'credit-section';
+        let title_element = document.createElement( 'h1' );
+        let content_element = document.createElement( 'div' );
         title_element.textContent = title;
 
         for ( const i in content_arr ) {
@@ -175,6 +224,19 @@ class Credit extends Monogatari.Action {
 
         element.append( title_element );
         element.append( content_element );
+        return element;    
+    }
+
+    createElementQuote ( quote, source ) {
+        let element = document.createElement( 'div' );
+        element.className = 'credit-section';
+        let quote_element = document.createElement( 'p' );
+        let source_element = document.createElement( 'p' );
+        quote_element.textContent = quote;        
+        source_element.textContent = source;
+        source_element.id = "source";
+        element.append( quote_element );
+        element.append( source_element );
         return element;
     }
     

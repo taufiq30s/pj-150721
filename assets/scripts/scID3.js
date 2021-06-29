@@ -10,11 +10,13 @@ monogatari.label('idPart3-1', 'Indonesia', [
   "play voice Yagoo_01",
   'yagoo Sepertinya setiap hari Talent yang kumiliki semakin menjauh dari kata Idol, mereka lebih terlihat seperti komedian sekarang.',
   'show character yagoo cry',
+  "play voice Yagoo_02",
   'yagoo Sepertinya Aku tidak bisa mengharapkan mereka untuk mewujudkan impianku membentuk V-Idol yang setara dengan AKB-48, mereka sekarang banyak orang bahkan menyebut mereka sebagai AK-47.',
   'show character yagoo normal',
-  "play voice Yagoo_02",
+  "play voice Yagoo_03",
   'yagoo Tapi kudengar di Indonesia banyak talent yang sangat berbakat.',
   'show character yagoo smile',
+  "play voice Yagoo_04",
   'yagoo Mungkin disana Aku akan menemukan talent yang dapat menjadi Idol yang sangat Ideal yang dapat mewujudkan impianku',
   'show character yagoo shinySmile',
   'clearall',
@@ -31,7 +33,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'iofi Bolehkah saya meminta satu selebarannya?',
   'hide character iofi normal with fadeOut',
   'show character susyagoo shinySmile with fadeIn',
-  "play voice Yagoo_03",
+  "play voice Yagoo_05",
   'susyagoo Tentu saja nona manis~ Silahkan ambil ini.',
   'hide character susyagoo shinySmile with fadeOut',
   'show character iofi normal with fadeIn',
@@ -133,7 +135,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
             'Ratu': "Yuta",
             'Putri Kedua': "Api",
             'Kaisar': "Dokutah",
-            'Penasihat': "",
+            'Penasihat': "PunPun Iofi's Personal Chair",
             'Utusan': "Raktea",
             'Agen Kuda': "Minyak Kuda",
             'Agen Kecoa': "Vesera",
@@ -185,6 +187,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
             "Moonchild",
             "JeffriArt",
             "Zainokta Rakei",
+            "KucingLaut",
           ]
         },
         {
@@ -196,15 +199,21 @@ monogatari.label('idPart3-1', 'Indonesia', [
         {
           'title': "Special Thanks",
           'content': [
-            "Zad, Binyo Boss, GrilledCheez, Melon Juice, Rarana, Zuvanix, Kyarudesu",
+            "Zad",
+            "Binyo Boss", 
+            "GrilledCheez",
+            "Melon Juice", 
+            "Rarana", 
+            "Zuvanix", 
+            "Kyarudesu",
             "And All Beloved Ioforia..."
           ]
         },
-        {
-          'title': "",
-          'content': ""
-        }
-      ]
+      ],
+      'quote': {
+        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+        'source': "Agnes Jessica"
+      }
     }
   },
   'centered Beberapa Bulan Kemudian',

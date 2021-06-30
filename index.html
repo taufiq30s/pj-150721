@@ -8,7 +8,7 @@
 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' fonts.googleapis.com cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' ajax.cloudflare.com static.cloudflareinsights.com code.jquery.com ;font-src 'self' fonts.gstatic.com cdn.jsdelivr.net ">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'  'unsafe-eval' ajax.cloudflare.com static.cloudflareinsights.com">
 		<meta name="description" content="A Visual Novel project as Iofi's birthday present from Ioforia"> <!--Page description. No longer than 155 characters.-->
 		<meta name="keywords" content="Iofi, VN, Lore, Slice-of-life">
 		<meta name="author" content="Team 150721"> <!--Name of the author.-->
@@ -73,13 +73,11 @@
 
 		<!-- Monogatari CSS Libraries -->
 		<link rel="stylesheet" href="./engine/core/monogatari.css">
-		<link rel="stylesheet" href="./style/main.css?v=0.3.0-beta3">	
+		<link rel="stylesheet" href="./style/main.css">	
 
 		<!-- External Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="./style/remixicon/remixicon.css">
 	</head>
 
 	<body>
@@ -103,6 +101,8 @@
 					<text-box></text-box>
 					<quick-menu></quick-menu>
 				</game-screen>
+				<gallery-screen></gallery-screen>
+				<credits-screen></credits-screen>
 				<load-screen></load-screen>
 				<save-screen></save-screen>
 				<settings-screen></settings-screen>
@@ -112,9 +112,10 @@
 		</div>
 
 		<!-- Third Party JavaScript Libraries -->
-		<script defer src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+		<script src="./js/vendor/jquery.min.js"></script>
+
 		<!-- Monogatari JavaScript Libraries -->
-		<!-- <script src="./engine/debug/debug.js"></script> -->
+		<script src="./engine/debug/debug.js"></script>
 		<script src="./engine/core/monogatari.js"></script>
 		<script defer src="./js/options.js?v=0.3.0-beta3"></script>
 		<script defer src="./js/actions/credit.min.js?v=0.3.0-beta3"></script>

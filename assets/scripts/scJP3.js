@@ -121,7 +121,7 @@ monogatari.label('jpPart3', '日本語', [
             'Ratu': "Yuta",
             'Putri Kedua': "Api",
             'Kaisar': "Dokutah",
-            'Penasihat': "",
+            'Penasihat': "PunPun Iofi's Personal Chair",
             'Utusan': "Raktea",
             'Agen Kuda': "Minyak Kuda",
             'Agen Kecoa': "Vesera",

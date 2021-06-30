@@ -1,9 +1,34 @@
 /* global monogatari */
 // Define the messages used in the game.
+monogatari.action('message').messages({
+	'Help': {
+		title: 'Help',
+		subtitle: 'Some useful Links',
+		body: `
+			<p><a href='https://developers.monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p>
+			<p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
+		`
+	}
+});
+
+// Define the notifications used in the game
+monogatari.action('notification').notifications({
+	'Welcome': {
+		title: 'Welcome',
+		body: 'This is the Monogatari VN Engine',
+		icon: ''
+	}
+});
+
+monogatari.action ('Message').messages ({
+  'SampleWriting':{
+      body: `<img src="assets/images/hp_mainan.jpg"><br>`
+  }
+});
 
 // Define the Particles JS Configurations used in the game
 monogatari.action('particles').particles({
-	"universe": {"particles":{"number":{"value":10,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}
+
 });
 
 // Define the canvas objects used in the game
@@ -29,61 +54,88 @@ monogatari.assets('music', {
 
 // Define the voice files used in the game.
 monogatari.assets('voices', {
-	"Advisor_01": "Advisor/Advisor_Line_1.mp3",
-	"Advisor_02": "Advisor/Advisor_Line_2.mp3",
-	"Emperor_01": "Emperor/Dialog_Kaisar_1.mp3",
-	"Emperor_02": "Emperor/Dialog_Kaisar_2.mp3",
-	"Emperor_03": "Emperor/Dialog_Kaisar_3.mp3",
-	"Emperor_04": "Emperor/Dialog_Kaisar_4.mp3",
-	"Emperor_05": "Emperor/Dialog_Kaisar_5.mp3",
-	"Envoy_01": "Envoy/Envoy_Line_1.wav",
-	"Envoy_02": "Envoy/Envoy_line_2.wav",
-	"Envoy_03": "Envoy/Envoy_line_3.wav",
-	"Envoy_04": "Envoy/Envoy_line_4.wav",
-	"Envoy_05": "Envoy/envoy_line_5.1.wav",
-	"Imouto_01": "Imouto/imouto api.mp3",
-	"King_01": "King/Raja_-_1_Balkon_Istana_-_Line_1.mp3",
-	"King_02": "King/Raja_-_1_Balkon_Istana_-_Line_3.mp3",
-	"King_03": "King/Raja_-_2_Koridor_menuju_taman_-_Line_14_Reverb.mp3",
-	"King_04": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_1.mp3",
-	"King_05": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_3.mp3",
-	"King_06": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_4.mp3",
-	"King_07": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_6.mp3",
-	"King_08": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_9.mp3",
-	"King_09": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_11.mp3",
-	"King_10": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_13.mp3",
-	"King_11": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_1.mp3",
-	"King_12": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_4_Cut.mp3",
-	"King_13": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_6.mp3",
-	"King_14": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_8.mp3",
-	"King_15": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_1.mp3",
-	"King_16": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_3.mp3",
-	"King_17": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_4.mp3",
-	"King_18": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_6.mp3",
-	"King_19": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_8.mp3",
-	"King_20": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_1.mp3",
-	"King_21": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_2.mp3",
-	"King_22": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_3.mp3",
-	"King_23": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_4.mp3",
-	"King_24": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_6.mp3",
-	"M-chan_01": "M-chan/M-chan_Take2.1.mp3",
-	"M-chan_02": "M-chan/M-chan_Take2.2.mp3",
-	"M-chan_03": "M-chan/M-chan_Take2.3.mp3",
-	"M-chan_04": "M-chan/M-chan_Take2.4.mp3",
-	"M-chan_05": "M-chan/M-chan_Take2.5.mp3",
-	"MIB-1_01": "MIB-1/MIB_1_LINE_1_take2.mp3",
-	"MIB-1_02": "MIB-1/MIB_1_LINE_2_take2.mp3",
-	"MIB-2_01": "MIB-2/MIB2D1f_2021-06-19_161247356.mp3",
-	"MIB-2_02": "MIB-2/MIB2D2f_2021-06-19_161437586.mp3",
-	"Orang-Asing_01": "Orang-Asing/Orang_Asing_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_7.mp3",
-	"Orang-Asing_02": "Orang-Asing/Orang_Asing_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_8.mp3",
-	"Queen_01": "Queen/Ratu_Dialog_1_Zuva.mp3",
-	"Queen_02": "Queen/Ratu_Dialog_2_Zuva.mp3",
-	"Queen_03": "Queen/Ratu_Dialog_3_Zuva.mp3",
-	"Queen_04": "Queen/Ratu_Dialog_4_Zuva.mp3",
-	"Yagoo_01": "Yagoo/YAGOO_2.mp3",
-	"Yagoo_02": "Yagoo/YAGOO_3.mp3",
-	"Yagoo_03": "Yagoo/YAGOO_4.mp3",
+	"Advisor_01": "Advisor/Advisor_Line_1.ogg",
+	"Advisor_02": "Advisor/Advisor_Line_2.1.ogg",
+	"Advisor_03": "Advisor/Advisor_Line_2.2.ogg",
+	"Agen-Kuda_01": "Agen-Kuda/Agen_Kuda_1.ogg", 
+	"Agen-Kuda_02": "Agen-Kuda/Agen_Kuda_2.ogg", 
+	"Agen-Kuda_03": "Agen-Kuda/Agen_Kuda_3.ogg", 
+	"Agen-Kuda_04": "Agen-Kuda/Agen_Kuda_4.ogg", 
+	"Agen-Kuda_05": "Agen-Kuda/Agen_Kuda_5.ogg", 
+	"Agen-Kuda_06": "Agen-Kuda/Agen_Kuda_6.ogg", 
+	"Agen-Kuda_07": "Agen-Kuda/Agen_Kuda_7.ogg", 
+	"Agen-Kuda_08": "Agen-Kuda/Agen_Kuda_8.ogg", 
+	"Agen-Kuda_09": "Agen-Kuda/Agen_Kuda_9.ogg", 
+	"Agen-Kuda_10": "Agen-Kuda/Agen_Kuda_10.ogg",
+	"Agen-Kuda_11": "Agen-Kuda/Agen_Kuda_11.ogg",
+	"Agen-Kuda_12": "Agen-Kuda/Agen_Kuda_12.ogg",
+	"Agen-Kuda_13": "Agen-Kuda/Agen_Kuda_13.ogg",
+	"Agen-Kuda_14": "Agen-Kuda/Agen_Kuda_14.ogg",
+	"Agen-Kuda_15": "Agen-Kuda/Agen_Kuda_15.ogg",
+	"Agen-Kuda_16": "Agen-Kuda/Agen_Kuda_16.ogg",
+	"Emperor_01": "Emperor/Dialog_Kaisar_1.1.ogg",
+	"Emperor_02": "Emperor/Dialog_Kaisar_1.2.ogg",
+	"Emperor_03": "Emperor/Dialog_Kaisar_2.ogg",
+	"Emperor_04": "Emperor/Dialog_Kaisar_3.ogg",
+	"Emperor_05": "Emperor/Dialog_Kaisar_4.ogg",
+	"Emperor_06": "Emperor/Dialog_Kaisar_5.1.ogg",
+	"Emperor_07": "Emperor/Dialog_Kaisar_5.2.ogg",
+	"Envoy_01": "Envoy/Envoy_Line_1.ogg",
+	"Envoy_02": "Envoy/Envoy_line_2.ogg",
+	"Envoy_03": "Envoy/Envoy_line_3.ogg",
+	"Envoy_04": "Envoy/Envoy_line_4.ogg",
+	"Envoy_05": "Envoy/Envoy_line_5.1.ogg",
+	"Envoy_06": "Envoy/Envoy_line_5.2.ogg",
+	"Envoy_07": "Envoy/envoy_line_6.ogg",
+	"Imouto_01": "Imouto/Imouto_line_1.ogg",
+	"Imouto_02": "Imouto/Imouto_line_2.ogg",
+	"Imouto_03": "Imouto/Imouto_line_3.ogg",
+	"Imouto_04": "Imouto/imouto_line_4.ogg",
+	"King_01": "King/Raja_-_1_Balkon_Istana_-_Line_1.ogg",
+	"King_02": "King/Raja_-_1_Balkon_Istana_-_Line_3.ogg",
+	"King_03": "King/Raja_-_2_Koridor_menuju_taman_-_Line_14_Reverb.ogg",
+	"King_04": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_1.ogg",
+	"King_05": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_3.ogg",
+	"King_06": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_4.ogg",
+	"King_07": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_6.ogg",
+	"King_08": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_9.ogg",
+	"King_09": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_11.ogg",
+	"King_10": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_13.ogg",
+	"King_11": "King/Raja_-_6_Suatu_pagi_Iolyptos_-_Line_1.ogg",
+	"King_12": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_4.ogg",
+	"King_13": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_6.ogg",
+	"King_14": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_8.ogg",
+	"King_15": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_1.ogg",
+	"King_16": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_3.ogg",
+	"King_17": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_4.ogg",
+	"King_18": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_6.ogg",
+	"King_19": "King/Raja_-_8_Balkon_Kamar_Pasangan_Kerajaan_-_Line_8.ogg",
+	"King_20": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_1.ogg",
+	"King_21": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_2.ogg",
+	"King_22": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_3.ogg",
+	"King_23": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_4.ogg",
+	"King_24": "King/Raja_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_6.ogg",
+	"M-chan_01": "M-chan/M-chan_Take2.1.ogg",
+	"M-chan_02": "M-chan/M-chan_Take2.2.ogg",
+	"M-chan_03": "M-chan/M-chan_Take2.3.ogg",
+	"M-chan_04": "M-chan/M-chan_Take2.4.ogg",
+	"M-chan_05": "M-chan/M-chan_Take2.5.ogg",
+	"MIB-1_01": "MIB-1/MIB_1_LINE_1_take2.ogg",
+	"MIB-1_02": "MIB-1/MIB_1_LINE_2_take2.ogg",
+	"MIB-2_01": "MIB-2/MIB_2_LINE_1.ogg",
+	"MIB-2_02": "MIB-2/MIB_2_LINE_2.ogg",
+	"Orang-Asing_01": "Orang-Asing/Orang_Asing_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_7.ogg",
+	"Orang-Asing_02": "Orang-Asing/Orang_Asing_-_17_Credit_-_Beberapa_bulan_kemudian_-_Line_8.ogg",
+	"Queen_01": "Queen/Ratu_Dialog_1_Zuva.ogg",
+	"Queen_02": "Queen/Ratu_Dialog_2_Zuva.ogg",
+	"Queen_03": "Queen/Ratu_Dialog_3_Zuva.ogg",
+	"Queen_04": "Queen/Ratu_Dialog_4.Zuva.ogg",
+	"Queen_05": "Queen/Ratu_Dialog_5_Zuva.ogg",
+	"Yagoo_01": "Yagoo/YAGOO_1.ogg",
+	"Yagoo_02": "Yagoo/YAGOO_2.ogg",
+	"Yagoo_03": "Yagoo/YAGOO_3.ogg",
+	"Yagoo_04": "Yagoo/YAGOO_4.ogg",
+	"Yagoo_05": "Yagoo/YAGOO_5.ogg",
 });
 
 // Define the sounds used in the game.
@@ -102,6 +154,8 @@ monogatari.assets('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
+	'tester': 'testbg.jpg',
+	'dummy': 'dummy.png',
 	'garden': 'webp/garden.webp',
 	'galaxy': 'webp/galaxy.webp',
 	'balkon' : 'webp/balkon.webp',
@@ -123,6 +177,7 @@ monogatari.assets('scenes', {
 	'sky': 'webp/sky.webp',
 	'comical': 'webp/comical.webp',
 	'earth': 'webp/earth.webp', 
+	'test' : 'tes.png',
 	'sus1' : 'webp/sus-yagoo.webp',
 	'sus2' : 'webp/sus-yagoo-bg.webp'
 });

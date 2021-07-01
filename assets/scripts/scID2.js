@@ -278,8 +278,6 @@ monogatari.label('idPart2-2', 'Indonesia', [
   "iofi Terima Kasih.",
   "hide character iofi normal with fadeOut",
   "Setelah Area 15 mengkategorikan Iofi sebagai Alien yang tidak berbahaya, dia diijinkan untuk hidup layaknya seperti manusia.",
-  "show scene #000",
-  "centered Kamar Kos di Tokyo Selatan",
   "show scene dorm with fadeIn",
   "show character iofi normal with fadeIn",
   "iofi Aku ingin belajar ilmu pengetahuan yang dimiliki manusia, dan katanya matematika adalah ilmu pengetahuan yang tinggi derajatnya.",

@@ -64,7 +64,7 @@ monogatari.script({
       "putriKedua Yeah…. Kakak memang yang terbaik.",
       "hide character putriPertama normal with fadeOut",
       "hide character putriKedua normal with fadeOut",
-      "Tumbuh dalam lingkungan yang tertutup khusus untuk keluarga kerajaan yang jauh dari dunia luar, membuatnya hanya memiliki Sang Putri kedua (adik) sebagai teman dekatnya.",
+      "Tumbuh dalam lingkungan yang tertutup khusus untuk keluarga kerajaan yang jauh dari dunia luar, membuatnya hanya memiliki Sang adik sebagai teman dekatnya.",
       "show character putriKedua normal at right with fadeIn",
       "show character putriPertama normal at left with fadeIn",
       "play voice Imouto_04",

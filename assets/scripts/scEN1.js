@@ -2,6 +2,7 @@ monogatari.script({
   English: {
     'Start': [
       "show scene galaxy with fadeIn",
+      "play music Intro with loop volume 50",
       "In a galaxy far away, there is a planet named Iolyptos.",
       "show scene iolyptos with fadeIn",
       "Iolyptos is a beautiful and peaceful planet, with an overwhelming natural resources, that is being ruled by a wise King and an elegant Queen.",
@@ -22,6 +23,7 @@ monogatari.script({
       "hide character ratu normal with fadeOut",
       "The King is blessed with 2 daughters.",
       "The first princess of Iolyptos is a woman that has outer and inner beauty.",
+      "stop music Intro",
       "show scene garden with fadeIn",
       "show character putriKedua normal with fadeIn",
       "play voice Imouto_01",

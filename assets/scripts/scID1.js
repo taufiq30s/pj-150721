@@ -3,6 +3,7 @@ monogatari.script({
     'Start': [
       // "jump credit",
       "show scene galaxy with fadeIn",
+      "play music Intro with loop volume 50",
       "Di sebuah Galaksi nun jauh disana, ada sebuah planet bernama Iolyptos.",
       "show scene iolyptos with fadeIn",
       "Iolyptos adalah planet indah dan damai, dengan sumber daya melimpah, yang dipimpin oleh seorang Raja yang bijaksana bersama Ratunya yang anggun.",
@@ -23,6 +24,7 @@ monogatari.script({
       "hide character ratu normal with fadeOut",
       "Sang Raja diberkahi dengan 2 orang putri.",
       "Putri pertama dari Iolyptos, adalah seorang wanita yang memiliki kecantikan paras dan hati.",
+      "stop music Intro",
       "show scene garden with fadeIn",
       "show character putriKedua normal with fadeIn",
       "play voice Imouto_01",

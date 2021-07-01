@@ -2,6 +2,7 @@ monogatari.script({
   日本語: {
     'Start': [
       "show scene galaxy with fadeIn",
+      "play music Intro with loop volume 50",
       "遥か遠い銀河の中で、Iolyptosという惑星があった",
       "show scene iolyptos with fadeIn",
       "その惑星はとても豊かで美しく、そして平和な生活がありました",
@@ -20,6 +21,7 @@ monogatari.script({
       "hide character ratu normal with fadeOut",
       "「 その王は二人の娘を授かり、」",
       "中でも長女は女王の美しさを受け継ぎ、清らかな心を持っていると星の中で噂になっていた.",
+      "stop music Intro",
       "show scene garden with fadeIn",
       "show character putriKedua normal with fadeIn",
       "secondPrincessJP 待って、お姉さま！おいていかないでよ～",

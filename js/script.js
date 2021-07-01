@@ -24,7 +24,18 @@ monogatari.assets('gallery', {
 
 // Define the music used in the game.
 monogatari.assets('music', {
-
+	'CastleGarden': 'Castle garden, Iofifteen sibling.mp3',
+	'Emperor': 'Emperor.mp3',
+	'EnvoyWithKing': 'Envoy with king.mp3',
+	'FamilyConvo': 'Family convo.mp3',
+	'Intro': "Intro, Iolyptos, King-Queen Dialogue.mp3",
+	'IofiLeave': 'Iofi leaving.mp3',
+	'IofiNewLife': 'Iofi new life.mp3',
+	'IofiParentDecision': 'Iofi parent decision.mp3',
+	'MenInBlackTheme': 'Iofi_Men in black.mp3',
+	'IofiRoom': 'Iofi, Iofi_s room, escape.mp3',
+	'TimeskipArea15': 'Timeskip area 15.mp3',
+	'UFOLanding': 'UFO landing.mp3',
 });
 
 // Define the voice files used in the game.
@@ -32,6 +43,12 @@ monogatari.assets('voices', {
 	"Advisor_01": "Advisor/Advisor_Line_1.ogg",
 	"Advisor_02": "Advisor/Advisor_Line_2.1.ogg",
 	"Advisor_03": "Advisor/Advisor_Line_2.2.ogg",
+	"Agen-Kecoak_01": "Agen-Kecoak/Line 1.ogg",  
+	"Agen-Kecoak_02": "Agen-Kecoak/Line 2.ogg",  
+	"Agen-Kecoak_03": "Agen-Kecoak/Line 3.ogg",  
+	"Agen-Kecoak_04": "Agen-Kecoak/Line 4.ogg",  
+	"Agen-Kecoak_05": "Agen-Kecoak/Line 5.ogg",  
+	"Agen-Kecoak_06": "Agen-Kecoak/Line 6.ogg",
 	"Agen-Kuda_01": "Agen-Kuda/Agen_Kuda_1.ogg", 
 	"Agen-Kuda_02": "Agen-Kuda/Agen_Kuda_2.ogg", 
 	"Agen-Kuda_03": "Agen-Kuda/Agen_Kuda_3.ogg", 
@@ -95,6 +112,7 @@ monogatari.assets('voices', {
 	"M-chan_03": "M-chan/M-chan_Take2.3.ogg",
 	"M-chan_04": "M-chan/M-chan_Take2.4.ogg",
 	"M-chan_05": "M-chan/M-chan_Take2.5.ogg",
+	"M-chan_06": "M-chan/M-chan_Take2.6.ogg",
 	"MIB-1_01": "MIB-1/MIB_1_LINE_1_take2.ogg",
 	"MIB-1_02": "MIB-1/MIB_1_LINE_2_take2.ogg",
 	"MIB-2_01": "MIB-2/MIB_2_LINE_1.ogg",

@@ -2,7 +2,7 @@ monogatari.script({
   English: {
     'Start': [
       "show scene galaxy with fadeIn",
-      "play music Intro with loop volume 50",
+      "play music Intro with loop volume 10",
       "In a galaxy far away, there is a planet named Iolyptos.",
       "show scene iolyptos with fadeIn",
       "Iolyptos is a beautiful and peaceful planet, with an overwhelming natural resources, that is being ruled by a wise King and an elegant Queen.",
@@ -23,7 +23,8 @@ monogatari.script({
       "hide character ratu normal with fadeOut",
       "The King is blessed with 2 daughters.",
       "The first princess of Iolyptos is a woman that has outer and inner beauty.",
-      "stop music Intro",
+      "stop music Intro with fade 5",
+      "play music CastleGarden with loop volume 10",
       "show scene garden with fadeIn",
       "show character putriKedua normal with fadeIn",
       "play voice Imouto_01",
@@ -60,7 +61,7 @@ monogatari.script({
     ],
     'MainP2': [
       "play voice Imouto_03",
-      "secondPrincess Yay, Big Sister is the best!.",
+      "secondPrincess Yay, Big Sister is the best!",
       "hide character putriPertama normal with fadeOut",
       "hide character putriKedua normal with fadeOut",
       "Being raised in an isolated royal environment, far from the outside world, makes the Second Princess the only friend for the First Princess.",
@@ -78,10 +79,12 @@ monogatari.script({
       "king <i>I'm sorry my daughter. i am unable to fulfill your dreams, the outside world is not as good as you think</i>",
       "hide character raja sedih1 with fadeOut",
       "The King accidentally overheard the conversation between his two daughters",
+      "stop music CastleGarden with fade 5",
       "show scene galaxy with fadeIn",
       "As time passes by, the First Princess became more beautiful, making her the most beautiful woman in Iolyptos.",
       "Rumors about her beauty spread across the world, even to a far away Galaxy.",
       "However, even though in space stars are shining brightly, there is also always dwelling darkness.",
+      "play music Emperor with loop volume 10",
       "show scene emperor-throne with fadeIn",
       "show character kaisar normal with fadeIn",
       "play voice Emperor_01",
@@ -128,6 +131,8 @@ monogatari.script({
       "envoy If it’s what Your Majesty wishes, I will fulfill it.",
       "hide character utusan normal with fadeOut",
       "The Emperor send the Envoy to the Iolyptos to propose to the First Princess and giving a threat if they trying to oppose him.",
+      "stop music Emperor fade 5",
+      "play music EnvoyWithKing volume 10",
       "show scene iolyptos-throne with fadeIn",
       "show character raja normal with fadeIn",
       "play voice King_04",
@@ -175,6 +180,7 @@ monogatari.script({
       "king ...",
       "hide character raja marah with fadeOut",
       "The king is unsure about what he should do, he just sat there silently at his throne and thought about the right thing to do.",
+      "stop music EnvoyWithKing with fade 10",
       "jump enPart2"
     ]
   },

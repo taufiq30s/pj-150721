@@ -624,7 +624,7 @@ dialog-log > .modal__content{
 	font-size: 2.5rem;
 }
 
-[data-string="Close"], [data-action="quit"], [data-action="dismiss-alert"], [data-action="delete-slot"] {
+[data-string="Close"], [data-action="quit"], [data-action="dismiss-alert"], [data-action="delete-slot"], [data-action="overwrite-slot"] {
 	border-radius: 35px;
 	background: linear-gradient(145deg, #ffd0d0, #dcafaf);
 	box-shadow:  5px 5px 10px #cfa5a5,
@@ -635,12 +635,12 @@ dialog-log > .modal__content{
 	font-size: 1.2rem;
 }
 
-[data-string="Close"]:hover, [data-action="quit"]:hover, [data-action="dismiss-alert"]:hover [data-action="delete-slot"]:hover {
+[data-string="Close"]:hover, [data-action="quit"]:hover, [data-action="dismiss-alert"]:hover, [data-action="delete-slot"]:hover, [data-action="overwrite-slot"]:hover {
 	box-shadow:  15px 15px 30px #cfa5a5,
             	-15px -15px 30px #ffdfdf;
 }
 
-[data-string="Close"]:active, [data-action="quit"]:active, [data-action="dismiss-alert"]:active [data-action="delete-slot"]:active {
+[data-string="Close"]:active, [data-action="quit"]:active, [data-action="dismiss-alert"]:active, [data-action="delete-slot"]:active, [data-action="overwrite-slot"]:active {
 	background: linear-gradient(145deg, #dcafaf, #ffd0d0);
 	box-shadow:  15px 15px 30px #cfa5a5,
 							-15px -15px 30px #ffdfdf;
@@ -648,7 +648,7 @@ dialog-log > .modal__content{
 	outline: none;
 }
 
-[data-string="Close"]:focus, [data-action="quit"]:focus, [data-action="dismiss-alert"]:focus [data-action="delete-slot"]:focus {
+[data-string="Close"]:focus, [data-action="quit"]:focus, [data-action="dismiss-alert"]:focus, [data-action="delete-slot"]:focus, [data-action="overwrite-slot"]:focus {
 	border: none;
 	outline: none;
 }
@@ -954,4 +954,9 @@ input[type=range]::-ms-fill-upper {
 
 [data-content=context] {
 	color: #fff;
+	padding: 1rem;
+}
+
+input[data-content=context] {
+	color: #000;
 }

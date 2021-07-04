@@ -100,6 +100,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   "stop music M-chan with fade 10",
   'show scene #000',
   'wait 1000',
+  "play music CreditsSong volume 10",
   {
     'Credit': {
       'fade' : [
@@ -245,6 +246,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
       }
     }
   },
+  "stop music CreditsSong fade 10",
   'centered Beberapa Bulan Kemudian',
   'show scene galaxy with fadeIn',
   'show character raja takut with fadeIn',

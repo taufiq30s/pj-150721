@@ -39,7 +39,8 @@ monogatari.assets('music', {
 	"IofiRecording": "Iofi rekaman.mp3",
 	"M-chan": "M-chan.mp3",
 	"YagooOffice": "Yagoo di kantor hololive.mp3",
-	"YagooSus": "Sus yagoo.mp3"
+	"YagooSus": "Sus yagoo.mp3",
+	"CreditsSong": "Bersama Ioforia - Airani Iofifteen (Music box ver.).mp3",
 });
 
 // Define the voice files used in the game.

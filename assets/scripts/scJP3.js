@@ -85,6 +85,7 @@ monogatari.label('jpPart3', '日本語', [
   "stop music M-chan with fade 10",
   'show scene #000',
   'wait 1000',
+  "play music CreditsSong volume 10",
   {
     'Credit': {
       'fade' : [
@@ -230,6 +231,7 @@ monogatari.label('jpPart3', '日本語', [
       }
     }
   },
+  "stop music CreditsSong fade 10",
   'centered そして数ヶ月後ーー',
   'show scene galaxy with fadeIn',
   'show character raja takut with fadeIn',

@@ -36,6 +36,10 @@ monogatari.assets('music', {
 	'IofiRoom': 'Iofi, Iofi_s room, escape.mp3',
 	'TimeskipArea15': 'Timeskip area 15.mp3',
 	'UFOLanding': 'UFO landing.mp3',
+	"IofiRecording": "Iofi rekaman.mp3",
+	"M-chan": "M-chan.mp3",
+	"YagooOffice": "Yagoo di kantor hololive.mp3",
+	"YagooSus": "Sus yagoo.mp3"
 });
 
 // Define the voice files used in the game.
@@ -133,6 +137,12 @@ monogatari.assets('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets('sounds', {
+	"AgenKudaShoots": "agen kuda nembak.mp3",
+	"AgenKudaReload": "agen kuda ngisi peluru.mp3",
+	"IofiSeeEarth": "iofi di ufo melihat bumi.mp3",
+	"Beach": "pantai.mp3",
+	"ServantSweeping": "pelayan nyapu.mp3",
+	"CallFromMChan": "telpon dari m-chan.mp3",
 
 });
 

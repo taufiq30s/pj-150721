@@ -373,6 +373,10 @@ text-box [data-content="dialog"] {
 	right: 15vw;
 }
 
+[data-screen="game"] [data-character].right-out {
+	right: -100%;
+}
+
 [data-screen="game"] [data-character=iofi],
 [data-screen="game"] [data-character=putriPertama] {
 	height: 94.7vh; /* 150cm (145+5) */

@@ -236,14 +236,18 @@ monogatari.characters({
 		name: "Putri Pertama",
 		color: "#F46383",
 		sprites: {
-			normal: 'first_princess_example.webp'
+			normal: 'iohime_smile.webp',
+			tertawa: 'iohime_tertawa.webp',
+			talking: 'iohime_convo.webp'
 		}
 	},
 	'putriKedua': {
 		name: "Putri Kedua",
 		color: "#19B3AB",
 		sprites: {
-			normal: 'second_princess_example.webp'
+			panik: 'imouto_panic.webp',
+			menggerutu: 'imouto_menggerutu.webp',
+			normal: 'imouto_smile.webp'
 		}
 	},
 	'raja': {

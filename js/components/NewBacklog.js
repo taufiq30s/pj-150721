@@ -1,18 +1,18 @@
 // Backlog Component
-class DialogLog extends Monogatari.Component {
+class BackLog extends Monogatari.Component {
   static setup () {
 		monogatari.component ('quick-menu').addButtonAfter ('Hide', {
 			string: 'Log',
 			icon: 'ri-chat-history-fill',
 			data: {
-				action: 'dialog-log'
+				action: 'backlog'
 			}
 		});
 		return Promise.resolve ();
 	}
 
 	static bind () {
-		monogatari.registerListener ('dialog-log', {
+		monogatari.registerListener ('backlog', {
 			callback: () => {
 				this.instances ((element) => {
 					const active = element.state.active;
@@ -49,7 +49,7 @@ class DialogLog extends Monogatari.Component {
       `);
 		}
     $_('[data-content="log"]').append (`
-      <hr></hr>
+      <span class="hr"></span>
     `);
 	}
 
@@ -62,11 +62,9 @@ class DialogLog extends Monogatari.Component {
 	}
 
 	onStateUpdate (property, oldValue, newValue) {
-		if (property === 'active') {			
-      monogatari.distractionFree();
+		if (property === 'active') {
 			this.classList.toggle ('modal--active');
-			this.classList.remove('backOutDown');
-			this.classList.add('backInDown');
+      monogatari.distractionFree();
 
 			if (newValue === true) {
 				$_('[data-content="log"]').get(0).scrollTop = $_('[data-content="log"]').get(0).scrollHeight
@@ -82,28 +80,17 @@ class DialogLog extends Monogatari.Component {
 
 	render () {
 		return `
-			<div class="modal__content paper animated">
+			<div class="modal__content acrylic">
         <div data-content="backlog">
           <h3>Backlog</h3>
-					<div data-action="dialog-log" id="close">
-					<a>
-						<span class="left">
-							<span class="circle-left"></span>
-							<span class="circle-right"></span>
-						</span>
-						<span class="right">
-							<span class="circle-left"></span>
-							<span class="circle-right"></span>
-						</span>
-					</a>
-				</div>
           <div data-content="log">
             <div class="text--center padded" data-string="NoDialogsAvailable" data-content="placeholder">No dialogs available. Dialogs will appear here as they show up.</div>
           </div>
         </div>
-				
+        <button data-string="Close" data-action="back-log">Close</button>
+			</div>
 		`;
 	}
 }
-DialogLog.tag = 'dialog-log';
-monogatari.registerComponent(DialogLog);
+BackLog.tag = 'back-log';
+monogatari.registerComponent(BackLog);

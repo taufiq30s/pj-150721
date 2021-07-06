@@ -113,7 +113,7 @@ monogatari.label('enPart3', 'English', [
           'list': {
             'King': "Jatmiko",
             'Queen': "Zuvanix",
-            'Imouto': "Api Atsu"
+            'Second Princess': "Api Atsu"
           }
         },
         {
@@ -127,9 +127,9 @@ monogatari.label('enPart3', 'English', [
         {
           'title': "",
           'list': {
-            'M-chan': "Api Atsu",
-            'Agen Kuda': "Minyak Kuda",
-            'Agen Kecoa': "Vesera"
+            'M-chan': "ApiAtsu",
+            'Agent Kuda': "Minyak Kuda",
+            'Agent Kecoa': "Vesera"
           }
         },
         {
@@ -137,7 +137,7 @@ monogatari.label('enPart3', 'English', [
           'list': {
             'MIB 1': "Yuta",
             'MIB 2': "Enterprise",
-            'YAGOO': "Hitsuji-san"
+            'YAGOO': "Hitsuji(cpp)"
           }
         }
       ],
@@ -145,18 +145,18 @@ monogatari.label('enPart3', 'English', [
         {
           'title': "Cast",
           'list': {
-            'Raja': "Jatmiko",
-            'Ratu': "Yuta",
-            'Putri Kedua': "Api",
-            'Kaisar': "Dokutah",
-            'Penasihat': "PunPun Iofi's Personal Chair",
-            'Utusan': "Raktea",
-            'Agen Kuda': "Minyak Kuda",
-            'Agen Kecoa': "Vesera",
+            'King': "Jatmiko",
+            'Queen': "Yuta",
+            'Second Princess': "ApiAtsu",
+            'Emperor': "Dokutah",
+            'Advisor': "PunPun Iofi's Personal Chair",
+            'Envoy': "Raktea",
+            'Agent Kuda': "Minyak Kuda",
+            'Agent Kecoa': "Vesera",
             'MIB 1': "Zuvanix",
             'MIB 2': "Enterprise",
-            'Yagoo': "Hitsuji-san",
-            'M-chan': "Api",
+            'Yagoo': "Hitsuji(cpp)",
+            'M-chan': "ApiAtsu",
           }
         },
         {
@@ -178,17 +178,19 @@ monogatari.label('enPart3', 'English', [
           }
         },
         {
-          'title': "Background",
+          'title': "Background and Illustration",
           'list': [
             "Transenponsan",
             "Yugen",
             "Laeventien",
             "PunPun Iofi's Personal Chair",
+            "JeffriArt",
+            "Littlecrownie",
             "Hacto_17"
           ]
         },
         {
-          'title': "Characters and Illustration Department",
+          'title': "Character Design",
           'list': [
             "JeffriArt",
             "Chassy Sant",

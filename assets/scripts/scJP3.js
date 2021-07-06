@@ -90,69 +90,69 @@ monogatari.label('jpPart3', '日本語', [
     'Credit': {
       'fade' : [
         {
-          'title': "Project Initiator",
+          'title': "プロジェクトイニシエーター",
           'content': "Para Haluforia"
         },
         {
-          'title': "Cast",
+          'title': "キャスト",
           'list': {
-            'King': "Jatmiko",
-            'Queen': "Zuvanix",
-            'Imouto': "Api Atsu"
+            '王': "Jatmiko",
+            '王女': "Zuvanix",
+            '次女': "Api Atsu"
           }
         },
         {
           'title': "",
           'list': {
-            'Envoy': "Khateas Raktea",
-            'Advisor': "Iofi's Personal Chair",
-            'Emperor': "Dr.Eronekoparagigante"
+            '使節': "Khateas Raktea",
+            '皇帝': "Dr.Eronekoparagigante",
+            'アドバイザー': "Iofi's Personal Chair",
           }
         },
         {
           'title': "",
           'list': {
-            'M-chan': "Api Atsu",
-            'Agen Kuda': "Minyak Kuda",
-            'Agen Kecoa': "Vesera"
+            'Mちゃん': "Api Atsu",
+            'クダエージェント': "Minyak Kuda",
+            'ゴキエージェント': "Vesera"
           }
         },
         {
           'title': "",
           'list': {
-            'MIB 1': "Yuta",
-            'MIB 2': "Enterprise",
+            '黒服の人一号': "Yuta",
+            '黒服の人二号': "Enterprise",
             'YAGOO': "Hitsuji-san"
           }
         }
       ],
       'scroll': [
         {
-          'title': "Cast",
+          'title': "キャスト",
           'list': {
-            'Raja': "Jatmiko",
-            'Ratu': "Yuta",
-            'Putri Kedua': "Api",
-            'Kaisar': "Dokutah",
-            'Penasihat': "PunPun Iofi's Personal Chair",
-            'Utusan': "Raktea",
-            'Agen Kuda': "Minyak Kuda",
-            'Agen Kecoa': "Vesera",
-            'MIB 1': "Zuvanix",
-            'MIB 2': "Enterprise",
-            'Yagoo': "Hitsuji-san",
-            'M-chan': "Api",
+            '王': "Jatmiko",
+            '王女': "Yuta",
+            '次女': "Api",
+            '皇帝': "Dokutah",
+            'アドバイザー': "PunPun Iofi's Personal Chair",
+            '使節': "Raktea",
+            'クダエージェント': "Minyak Kuda",
+            'ゴキエージェント': "Vesera",
+            '黒服の人一号': "Zuvanix",
+            '黒服の人二号': "Enterprise",
+            'YAGOO': "Hitsuji-san",
+            'Mちゃん': "Api",
           }
         },
         {
-          'title': "Story",
+          'title': "物語",
           'list': {
-            'Originally Written By': "Rudi Hermawan",
-            'Translated By': [
+            'もともと書かれた': "Rudi Hermawan",
+            '翻訳者': [
               "Vesera (EN)",
               "Reiko (JP)"
             ],
-            'Editor and Quality Check': [
+            'エディターと品質チェック': [
               "Yuta Zoka",
               "Khateas Raktea",
               "Dr. Nergigante",
@@ -163,16 +163,19 @@ monogatari.label('jpPart3', '日本語', [
           }
         },
         {
-          'title': "Background",
+          'title': "背景とイラスト",
           'list': [
             "Transenponsan",
             "Yugen",
             "Laeventien",
-            "PunPun Iofi's Personal Chair"
+            "PunPun Iofi's Personal Chair",
+            "JeffriArt",
+            "Littlecrownie",
+            "Hacto_17"
           ]
         },
         {
-          'title': "Characters and Illustration Department",
+          'title': "キャラクターデザイン",
           'list': [
             "JeffriArt",
             "Chassy Sant",
@@ -183,7 +186,7 @@ monogatari.label('jpPart3', '日本語', [
           ]
         },
         {
-          'title': "Programming" ,
+          'title': "プログラミング" ,
           'list': [
             "Moonchild",
             "JeffriArt",
@@ -192,7 +195,7 @@ monogatari.label('jpPart3', '日本語', [
           ]
         },
         {
-          'title': "Tester",
+          'title': "テスター",
           'list' : [
             "Asukiri",
             "Chero",
@@ -211,7 +214,7 @@ monogatari.label('jpPart3', '日本語', [
           ]
         },
         {
-          'title': "Special Thanks",
+          'title': "特別な感謝",
           'list': [
             "Zad",
             "Binyo Boss", 

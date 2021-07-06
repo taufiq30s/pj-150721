@@ -24,7 +24,7 @@ monogatari.component('main-screen').template(() => {
       </div>
       <div class="wrapper-version version-bg1" data-content="version">
         <p id="product-version">Version 0.3.0-beta3</p>
-        <p id="copy" data-content="author">Illust by <a href="https://twitter.com/littlecrownie" target="_blank">littlecrownie</a></p>
+        <p id="copy" data-content="author">Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a></p>
       </div>
     </div>
   `;
@@ -138,13 +138,18 @@ monogatari.showMainScreen = () => {
     monogatari.run (this.monogatari ()[this.monogatari ('step')]);
   } else {
     if(monogatari.setting ('isFinished')) {
-      console.log("test");
       $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/hacto_17" target="_blank">Hacto_17</a> from <a href="https://twitter.com/SMiaww19" target="_blank">FluffyART Studio</a>`;
       $_('main-screen').style ('background-image', 'url(../assets/images/main2.webp)');
       if($_('[data-content="copyright"]').hasClass ('copy-bg1')) {
         $_('[data-content="copyright"]').removeClass ('copy-bg1');
         $_('[data-content="version"]').removeClass ('version-bg1');
       }
+    }
+    else {
+      $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a>`;
+      $_('main-screen').style ('background-image', 'url(../assets/images/main1.webp)');
+      $_('[data-content="copyright"]').addClass ('copy-bg1');
+        $_('[data-content="version"]').addClass ('version-bg1');
     }
     monogatari.showScreen ('main');
   }

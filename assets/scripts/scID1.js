@@ -9,7 +9,7 @@ monogatari.script({
       "Iolyptos adalah planet indah dan damai, dengan sumber daya melimpah, yang dipimpin oleh seorang Raja yang bijaksana bersama Ratunya yang anggun.",
       "show background iolyptos-city with fadeIn",
       "clearall",
-      "wait 1000",
+      "wait 2000",
       "show scene balkon with fadeIn",
       "show character raja normal at left with fadeIn",
       "play voice King_01",

@@ -375,7 +375,7 @@ monogatari.characters({
 		color: "#A37A52",
 	},
 	'coro': {
-		name: "Agen Kecoa",
+		name: "Agent Kecoa",
 		color: "#8D9150",
 	},
 	'soldier':{

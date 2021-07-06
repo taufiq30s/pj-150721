@@ -137,7 +137,10 @@ loading-screen div {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-	background: url(../assets/images/main1.webp) no-repeat top fixed;
+	background-image: url(../assets/images/main1.webp);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;
 	background-size: cover;	
 }
 
@@ -194,6 +197,16 @@ loading-screen div {
 
 .wrapper-copy > p:last-child, .wrapper-version > p:last-child {
 	padding-bottom: 1.5vmax;
+}
+
+.copy-bg1 {
+	font-weight: bold;
+	-webkit-text-stroke: 1px #545454;
+}
+
+.version-bg1 {
+	color: #545454;
+	font-weight: bold;
 }
 
 /**

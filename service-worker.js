@@ -62,12 +62,8 @@ const files = [
 	// Background Images
 	'assets/scenes/webp/garden.webp',
 	'assets/scenes/webp/galaxy.webp',
-	'assets/scenes/webp/iolyptos.webp',
 	'assets/scenes/webp/iolyptus.webp',
 	'assets/scenes/webp/iolyptus-city.webp',
-	'assets/scenes/webp/city1.1.webp',
-	'assets/scenes/webp/city1.2.webp',
-	'assets/scenes/webp/city1.3.webp',
 	'assets/scenes/webp/emperor-throne.webp',
 	'assets/scenes/webp/iolyptos-throne.webp',
 	'assets/scenes/webp/balkon.webp',
@@ -87,8 +83,6 @@ const files = [
 	'assets/scenes/webp/ufo.webp',
 	'assets/scenes/webp/bedroom.webp',
 	'assets/scenes/webp/sky.webp',
-	'assets/scenes/webp/iolyptos-throne-far.webp',
-	'assets/scenes/webp/iolyptos-throne-near.webp',
 
 	// Character Images
 	'assets/characters/first_princess_example.webp',
@@ -135,18 +129,9 @@ const files = [
 	'assets/characters/raja-tegas-kukuh.webp',
 	'assets/characters/raja-tegas-teriak.webp',
 	'assets/characters/raja-teriak.webp',
-	'assets/characters/first_princess_example.png',
-	'assets/characters/second_princess_example.png',
-	'assets/characters/king_example.png',
-	'assets/characters/queen_example.png',
-	'assets/characters/imperial_example.png',
-	'assets/characters/advisor.png',
-	'assets/characters/envoy.png',
+	
 
 	// Other Elements
-	'assets/images/namebox.png',
-	'assets/images/textbox(2).png',
-	'assets/images/mainbg.jpg',
 	'assets/images/iocry.webp',
 	'assets/images/iocry.png',
 	'assets/images/phone.webp',

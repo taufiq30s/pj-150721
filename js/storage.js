@@ -4,5 +4,6 @@
 monogatari.storage ({
 	player: {
 		name: ''
-	}
+	},
+	isFinished: false,
 });

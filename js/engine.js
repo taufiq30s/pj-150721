@@ -18,13 +18,13 @@ monogatari.component('main-screen').template(() => {
     </div>
     <main-menu></main-menu>
     <div class="wrapper-footer">
-      <div class="wrapper-copy">
+      <div class="wrapper-copy copy-bg1" data-content="copyright">
         <p id="copy">&copy; 2021 Pj-150721 Team</p>
         <p id="product-version">This game using multiple license. See About for details.</p>
       </div>
-      <div class="wrapper-version">
+      <div class="wrapper-version version-bg1" data-content="version">
         <p id="product-version">Version 0.3.0-beta3</p>
-        <p id="copy">Illust by <a href="https://twitter.com/hacto_17" target="_blank">Hacto_17</a> from <a href="https://twitter.com/SMiaww19" target="_blank">FluffyART Studio</a></p>
+        <p id="copy" data-content="author">Illust by <a href="https://twitter.com/littlecrownie" target="_blank">littlecrownie</a></p>
       </div>
     </div>
   `;
@@ -126,4 +126,26 @@ monogatari.component('settings-screen').template(() => {
 				</div>
 			</div>
 		`;
-})
+});
+
+// Show Main screen and change bg when player finished the game
+monogatari.showMainScreen = () => {
+  monogatari.global ('on_splash_screen', false);
+
+  if (!monogatari.setting ('ShowMainScreen')) {
+    monogatari.global ('playing', true);
+    monogatari.showScreen ('game');
+    monogatari.run (this.monogatari ()[this.monogatari ('step')]);
+  } else {
+    if(monogatari.setting ('isFinished')) {
+      console.log("test");
+      $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/hacto_17" target="_blank">Hacto_17</a> from <a href="https://twitter.com/SMiaww19" target="_blank">FluffyART Studio</a>`;
+      $_('main-screen').style ('background-image', 'url(../assets/images/main2.webp)');
+      if($_('[data-content="copyright"]').hasClass ('copy-bg1')) {
+        $_('[data-content="copyright"]').removeClass ('copy-bg1');
+        $_('[data-content="version"]').removeClass ('version-bg1');
+      }
+    }
+    monogatari.showScreen ('main');
+  }
+}

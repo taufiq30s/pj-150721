@@ -276,3 +276,152 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'centered To Be Continue...?',
   'end'
 ]);
+
+monogatari.label('credit', 'Indonesia', [
+  {
+    'Credit': {
+      'fade' : [
+        {
+          'title': "Project Initiator",
+          'content': "Para Haluforia"
+        },
+        {
+          'title': "Cast",
+          'list': {
+            'King': "Jatmiko",
+            'Queen': "Zuvanix",
+            'Imouto': "Api Atsu"
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'Envoy': "Khateas Raktea",
+            'Advisor': "Iofi's Personal Chair",
+            'Emperor': "Dr.Eronekoparagigante"
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'M-chan': "Api Atsu",
+            'Agen Kuda': "Minyak Kuda",
+            'Agen Kecoa': "Vesera"
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'MIB 1': "Yuta",
+            'MIB 2': "Enterprise",
+            'YAGOO': "Hitsuji-san"
+          }
+        }
+      ],
+      'scroll': [
+        {
+          'title': "Cast",
+          'list': {
+            'Raja': "Jatmiko",
+            'Ratu': "Yuta",
+            'Putri Kedua': "Api",
+            'Kaisar': "Dokutah",
+            'Penasihat': "PunPun Iofi's Personal Chair",
+            'Utusan': "Raktea",
+            'Agen Kuda': "Minyak Kuda",
+            'Agen Kecoa': "Vesera",
+            'MIB 1': "Zuvanix",
+            'MIB 2': "Enterprise",
+            'Yagoo': "Hitsuji-san",
+            'M-chan': "Api",
+          }
+        },
+        {
+          'title': "Story",
+          'list': {
+            'Originally Written By': "Rudi Hermawan",
+            'Translated By': [
+              "Vesera (EN)",
+              "Reiko (JP)"
+            ],
+            'Editor and Quality Check': [
+              "Yuta Zoka",
+              "Khateas Raktea",
+              "Dr. Nergigante",
+              "Minyak Sayur",
+              "Hitsuji",
+              "LegoVW"
+            ]
+          }
+        },
+        {
+          'title': "Background",
+          'list': [
+            "Transenponsan",
+            "Yugen",
+            "Laeventien",
+            "PunPun Iofi's Personal Chair"
+          ]
+        },
+        {
+          'title': "Characters and Illustration",
+          'list': [
+            "JeffriArt",
+            "Chassy Sant",
+            "Laeventien",
+            "Haloclo 18",
+            "Jatmiko",
+            "Hacto_17"
+          ]
+        },
+        {
+          'title': "Programming" ,
+          'list': [
+            "Moonchild",
+            "JeffriArt",
+            "Zainokta Rakei",
+            "KucingLaut",
+          ]
+        },
+        {
+          'title': "Tester",
+          'list' : [
+            "Asukiri",
+            "Chero",
+            "KucingLaut",
+            "LegoVW",
+            "Pika",
+            "Ryokhan",
+            "Arcana",
+            "Chumacera",
+            "Feeltis catcus",
+            "Kisaragi Ryuu",
+            "Rad",
+            "Rediffract",
+            "Ryokhan",
+            "Yugen"
+          ]
+        },
+        {
+          'title': "Special Thanks",
+          'content': [
+            "Zad",
+            "Binyo Boss", 
+            "GrilledCheez",
+            "Melon Juice", 
+            "Rarana", 
+            "Zuvanix", 
+            "Kyarudesu",
+            "Mas Ittou",
+            "And All Beloved Ioforia..."
+          ]
+        },
+      ],
+      'quote': {
+        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+        'source': "Agnes Jessica"
+      }
+    }
+  },
+  'end'
+]);

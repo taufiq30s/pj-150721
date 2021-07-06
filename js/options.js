@@ -130,7 +130,10 @@ monogatari.settings({
 		'Adapter': 'LocalStorage',
 		'Store': 'GameData',
 		'Endpoint': ''
-	}
+	},
+
+	// Show Iofi's Background in Main Menu
+	'isFinished': false,
 });
 
 // Initial Settings

@@ -701,12 +701,12 @@ hr {
   margin-left: 37px;
 }
 #close a:hover > span {
-  background-color: #ff1744;
+  background-color: #fc2752;
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 #close a:hover > span span {
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  background-color: #b2102f;
+  background-color: #f87c95;
 }
 #close a:hover > span.left .circle-left {
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -1077,7 +1077,7 @@ input[type=range]::-ms-fill-upper {
 }
 
 /** HD Screen, Large Devices, Wide Screens, Desktop (1200px) **/
-@media screen and (max-width: 89.9em) {
+@media screen and  (max-width: 89.9em) {
 	[data-ui="who"] {
 		padding: 0.3rem 0;
 		height: 2.8rem;
@@ -1165,12 +1165,12 @@ input[type=range]::-ms-fill-upper {
 }
 
 /** 4k Screens, Large Devices, Wide Screens (3840px) **/
-@media screen and (min-width: 240em) {
+@media screen and (max-width: 312.49em) {
 
 }
 
 /** 5k Screens, Large Devices, Wide Screens (5000px) **/
-@media screen and (min-width: 312.5em) {
+@media screen and (max-width: 312.5em) {
 
 }
 
@@ -1179,16 +1179,16 @@ input[type=range]::-ms-fill-upper {
 
 }
 
-/** Text boxes height based on screen height **/
-@media screen and (min-height: 48em) {
+/* * Text boxes height based on screen height *
+@media screen and (max-height: 48em) {
 	[data-component="text-box"] {
 	}
 }
 
-@media screen and (min-height: 64em) {
+@media screen and (max-height: 64em) {
 	[data-component="text-box"] {
 	}
-}
+} */
 
 /** Custom CSS Element **/
 #footer {

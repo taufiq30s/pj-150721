@@ -14,7 +14,7 @@
 monogatari.component('main-screen').template(() => {
   return `
     <div class="wrapper-logo">
-      <img id="logo" src="../assets/images/anewcanvas.webp">
+      <img id="logo" src="assets/images/anewcanvas.webp">
     </div>
     <main-menu></main-menu>
     <div class="wrapper-footer">
@@ -79,7 +79,7 @@ monogatari.component('text-box').template(() => {
   </div>
   <div data-content="text">
     <p data-ui="say" data-content="dialog"></p>
-    <img src="../assets/images/next.png" data-content="next" id="next" style="display:none;">
+    <img src="assets/images/next.png" data-content="next" id="next" style="display:none;">
   </div>
   `
 });
@@ -139,7 +139,7 @@ monogatari.showMainScreen = () => {
   } else {
     if(monogatari.setting ('isFinished')) {
       $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/hacto_17" target="_blank">Hacto_17</a> from <a href="https://twitter.com/SMiaww19" target="_blank">FluffyART Studio</a>`;
-      $_('main-screen').style ('background-image', 'url(../assets/images/main2.webp)');
+      $_('main-screen').style ('background-image', 'url(assets/images/main2.webp)');
       if($_('[data-content="copyright"]').hasClass ('copy-bg1')) {
         $_('[data-content="copyright"]').removeClass ('copy-bg1');
         $_('[data-content="version"]').removeClass ('version-bg1');
@@ -147,7 +147,7 @@ monogatari.showMainScreen = () => {
     }
     else {
       $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a>`;
-      $_('main-screen').style ('background-image', 'url(../assets/images/main1.webp)');
+      $_('main-screen').style ('background-image', 'url(assets/images/main1.webp)');
       $_('[data-content="copyright"]').addClass ('copy-bg1');
         $_('[data-content="version"]').addClass ('version-bg1');
     }

@@ -135,6 +135,10 @@ const files = [
 	'assets/images/iocry.webp',
 	'assets/images/iocry.png',
 	'assets/images/phone.webp',
+	'assets/images/anewcanvas.webp',
+	'assets/images/main1.webp',
+	'assets/images/main2.webp',
+	'assets/images/next.webp',
 	'assets/cursor/chiyopi.cur',
 ];
 

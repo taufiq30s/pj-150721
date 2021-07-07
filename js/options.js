@@ -20,7 +20,7 @@ monogatari.settings({
 	'Name': 'A New Canvas',
 
 	// The version of your game in semantic versioning (https://semver.org/).
-	'Version': '0.3.0-beta.2',
+	'Version': '0.3.0-beta.3',
 
 	// Initial Label *
 	'Label': 'Start',
@@ -130,7 +130,10 @@ monogatari.settings({
 		'Adapter': 'LocalStorage',
 		'Store': 'GameData',
 		'Endpoint': ''
-	}
+	},
+
+	// Show Iofi's Background in Main Menu
+	'isFinished': false,
 });
 
 // Initial Settings

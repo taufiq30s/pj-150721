@@ -13,6 +13,7 @@ class Credit extends Monogatari.Action {
     }
     
     apply () {
+        this.engine.settings().isFinished = true;
         this.engine.global( 'block', true );
         this.engine.element().find('[data-component="text-box"]').hide();
 

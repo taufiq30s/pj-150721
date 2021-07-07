@@ -5,22 +5,30 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'clearall',
   // 'wait',
   'wait 5000',
+  "play music YagooOffice loop with volume 10",
   'show scene inoffice with fadeIn',
   'show character yagoo normal with fadeIn',
+  "play voice Yagoo_01",
   'yagoo Sepertinya setiap hari Talent yang kumiliki semakin menjauh dari kata Idol, mereka lebih terlihat seperti komedian sekarang.',
   'show character yagoo cry',
+  "play voice Yagoo_02",
   'yagoo Sepertinya Aku tidak bisa mengharapkan mereka untuk mewujudkan impianku membentuk V-Idol yang setara dengan AKB-48, mereka sekarang banyak orang bahkan menyebut mereka sebagai AK-47.',
   'show character yagoo normal',
+  "play voice Yagoo_03",
   'yagoo Tapi kudengar di Indonesia banyak talent yang sangat berbakat.',
   'show character yagoo smile',
+  "play voice Yagoo_04",
   'yagoo Mungkin disana Aku akan menemukan talent yang dapat menjadi Idol yang sangat Ideal yang dapat mewujudkan impianku',
   'show character yagoo shinySmile',
   'clearall',
   'wait 2000',
   'hide character yagoo shinySmile with fadeOut',
   'Pada akhirnya mencoba peruntungan untuk mencari talent di Negara yang bernama Indonesia.',  
+  "stop music YagooOffice with fade 5",
   'show scene sky with fadeIn',
   'Iofi sedang berjalan pulang dari tempat kuliahnya di Universitas Asacoco Cabang Pancoran Pinggir Dalam.',
+  "play music YagooSus loop with volume 10",
+  "play sound ServantSweeping loop with volume 10",
   'show background sus1 with fadeIn bg-sus',
   'Saat Iofi Berjalan dia melihat sebuah Stand yang membagikan sebuah selebaran yang bertuliskan "Hololive Indonesia"',
   'show background sus2 bg-sus',
@@ -29,12 +37,16 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'iofi Bolehkah saya meminta satu selebarannya?',
   'hide character iofi normal with fadeOut',
   'show character susyagoo shinySmile with fadeIn',
+  "play voice Yagoo_05",
   'susyagoo Tentu saja nona manis~ Silahkan ambil ini.',
   'hide character susyagoo shinySmile with fadeOut',
   'show character iofi normal with fadeIn',
   'iofi Terima Kasih~✨',
   'hide character iofi normal with fadeOut',
-  'Iofi pun mengambil selembaran yang dibagikan Tersebut dan membawanya pulang.',  
+  'Iofi pun mengambil selembaran yang dibagikan Tersebut dan membawanya pulang.',
+  "stop sound ServantSweeping",
+  "stop music YagooSus with fade 5",
+  "play music IofiRecording loop with volume 10",
   'show scene dorm with fadeIn',
   // == Membaca Selembaran disini ==,
   'show character iofi normal with fadeIn',
@@ -45,38 +57,230 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'hide character iofi normal with fadeOut',
   'Setelah mengumpulkan rasa percaya dirinya, Iofi pun memberanikan diri untuk membuat Video pendek tentang bakatnya dan mengirimkannya ke Hololive Indonesia.',
   'iofi Hai semuanya perkenalkan nama aku Airani Iofifteen…………………',
+  "stop music IofiRecording with fade 10",
   'show scene #000',
   'centered Beberapa Bulan Kemudian',
   'show scene dorm with fadeIn',
   'wait 1000',
+  "play sound CallFromMChan loop",
   '<i>Kring........</i>',
+  "stop sound CallFromMChan",
   'show character iofi normal with fadeIn',
   'iofi Ya, Halo? Dengan siapa ini?',
+  "play voice M-chan_01",
   'unknown Apakah ini dengan Saudari yang bernama Airani Iofifteen?',
   'iofi Iya, dengan saya sendiri.',
   'unknown Sebelumnya saya perkenalkan dulu, saya M-Chan dari Hololive Indonesia',
   'iofi Hololive Indonesia? Apakah ini benar-benar Hololive Indonesia?',
-  'show ext-background test with slideInLeft 1000',
+  'show ext-background comical with slideInLeft 1000',
   'show character iofi normal at right with slideInLeft',
   'show character mchan normal at left with slideInLeft',
+  "play music M-chan loop with volume 5",
+  "play voice M-chan_02",
   'mchan Iya benar, saya M-Chan dari Hololive Indonesia',
+  "play voice M-chan_03",
   'mchan Jadi begini, saya ingin memberitahukan soal hasil audisi waktu itu.',
+  "play voice M-chan_04",
   'mchan Jadi kami dari Hololive Indonesia menyatakan, Airani Iofifteen....',
   'iofi <i>Lulus….? Tidak lulus....?</i>',
+  "play voice M-chan_05",
   'mchan Sayang sekali.......',
   'iofi ...',
+  "play voice M-chan_06",
   'mchan Anda dinyatakan lulus audisi Hololive Indonesia!',
   'iofi Saya beneran Lulus?',
   'mchan Iya... Selamat yah..... Untuk informasi lebih lanjut, akan kami hubungi dalam beberapa hari kedepan.',
   'iofi Terima kasih....Terima kasih....',
-  'show ext-background test with slideOutLeft',
+  'show ext-background comical with slideOutLeft',
   'hide character mchan normal at left with slideOutLeft',
   'show character iofi normal with slideInRight',
   'iofi A-aku lolos? Apakah ini mimpi? Aku lolos! Iofi Kamu Bisa!',
   'hide character iofi normal with fadeOut',
   'Dengan segala kemampuan yang ia miliki, dan mungkin sedikit "Brainwash" akhirnya ia bisa lolos sebagai talent Hololive Indonesia.',
+  "stop music M-chan with fade 10",
   'show scene #000',
   'wait 1000',
+  "play music CreditsSong volume 10",
+  {
+    'Credit': {
+      'fade' : [
+        {
+          'title': "Project Initiator",
+          'content': "Para Haluforia"
+        },
+        {
+          'title': "Cast",
+          'list': {
+            'Raja': "Jatmiko",
+            'Ratu': "Zuvanix",
+            'Putri Kedua': "ApiAtsu"
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'Utusan': "Khateas Raktea",            
+            'Kaisar': "Dr.Eronekoparagigante",
+            'Penasihat': "Iofi's Personal Chair",
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'M-chan': "ApiAtsu",
+            'Agen Kuda': "Minyak Kuda",
+            'Agen Kecoa': "Vesera"
+          }
+        },
+        {
+          'title': "",
+          'list': {
+            'MIB 1': "Yuta",
+            'MIB 2': "Enterprise",
+            'YAGOO': "Hitsuji(cpp)"
+          }
+        }
+      ],
+      'scroll': [
+        {
+          'title': "Cast",
+          'list': {
+            'Raja': "Jatmiko",
+            'Ratu': "Yuta",
+            'Putri Kedua': "ApiAtsu",
+            'Kaisar': "Dokutah",
+            'Penasihat': "PunPun Iofi's Personal Chair",
+            'Utusan': "Raktea",
+            'Agen Kuda': "Minyak Kuda",
+            'Agen Kecoa': "Vesera",
+            'MIB 1': "Zuvanix",
+            'MIB 2': "Enterprise",
+            'Yagoo': "Hitsuji(cpp)",
+            'M-chan': "ApiAtsu",
+          }
+        },
+        {
+          'title': "Story",
+          'list': {
+            'Originally Written By': "Rudi Hermawan",
+            'Translated By': [
+              "Vesera (EN)",
+              "Reiko (JP)"
+            ],
+            'Editor and Quality Check': [
+              "Yuta Zoka",
+              "Khateas Raktea",
+              "Dr. Nergigante",
+              "Minyak Sayur",
+              "Hitsuji",
+              "LegoVW"
+            ]
+          }
+        },
+        {
+          'title': "Background and Illustration",
+          'list': [
+            "Transenponsan",
+            "Yugen",
+            "Laeventien",
+            "PunPun Iofi's Personal Chair",
+            "JeffriArt",
+            "Littlecrownie",
+            "Hacto_17"
+          ]
+        },
+        {
+          'title': "Character Design",
+          'list': [
+            "JeffriArt",
+            "Chassy Sant",
+            "Laeventien",
+            "Haloclo 18",
+            "Jatmiko",
+            "Hacto_17"
+          ]
+        },
+        {
+          'title': "Programming" ,
+          'list': [
+            "Moonchild",
+            "JeffriArt",
+            "Zainokta Rakei",
+            "KucingLaut",
+          ]
+        },
+        {
+          'title': "Tester",
+          'list' : [
+            "Asukiri",
+            "Chero",
+            "KucingLaut",
+            "LegoVW",
+            "Pika",
+            "Ryokhan",
+            "Arcana",
+            "Chumacera",
+            "Feeltis catcus",
+            "Kisaragi Ryuu",
+            "Rad",
+            "Rediffract",
+            "Ryokhan",
+            "Yugen"
+          ]
+        },
+        {
+          'title': "Special Thanks",
+          'content': [
+            "Zad",
+            "Binyo Boss", 
+            "GrilledCheez",
+            "Melon Juice", 
+            "Rarana", 
+            "Zuvanix", 
+            "Kyarudesu",
+            "Mas Ittou",
+            "And All Beloved Ioforia..."
+          ]
+        },
+      ],
+      'quote': {
+        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+        'source': "Agnes Jessica"
+      }
+    }
+  },
+  "stop music CreditsSong fade 10",
+  'centered Beberapa Bulan Kemudian',
+  'show scene galaxy with fadeIn',
+  'show character raja takut with fadeIn',
+  "play voice King_20",
+  'raja Besar sekali armada mereka, apakah kita bisa mengalahkan mereka?',
+  'show character raja percaya with fadeIn',
+  "play voice King_21",
+  'raja Tidak! Aku tidak boleh menunjukkan ketakutanku kepada para prajuritku!',
+  'show character raja teriak2 with fadeIn',
+  "play voice King_22",
+  'raja Para Prajurit! Bersiaplah diposisi kalian. Ini akan menjadi pertempuran yang sulit. Tapi tunjukkan bahwa Iolyptus adalah bangsa yang merdeka, tidak takut kepada kekaisaran.',
+  "play voice King_23",
+  'raja Percayalah. Kita bisa mengalahkan armada yang mereka miliki.',
+  'hide character raja teriak with fadeOut',
+  'prajurit Yang mulia, ada armada lain memasuki medan pertempuran.',
+  'show character raja kaget with fadeIn',
+  "play voice King_24",
+  'raja Cepat periksa armada mil-',
+  'hide character raja normal with fadeOut',
+  'show scene ufo with fadeIn',
+  "play voice Orang-Asing_01",
+  'unknown HEI BOCAH TENGIK!!! Kali ini aku akan membantumu. Setidaknya aku tidak akan membiarkanmu mati begitu saja.',
+  "play voice Orang-Asing_02",
+  'unknown Aku masih ingin menghajarmu setelah mengambil putriku dulu, dan sekarang kau memulangkannya kepadaku. Bersiaplah jika kau selamat dari pertempuran ini.',
+  'show scene #000',
+  'wait 1500',
+  'centered To Be Continue...?',
+  'end'
+]);
+
+monogatari.label('credit', 'Indonesia', [
   {
     'Credit': {
       'fade' : [
@@ -125,7 +329,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
             'Ratu': "Yuta",
             'Putri Kedua': "Api",
             'Kaisar': "Dokutah",
-            'Penasihat': "",
+            'Penasihat': "PunPun Iofi's Personal Chair",
             'Utusan': "Raktea",
             'Agen Kuda': "Minyak Kuda",
             'Agen Kecoa': "Vesera",
@@ -148,12 +352,13 @@ monogatari.label('idPart3-1', 'Indonesia', [
               "Khateas Raktea",
               "Dr. Nergigante",
               "Minyak Sayur",
-              "Hitsuji"
+              "Hitsuji",
+              "LegoVW"
             ]
           }
         },
         {
-          'title': "Background Department",
+          'title': "Background",
           'list': [
             "Transenponsan",
             "Yugen",
@@ -162,62 +367,64 @@ monogatari.label('idPart3-1', 'Indonesia', [
           ]
         },
         {
-          'title': "Characters and Illustration Department",
+          'title': "Characters and Illustration",
           'list': [
             "JeffriArt",
             "Chassy Sant",
             "Laeventien",
             "Haloclo 18",
-            "Jatmiko"
+            "Jatmiko",
+            "Hacto_17"
           ]
         },
         {
-          'title': "Programming Department" ,
+          'title': "Programming" ,
           'list': [
             "Moonchild",
             "JeffriArt",
             "Zainokta Rakei",
+            "KucingLaut",
           ]
         },
         {
           'title': "Tester",
           'list' : [
-            "[Your name will be put here!😆]"
+            "Asukiri",
+            "Chero",
+            "KucingLaut",
+            "LegoVW",
+            "Pika",
+            "Ryokhan",
+            "Arcana",
+            "Chumacera",
+            "Feeltis catcus",
+            "Kisaragi Ryuu",
+            "Rad",
+            "Rediffract",
+            "Ryokhan",
+            "Yugen"
           ]
         },
         {
           'title': "Special Thanks",
           'content': [
-            "Zad, Binyo Boss, GrilledCheez, Melon Juice, Rarana, Zuvanix, Kyarudesu",
+            "Zad",
+            "Binyo Boss", 
+            "GrilledCheez",
+            "Melon Juice", 
+            "Rarana", 
+            "Zuvanix", 
+            "Kyarudesu",
+            "Mas Ittou",
             "And All Beloved Ioforia..."
           ]
         },
-        {
-          'title': "",
-          'content': ""
-        }
-      ]
+      ],
+      'quote': {
+        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+        'source': "Agnes Jessica"
+      }
     }
   },
-  'centered Beberapa Bulan Kemudian',
-  'show scene galaxy with fadeIn',
-  'show character raja takut with fadeIn',
-  'raja Besar sekali armada mereka, apakah kita bisa mengalahkan mereka?',
-  'show character raja percaya with fadeIn',
-  'raja Tidak! Aku tidak boleh menunjukkan ketakutanku kepada para prajuritku!',
-  'show character raja teriak2 with fadeIn',
-  'raja Para Prajurit! Bersiaplah diposisi kalian. Ini akan menjadi pertempuran yang sulit. Tapi tunjukkan bahwa Iolyptus adalah bangsa yang merdeka, tidak takut kepada kekaisaran.',
-  'raja Percayalah. Kita bisa mengalahkan armada yang mereka miliki.',
-  'hide character raja teriak with fadeOut',
-  'prajurit Yang mulia, ada armada lain memasuki medan pertempuran.',
-  'show character raja kaget with fadeIn',
-  'raja Cepat periksa armada mil-',
-  'hide character raja normal with fadeOut',
-  'show scene ufo with fadeIn',
-  'unknown HEI BOCAH TENGIK!!! Kali ini aku akan membantumu. Setidaknya aku tidak akan membiarkanmu mati begitu saja.',
-  'unknown Aku masih ingin menghajarmu setelah mengambil putriku dulu, dan sekarang kau memulangkannya kepadaku. Bersiaplah jika kau selamat dari pertempuran ini.',
-  'show scene #000',
-  'wait 1500',
-  'centered To Be Continue...?',
   'end'
 ]);

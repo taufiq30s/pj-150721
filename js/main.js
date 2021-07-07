@@ -1,4 +1,5 @@
 'use strict';
+// import Monogatari from '@monogatari/core';
 /* global Monogatari */
 /* global monogatari */
 
@@ -64,7 +65,7 @@ monogatari.registerListener('arrowDownKey', {
 monogatari.registerListener('shiftKey', {
 	keys: 'shift',
 	callback: () => {
-		this.autoPlay (this.global ('_auto_play_timer') === null);
+		monogatari.autoPlay (monogatari.global ('_auto_play_timer') === null);
 	}
 });
 
@@ -88,13 +89,22 @@ $_ready (() => {
 
 	
 
-	// Register About Us to Translation System
+	// Register Some data-string to Translation System
 	monogatari.translation('Indonesia')["About"] = "Tentang";
 	monogatari.translation('English')["About"] = "About";
 	monogatari.translation('日本語')["About"] = "について";
 	monogatari.translation('Indonesia')["Feedback"] = "Send Issue";
 	monogatari.translation('English')["Feedback"] = "Send Issue";
 	monogatari.translation('日本語')["Feedback"] = "課題の送信";
+	monogatari.translation('Indonesia')["Loading"] = "Memuat Aset";
+	monogatari.translation('English')["Loading"] = "Loading Assets";
+	monogatari.translation('日本語')["Loading"] = "アセットの読み込み";
+	monogatari.translation('Indonesia')["disclaimer"] = "Pemberitahuan";
+	monogatari.translation('English')["disclaimer"] = "Disclaimer";
+	monogatari.translation('日本語')["disclaimer"] = "免責";
+	monogatari.translation('Indonesia')["disclaimer-message"] = "Game ini adalah fan work.";
+	monogatari.translation('English')["disclaimer-message"] = "This is a fan work.";
+	monogatari.translation('日本語')["disclaimer-message"] = "このゲームは同人作品です。";
 
 	monogatari.init ('#monogatari').then (() => {		
 		// 3. Inside the init function:		
@@ -205,12 +215,18 @@ $_ready (() => {
 				{
 					charNameBox.classList.remove('hidden');
 				}
-			}			
+			}		
+			$_('#next').style('display', 'none');
+			$_('#next').removeClass('fadeIn');
+			$_('#next').removeClass('animated');
+
 		});
 		
 		// Show a icon when typing was finished
 		monogatari.on('didFinishTyping', () => {
-
+			$_('#next').style('display', 'block');
+			$_('#next').addClass('animated');
+			$_('#next').addClass('fadeIn');
 		});
 	});
 });

@@ -2,6 +2,7 @@ monogatari.script({
   日本語: {
     'Start': [
       "show scene galaxy with fadeIn",
+      "play music Intro with loop volume 10",
       "遥か遠い銀河の中で、Iolyptosという惑星があった",
       "show scene iolyptos with fadeIn",
       "その惑星はとても豊かで美しく、そして平和な生活がありました",
@@ -20,6 +21,8 @@ monogatari.script({
       "hide character ratu normal with fadeOut",
       "「 その王は二人の娘を授かり、」",
       "中でも長女は女王の美しさを受け継ぎ、清らかな心を持っていると星の中で噂になっていた.",
+      "stop music Intro with fade 5",
+      "play music CastleGarden with loop volume 10",
       "show scene garden with fadeIn",
       "show character putriKedua normal with fadeIn",
       "secondPrincessJP 待って、お姉さま！おいていかないでよ～",
@@ -69,10 +72,12 @@ monogatari.script({
       "kingJP <i>すまない… 娘よ…その願いは私には叶えられそうにもない…この世界はそんな夢物語みたい甘くないんだ… すまない…</i>",
       "hide character raja sedih1 with fadeOut",
       "二人の話を聞いた王はただ佇んでいた…",
+      "stop music CastleGarden with fade 5",
       "show scene galaxy with fadeIn",
       "時が過ぎ、長女の美貌はますます磨かれ、名実ともにIolyptosイチのものになっていった。",
       "その噂は亜光速で宇宙に広がり、遥かかなたの銀河まで知られていた。",
       "もし宇宙で無数の星で輝いたとしても、いつかは闇が訪れ輝きを失う。そのような運命がlolyptosに訪れていました",
+      "play music Emperor with loop volume 10",
       "show scene emperor-throne with fadeIn",
       "show character kaisar normal with fadeIn",
       "emperorJP 資源にあふれたIolyptosという惑星を知っておるか？",
@@ -108,6 +113,8 @@ monogatari.script({
       "envoyJP 承知いたしました！",
       "hide character utusan normal with fadeOut",
       "帝国は使節をIolyptosに送って、王に伝言を伝えた…このメッセージは暗に戦争を起こすという重大な意味を明確にして",
+      "stop music Emperor fade 5",
+      "play music EnvoyWithKing volume 10",
       "show scene iolyptos-throne with fadeIn",
       "show character raja normal with fadeIn",
       "kingJP ふむ…皇帝からの伝言と…？続けたまえ…",
@@ -144,6 +151,7 @@ monogatari.script({
       "kingJP ...",
       "hide character raja marah with fadeOut",
       "王はどうしようもない表情でただただそこで座っていた",
+      "stop music EnvoyWithKing with fade 10",
       "jump jpPart2"
     ]
   },

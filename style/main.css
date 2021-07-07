@@ -432,6 +432,7 @@ credits-container .credit-section {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
+	align-items: flex-start;
 	text-align: center;
 }
 

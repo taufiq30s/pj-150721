@@ -429,19 +429,34 @@ credits-container.credit-fade {
 }
 
 credits-container .credit-section {
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	text-align: center;
 }
 
 credits-container .credit-section h1 {
+	flex: 1 100%;
 	font-size: 32px;
 	margin: 0 0 30px;
 }
 
+credits-container .credit-section h3 {
+	flex: 1 100%;
+	font-size: 24px;
+	margin: 0 0 30px;
+}
+
+credits-container .credit-section div {
+	flex: 1 100%;
+}
+
 credits-container .credit-section dl {
+	flex: 1 100%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin: 0;
 }
 
 credits-container .credit-section dl dt {
@@ -467,7 +482,25 @@ credits-container .credit-section dl dd p {
 	margin: 0 0 5px;
 }
 
+credits-container .credit-bgm-section dl {
+	flex: 1 50%;
+}
+
+credits-container .credit-bgm-section dl dt {
+	flex: 1 100%;
+	padding: 0 0 15px;
+	text-align: center;
+	color: #fff;
+}
+
+credits-container .credit-bgm-section dl dt + dd {
+	flex: 1 100%;
+	padding: 0 0 60px;
+	text-align: center;
+}
+
 credits-container .credit-section p {
+	flex: 1 100%;
 	margin: 0 0 30px;
 }
 
@@ -480,7 +513,8 @@ credits-container.credit-scroll .wrapper {
 }
 
 credits-container.credit-scroll .credit-section {
-	margin: 0 0 60px;
+	margin: 0 auto 60px;
+	max-width: 960px;
 }
 
 #source {

@@ -293,9 +293,11 @@ self.addEventListener ('fetch', (event) => {
 			function fetchedFromNetwork (response) {
 				const cacheCopy = response.clone ();
 
-				caches.open (`${name}-v${version}`).then (function add (cache) {
-					cache.put (event.request, cacheCopy);
-				});
+				if(response.ok && response.status != 206 && shouldCache(request.url)) {
+					caches.open (`${name}-v${version}`).then (function add (cache) {
+						cache.put (event.request, cacheCopy);
+					});
+				}				
 				return response;
 			}
 

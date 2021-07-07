@@ -132,7 +132,7 @@ monogatari.script({
       "hide character utusan normal with fadeOut",
       "Sang Kaisar pun mengirim utusan ke Iolyptos untuk melamar Sang Putri, sambil membawa ancaman perang jika Raja menolak lamaran tersebut.",
       "stop music Emperor fade 5",
-      "play music EnvoyWithKing volume 10",
+      "play music EnvoyWithKing with loop volume 10",
       "show scene iolyptos-throne with fadeIn",
       "show character raja normal with fadeIn",
       "play voice King_04",

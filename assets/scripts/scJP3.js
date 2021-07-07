@@ -3,7 +3,7 @@ monogatari.label('jpPart3', '日本語', [
   '日本、Vtuberアイドル事務所「カバー」。そこのCEOは今大きな悩みを抱えている。それは自分の夢とタレントだ',
   'show scene office with fadeIn',
   'wait 5000',
-  "play music YagooOffice loop with volume 10",
+  "play music YagooOffice with loop volume 10",
   'show scene inoffice with fadeIn',
   'show character yagoo normal with fadeIn',
   'yagoo どうやら私達のタレントたちはアイドルというより芸人に見えますね…',
@@ -21,7 +21,7 @@ monogatari.label('jpPart3', '日本語', [
   "stop music YagooOffice with fade 5",
   'show scene sky with fadeIn',
   '大学から帰る時、イオフィはとあるスタンドが気になった',
-  "play music YagooSus loop with volume 10",
+  "play music YagooSus with loop volume 10",
   "play sound ServantSweeping loop with volume 10",
   'show background sus1 with fadeIn',
   'イオフィは近くのチラシ配りのおっさんを見て考えた',
@@ -39,7 +39,7 @@ monogatari.label('jpPart3', '日本語', [
   'イオフィはそのチラシをもらって、家に帰ることにした',
   "stop sound ServantSweeping",
   "stop music YagooSus with fade 5",
-  "play music IofiRecording loop with volume 10",
+  "play music IofiRecording with loop volume 10",
   'show scene dorm with fadeIn',
   // == Membaca Selembaran disini ==,
   'show character iofi normal with fadeIn',
@@ -64,7 +64,7 @@ monogatari.label('jpPart3', '日本語', [
   'show ext-background comical with slideInLeft 1000',
   'show character iofi normal at right with slideInLeft',
   'show character mchan normal at left with slideInLeft',
-  "play music M-chan loop with volume 5",
+  "play music M-chan with loop volume 5",
   'mchanJP はい、そうです。私はホロライブIDのMちゃんと申します',
   'iofiJP あ、あぁ！すみません！あの…どうしましたか？　私に連絡なんて…',  
   'mchanJP イオフィ様にオーディションの件で報告したい事がありまして…',
@@ -85,7 +85,7 @@ monogatari.label('jpPart3', '日本語', [
   "stop music M-chan with fade 10",
   'show scene #000',
   'wait 1000',
-  "play music CreditsSong volume 10",
+  "play music CreditsSong with loop volume 10",
   {
     'Credit': {
       'fade' : [
@@ -98,7 +98,7 @@ monogatari.label('jpPart3', '日本語', [
           'list': {
             '王': "Jatmiko",
             '王女': "Zuvanix",
-            '次女': "Api Atsu"
+            '次女': "ApiAtsu"
           }
         },
         {
@@ -112,7 +112,7 @@ monogatari.label('jpPart3', '日本語', [
         {
           'title': "",
           'list': {
-            'Mちゃん': "Api Atsu",
+            'Mちゃん': "ApiAtsu",
             'クダエージェント': "Minyak Kuda",
             'ゴキエージェント': "Vesera"
           }
@@ -131,14 +131,14 @@ monogatari.label('jpPart3', '日本語', [
           'title': "キャスト",
           'list': {
             '王': "Jatmiko",
-            '王女': "Yuta",
+            '王女': "Zuvanix",
             '次女': "Api",
             '皇帝': "Dokutah",
             'アドバイザー': "PunPun Iofi's Personal Chair",
             '使節': "Raktea",
             'クダエージェント': "Minyak Kuda",
             'ゴキエージェント': "Vesera",
-            '黒服の人一号': "Zuvanix",
+            '黒服の人一号': "Yuta",
             '黒服の人二号': "Enterprise",
             'YAGOO': "Hitsuji-san",
             'Mちゃん': "Api",
@@ -170,6 +170,7 @@ monogatari.label('jpPart3', '日本語', [
             "Laeventien",
             "PunPun Iofi's Personal Chair",
             "JeffriArt",
+            "Jatmiko",
             "Littlecrownie",
             "Hacto_17"
           ]
@@ -181,7 +182,6 @@ monogatari.label('jpPart3', '日本語', [
             "Chassy Sant",
             "Laeventien",
             "Haloclo 18",
-            "Jatmiko",
             "Hacto_17"
           ]
         },

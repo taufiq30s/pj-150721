@@ -5,7 +5,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'clearall',
   // 'wait',
   'wait 5000',
-  "play music YagooOffice loop with volume 10",
+  "play music YagooOffice with loop volume 10",
   'show scene inoffice with fadeIn',
   'show character yagoo normal with fadeIn',
   "play voice Yagoo_01",
@@ -27,7 +27,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   "stop music YagooOffice with fade 5",
   'show scene sky with fadeIn',
   'Iofi sedang berjalan pulang dari tempat kuliahnya di Universitas Asacoco Cabang Pancoran Pinggir Dalam.',
-  "play music YagooSus loop with volume 10",
+  "play music YagooSus with loop volume 10",
   "play sound ServantSweeping loop with volume 10",
   'show background sus1 with fadeIn bg-sus',
   'Saat Iofi Berjalan dia melihat sebuah Stand yang membagikan sebuah selebaran yang bertuliskan "Hololive Indonesia"',
@@ -46,7 +46,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'Iofi pun mengambil selembaran yang dibagikan Tersebut dan membawanya pulang.',
   "stop sound ServantSweeping",
   "stop music YagooSus with fade 5",
-  "play music IofiRecording loop with volume 10",
+  "play music IofiRecording with loop volume 10",
   'show scene dorm with fadeIn',
   // == Membaca Selembaran disini ==,
   'show character iofi normal with fadeIn',
@@ -75,7 +75,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   'show ext-background comical with slideInLeft 1000',
   'show character iofi normal at right with slideInLeft',
   'show character mchan normal at left with slideInLeft',
-  "play music M-chan loop with volume 5",
+  "play music M-chan with loop volume 5",
   "play voice M-chan_02",
   'mchan Iya benar, saya M-Chan dari Hololive Indonesia',
   "play voice M-chan_03",
@@ -100,7 +100,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   "stop music M-chan with fade 10",
   'show scene #000',
   'wait 1000',
-  "play music CreditsSong volume 10",
+  "play music CreditsSong loop volume 10",
   {
     'Credit': {
       'fade' : [
@@ -146,14 +146,14 @@ monogatari.label('idPart3-1', 'Indonesia', [
           'title': "Cast",
           'list': {
             'Raja': "Jatmiko",
-            'Ratu': "Yuta",
+            'Ratu': "Zuvanix",
             'Putri Kedua': "ApiAtsu",
             'Kaisar': "Dokutah",
             'Penasihat': "PunPun Iofi's Personal Chair",
             'Utusan': "Raktea",
             'Agen Kuda': "Minyak Kuda",
             'Agen Kecoa': "Vesera",
-            'MIB 1': "Zuvanix",
+            'MIB 1': "Yuta",
             'MIB 2': "Enterprise",
             'Yagoo': "Hitsuji(cpp)",
             'M-chan': "ApiAtsu",
@@ -185,6 +185,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
             "Laeventien",
             "PunPun Iofi's Personal Chair",
             "JeffriArt",
+            "Jatmiko",
             "Littlecrownie",
             "Hacto_17"
           ]
@@ -196,7 +197,6 @@ monogatari.label('idPart3-1', 'Indonesia', [
             "Chassy Sant",
             "Laeventien",
             "Haloclo 18",
-            "Jatmiko",
             "Hacto_17"
           ]
         },

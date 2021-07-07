@@ -114,7 +114,7 @@ monogatari.script({
       "hide character utusan normal with fadeOut",
       "帝国は使節をIolyptosに送って、王に伝言を伝えた…このメッセージは暗に戦争を起こすという重大な意味を明確にして",
       "stop music Emperor fade 5",
-      "play music EnvoyWithKing volume 10",
+      "play music EnvoyWithKing with loop volume 10",
       "show scene iolyptos-throne with fadeIn",
       "show character raja normal with fadeIn",
       "kingJP ふむ…皇帝からの伝言と…？続けたまえ…",

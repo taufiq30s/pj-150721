@@ -132,7 +132,7 @@ monogatari.script({
       "hide character utusan normal with fadeOut",
       "The Emperor send the Envoy to the Iolyptos to propose to the First Princess and giving a threat if they trying to oppose him.",
       "stop music Emperor fade 5",
-      "play music EnvoyWithKing volume 10",
+      "play music EnvoyWithKing with loop volume 10",
       "show scene iolyptos-throne with fadeIn",
       "show character raja normal with fadeIn",
       "play voice King_04",

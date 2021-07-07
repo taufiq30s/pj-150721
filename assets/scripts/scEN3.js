@@ -5,7 +5,7 @@ monogatari.label('enPart3', 'English', [
   'clearall',
   // 'wait',
   'wait 5000',
-  "play music YagooOffice loop with volume 10",
+  "play music YagooOffice with loop volume 10",
   'show scene inoffice with fadeIn',
   'show character yagoo normal with fadeIn',
   "play voice Yagoo_01",
@@ -27,7 +27,7 @@ monogatari.label('enPart3', 'English', [
   "stop music YagooOffice with fade 5",
   'show scene sky with fadeIn',
   'Iofi is walking to her home from her college at Asacoco University Branch Pancoran Pinggir Dalam.',
-  "play music YagooSus loop with volume 10",
+  "play music YagooSus with loop volume 10",
   "play sound ServantSweeping loop with volume 10",
   'show background sus1 with fadeIn',
   'When she walks she saw a stand that gives a flyer that reads as Hololive Indonesia.',
@@ -46,7 +46,7 @@ monogatari.label('enPart3', 'English', [
   'Iofi then took the flyer given to her and she brought it home.',  
   "stop sound ServantSweeping",
   "stop music YagooSus with fade 5",
-  "play music IofiRecording loop with volume 10",
+  "play music IofiRecording with loop volume 10",
   'show scene dorm with fadeIn',
   // == Membaca Selembaran disini ==,
   'show character iofi normal with fadeIn',
@@ -75,7 +75,7 @@ monogatari.label('enPart3', 'English', [
   'show ext-background comical with slideInLeft 1000',
   'show character iofi normal at right with slideInLeft',
   'show character mchan normal at left with slideInLeft',
-  "play music M-chan loop with volume 5",
+  "play music M-chan with loop volume 5",
   "play voice M-chan_02",
   'mchan Yes it is, I am M-Chan from Hololive Indonesia',
   "play voice M-chan_03",
@@ -100,7 +100,7 @@ monogatari.label('enPart3', 'English', [
   "stop music M-chan with fade 10",
   'show scene #000',
   'wait 1000',
-  "play music CreditsSong volume 10",
+  "play music CreditsSong with loop volume 10",
   {
     'Credit': {
       'fade' : [
@@ -146,14 +146,14 @@ monogatari.label('enPart3', 'English', [
           'title': "Cast",
           'list': {
             'King': "Jatmiko",
-            'Queen': "Yuta",
+            'Queen': "Zuvanix",
             'Second Princess': "ApiAtsu",
             'Emperor': "Dokutah",
             'Advisor': "PunPun Iofi's Personal Chair",
             'Envoy': "Raktea",
             'Agent Kuda': "Minyak Kuda",
             'Agent Kecoa': "Vesera",
-            'MIB 1': "Zuvanix",
+            'MIB 1': "Yuta",
             'MIB 2': "Enterprise",
             'Yagoo': "Hitsuji(cpp)",
             'M-chan': "ApiAtsu",
@@ -185,6 +185,7 @@ monogatari.label('enPart3', 'English', [
             "Laeventien",
             "PunPun Iofi's Personal Chair",
             "JeffriArt",
+            "Jatmiko",
             "Littlecrownie",
             "Hacto_17"
           ]
@@ -196,7 +197,6 @@ monogatari.label('enPart3', 'English', [
             "Chassy Sant",
             "Laeventien",
             "Haloclo 18",
-            "Jatmiko"
           ]
         },
         {

@@ -79,7 +79,7 @@ monogatari.component('text-box').template(() => {
   </div>
   <div data-content="text">
     <p data-ui="say" data-content="dialog"></p>
-    <img src="../assets/images/next.png" id="next" style="display:none;">
+    <img src="../assets/images/next.png" data-content="next" id="next" style="display:none;">
   </div>
   `
 });

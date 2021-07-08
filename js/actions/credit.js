@@ -122,12 +122,12 @@ class Credit extends Monogatari.Action {
         
         const content = contents[i];
         if ( 'content' in content ) {
-            this.fadeContent( content.title, content.content ).then( () => {
+            this.fadeContent( content.title, content.content, ( 'class' in content ? content.class : '' ) ).then( () => {
                 this.fade( contents, i + 1, resolve );
             } );
         }
         else if ( 'list' in content ) {
-            this.fadeList( content.title, content.list ).then( () => {
+            this.fadeList( content.title, content.list, ( 'class' in content ? content.class : '' ) ).then( () => {
                 this.fade( contents, i + 1, resolve );
             } );
         }
@@ -138,8 +138,8 @@ class Credit extends Monogatari.Action {
         }
     }
     
-    fadeContent ( title, content ) {
-        let element = this.createElementContent( title, content );
+    fadeContent ( title, content, classnames = '' ) {
+        let element = this.createElementContent( title, content, classnames );
         element.classList.add( 'animated', 'fadeIn' );
         
         this.wrapper.append( element );
@@ -156,8 +156,8 @@ class Credit extends Monogatari.Action {
         } );
     }
     
-    fadeList ( title, list ) {
-        let element = this.createElementList( title, list );
+    fadeList ( title, list, classnames = '' ) {
+        let element = this.createElementList( title, false, list, classnames );
         element.classList.add( 'animated', 'fadeIn' );
         
         this.wrapper.append( element );
@@ -188,11 +188,11 @@ class Credit extends Monogatari.Action {
             const content = contents[i];
             
             if ( 'content' in content ) {
-                let element = this.createElementContent( content.title, content.content );
+                let element = this.createElementContent( content.title, content.content, ( 'class' in content ? content.class : '' ) );
                 this.wrapper.append( element );
             }
             else if ( 'list' in content ) {
-                let element = this.createElementList( content.title, content.list );
+                let element = this.createElementList( content.title, ( 'subtitle' in content ? content.subtitle : false ), content.list, ( 'class' in content ? content.class : '' ) );
                 this.wrapper.append( element );
             }
         }
@@ -208,11 +208,12 @@ class Credit extends Monogatari.Action {
         } );
     }
     
-    createElementContent ( title, content ) {
+    createElementContent ( title, content, classnames = '' ) {
         let content_arr = Array.isArray( content ) ? content : [ content ];
         let element = document.createElement( 'div' );
 
-        element.className = 'credit-section';
+        element.className = 'credit-section' + ( classnames ? ' ' + classnames : '' );
+        
         let title_element = document.createElement( 'h1' );
         let content_element = document.createElement( 'div' );
         title_element.textContent = title;
@@ -241,37 +242,52 @@ class Credit extends Monogatari.Action {
         return element;
     }
     
-    createElementList ( title, list ) {
-        let is_array = Array.isArray( list );
+    createElementList ( title, subtitle, lists, classnames = '' ) {
         let element = document.createElement( 'div' );
         let title_element = document.createElement( 'h1' );
-        let list_element = document.createElement( 'dl' );
 
-        element.className = 'credit-section';
+        element.className = 'credit-section' + ( classnames ? ' ' + classnames : '' );
         title_element.textContent = title;
+        element.append( title_element );
 
-        for ( const i in list ) {
-            if ( ! is_array ) {
-                let dt_element = document.createElement( 'dt' );
-                dt_element.textContent = i;
-                list_element.append( dt_element );
-            }
-            let dd_element = document.createElement( 'dd' );
-            if ( Array.isArray( list[i] ) ) {
-                for ( const l in list[i] ) {
-                    let p_element = document.createElement('p');
-                    p_element.textContent = list[i][l];
-                    dd_element.append( p_element );
-                }
-            }
-            else {
-                dd_element.textContent = list[i];
-            }
-            list_element.append( dd_element );
+        let subtitle_element;
+        if ( subtitle ) {
+            subtitle_element = document.createElement( 'h3' );
+            subtitle_element.textContent = subtitle;
+            element.append( subtitle_element );
+        }
+        
+        if ( ! Array.isArray( lists ) || typeof lists[0] == 'string' ) {
+            lists = [ lists ];
         }
 
-        element.append( title_element );
-        element.append( list_element );
+        for ( const s in lists ) {
+            let list = lists[s];
+            let list_element = document.createElement( 'dl' );
+            let is_array = Array.isArray( list );
+            
+            for ( const i in list ) {
+                if ( ! is_array ) {
+                    let dt_element = document.createElement( 'dt' );
+                    dt_element.textContent = i;
+                    list_element.append( dt_element );
+                }
+                let dd_element = document.createElement( 'dd' );
+                if ( Array.isArray(list[i]) ) {
+                    for ( const l in list[i] ) {
+                        let p_element = document.createElement( 'p' );
+                        p_element.textContent = list[i][l];
+                        dd_element.append( p_element );
+                    }
+                }
+                else {
+                    dd_element.textContent = list[i];
+                }
+                list_element.append( dd_element );
+            }
+            element.append( list_element );
+        }
+        
         return element;
     }
     

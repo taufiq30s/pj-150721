@@ -1294,11 +1294,11 @@ input[type=range]::-ms-fill-upper {
 }
 
 [data-string=SlotDeletion] {
-	color: #fff;
+	color: #000;
 }
 
 [data-content=context] {
-	color: #fff;
+	color: #000;
 	padding: 1rem;
 }
 

@@ -258,6 +258,18 @@ monogatari.label('idPart3-1', 'Indonesia', [
           ]
         },
         {
+          'title': "Ending Music Theme",
+          'subtitle': "「Bersama Ioforia」",
+          'list': {
+            'Lyrics': [
+              "Airani Iofifteen",
+              "Rikkaloid"
+            ],
+            'Music': "Rikkaloid",
+            'Arrangement': 'Zuvanix'
+          }
+        },
+        {
           'title': "Special Thanks",
           'content': [
             "Zad",

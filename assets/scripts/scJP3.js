@@ -244,6 +244,18 @@ monogatari.label('jpPart3', '日本語', [
           ]
         },
         {
+          'title': "エンディング主題歌",
+          'subtitle': "「Bersama Ioforia」",
+          'list': {
+            '歌詞': [
+              "Airani Iofifteen",
+              "Rikkaloid"
+            ],
+            '音楽': "Rikkaloid",
+            '配置': 'Zuvanix'
+          }
+        },
+        {
           'title': "特別な感謝",
           'list': [
             "Zad",

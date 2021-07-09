@@ -175,7 +175,7 @@ monogatari.label('enPart3', 'English', [
               "Khateas Raktea",
               "Dr. Nergigante",
               "Minyak Sayur",
-              "Hitsuji",
+              "Hitsuji(cpp)",
               "LegoVW"
             ]
           }
@@ -256,6 +256,18 @@ monogatari.label('enPart3', 'English', [
               "[South Wind]": "FLASH☆BEAT"
             }
           ]
+        },
+        {
+          'title': "Ending Music Theme",
+          'subtitle': "「Bersama Ioforia」",
+          'list': {
+            'Lyrics': [
+              "Airani Iofifteen",
+              "Rikkaloid"
+            ],
+            'Music': "Rikkaloid",
+            'Arrangement': 'Zuvanix'
+          }
         },
         {
           'title': "Special Thanks",

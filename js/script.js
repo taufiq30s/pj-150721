@@ -195,7 +195,13 @@ monogatari.characters({
 		name: "Iofi",
 		color: "#F46383",
 		sprites: {
-			normal: 'first_princess_example.webp'
+			normal: 'iofi_netral.webp',
+			bahagia: 'iofi_bahagia.webp',
+			bingung: 'iofi_bingung.webp',
+			panik: 'iofi_panik.webp',
+			senyum: 'iofi_senyum.webp',
+			senyumCanggung: 'iofi_senyum_canggung.webp',
+			tawaCanggung: 'iofi_tertawa_canggung.webp'
 		}
 	},
 	'yagoo': {
@@ -234,7 +240,7 @@ monogatari.characters({
 		name: "M-chan",
 		color: "#FFB449",
 		sprites: {
-			normal: 'm chan - netral.webp',
+			normal: 'mchan_netral.webp',
 		}
 	},
 	"unknown": {
@@ -283,14 +289,16 @@ monogatari.characters({
 		name: "Ratu",
 		color: "#ED9082",
 		sprites: {
-			normal: 'queen_example.webp'
+			normal: 'queen.webp'
 		}
 	},
 	'kaisar': {
 		name: "Kaisar",
 		color: "#CA6A68",
 		sprites: {
-			normal: 'imperial_example.webp'
+			normal: 'emperor_netral.webp',
+			menyeringai: 'emperor_menyeringai.webp',
+			teriak: 'emperor_berteriak.webp'
 		}
 	},
 	'penasihat': {
@@ -399,9 +407,6 @@ monogatari.characters({
 	'queenJP': {
 		name: "王女",
 		color: "#ED9082",
-		sprites: {
-			normal: 'queen_example.webp'
-		}
 	},
 	'emperorJP': {
 		name: "皇帝",

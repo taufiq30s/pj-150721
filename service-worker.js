@@ -298,6 +298,7 @@ self.addEventListener ('fetch', (event) => {
 					});		
 					return response;
 				}
+			}
 
 			function unableToResolve () {
 				return new Response (`

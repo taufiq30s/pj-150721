@@ -214,6 +214,33 @@ monogatari.label('jpPart3', '日本語', [
           ]
         },
         {
+          'title': "Background Music",
+          'subtitle': "DOVA",
+          'class': "credit-bgm-section",
+          'list': [
+            {
+              "[Machina]": "だんご工房",
+              "[珊瑚礁]": "伊藤ケイス",
+              "[隠された遺跡の中へ]": "秦暁",
+              "[Clouded Stage]": "MFP [Marron Fields Production]",
+              "[淵に立つ背中を押すのは...的なBGM]": "鷹尾まさき[タカオマサキ]",
+              "[哀愁漂うホラー的なBGM]": "鷹尾まさき[タカオマサキ]",
+              "[Digital Space]": "Shimtone",
+              "[Painted from Memory ～想いは調べにのって～]": "田中芳典"
+            },
+            {
+              "[閉ざされた海底都市]": "ハヤシユウ",
+              "[堕ちる]": "もっぴーさうんど",
+              "[Ruins]": "Motomuge",
+              "[Tension]": "こおろぎ",
+              "[帰ろう]": "T12ya",
+              "[日曜の午後]": "KK",
+              "[Funny Life]": "T.tam",
+              "[South Wind]": "FLASH☆BEAT"
+            }
+          ]
+        },
+        {
           'title': "特別な感謝",
           'list': [
             "Zad",
@@ -254,6 +281,6 @@ monogatari.label('jpPart3', '日本語', [
   'unknown 貴様がここで死ぬのも悪くないが、うちの娘はきっと吾輩を許せないだろう。だが、この戦い終わったら、うちの娘を奪う時の返しでお前を殴るぞ。だから…その時まで死ぬんじゃない！ ',
   'show scene #000',
   'wait 1500',
-  'centered To Be Continue...?',
+  'centered To Be Continued...?',
   'end'
 ]);

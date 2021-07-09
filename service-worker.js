@@ -292,14 +292,12 @@ self.addEventListener ('fetch', (event) => {
 		caches.match (event.request).then ((cached) => {
 			function fetchedFromNetwork (response) {
 				const cacheCopy = response.clone ();
-
 				if(response.ok && response.status != 206) {
 					caches.open (`${name}-v${version}`).then (function add (cache) {
 						cache.put (event.request, cacheCopy);
-					});
-				}				
-				return response;
-			}
+					});		
+					return response;
+				}
 
 			function unableToResolve () {
 				return new Response (`

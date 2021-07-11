@@ -254,9 +254,21 @@ monogatari.characters({
 		name: "Putri Pertama",
 		color: "#F46383",
 		sprites: {
-			normal: 'iohime_smile.webp',
+			smile: 'iohime_smile.webp',
 			tertawa: 'iohime_tertawa.webp',
-			talking: 'iohime_convo.webp'
+			talking: 'iohime_convo.webp',
+			closeeye: 'iohime_closeeye.webp',
+			closeeye2: 'iohime_closeeye2.webp',
+			closeeye3: 'iohime_closeeye3.webp',
+			netral: 'iohime_netral.webp',
+			angry: 'iohime_marah.webp',
+			kaget: 'iohime_kaget.webp',
+			tawalepas: 'iohime_tertawa_lepas.webp',
+			cemashijau: 'iohime_cemas_hijau.webp',
+			kagethijau: 'iohime_kaget_hijau.webp',
+			marahhijau: 'iohime_marah_hijau.webp',
+			netralhijau: 'iohime_netral_hijau.webp',
+			sadhijau: 'iohime_sad_hijau.webp',
 		}
 	},
 	'putriKedua': {
@@ -265,7 +277,8 @@ monogatari.characters({
 		sprites: {
 			panik: 'imouto_panic.webp',
 			menggerutu: 'imouto_menggerutu.webp',
-			normal: 'imouto_smile.webp'
+			normal: 'imouto_smile.webp',
+			bingung: 'imouto_bingung.webp'
 		}
 	},
 	'raja': {
@@ -290,7 +303,13 @@ monogatari.characters({
 		name: "Ratu",
 		color: "#ED9082",
 		sprites: {
-			normal: 'queen.webp'
+			normal: 'queen.webp',
+			bingung1: 'queen_bingung1.webp',
+			bingung2: 'queen_bingung2.webp',
+			cemas: 'queen_cemas.webp',
+			canggung: 'queen_canggung.webp',
+			sad: 'queen_sad.webp',
+			smileforced: 'queen_smile_forced.webp',
 		}
 	},
 	'kaisar': {

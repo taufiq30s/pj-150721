@@ -4,13 +4,6 @@
 */
 // Change Main Screen
 
-/* TODO Footer */
-/*
-  <div id="footer">
-      <p id="product-version">Version 0.3.0-beta3</p>
-      <p id="copy">&copy; 2021 Pj-150721 Team</p>
-    </div>
-*/
 monogatari.component('main-screen').template(() => {
   return `
     <div class="wrapper-logo">
@@ -23,7 +16,7 @@ monogatari.component('main-screen').template(() => {
         <p id="product-version">This game using multiple license. See About for details.</p>
       </div>
       <div class="wrapper-version version-bg1" data-content="version">
-        <p id="product-version">Version 0.3.0-beta3</p>
+        <p id="product-version">Version 1.0.0-pre1</p>
         <p id="copy" data-content="author">Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a></p>
       </div>
     </div>
@@ -79,7 +72,7 @@ monogatari.component('text-box').template(() => {
   </div>
   <div data-content="text">
     <p data-ui="say" data-content="dialog"></p>
-    <img src="assets/images/next.png" data-content="next" id="next" style="display:none;">
+    <img src="assets/images/next.webp" data-content="next" id="next" style="display:none;">
   </div>
   `
 });

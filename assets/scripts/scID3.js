@@ -97,6 +97,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
   "play sound heartbeat loop",
   'iofi <i>Lulus….? Tidak lulus....?</i>',
   "play voice M-chan_06",
+  "stop sound heartbeat",
   'mchan Sayang sekali.......',
   'show character iofi panik at right',
   'iofi ...',

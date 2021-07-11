@@ -144,7 +144,8 @@ monogatari.assets('sounds', {
 	"Beach": "pantai.mp3",
 	"ServantSweeping": "pelayan nyapu.mp3",
 	"CallFromMChan": "telpon dari m-chan.mp3",
-
+	"IofiRun": "Running_On_Tile_Iofi_Dibentak.mp3",
+	"QueenTakeSecondPrincess": "Walk_On_Concrete_Ratu_Bawa_Putri_K2.mp3",
 });
 
 // Define the videos used in the game.

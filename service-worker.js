@@ -341,8 +341,8 @@ self.addEventListener ('fetch', (event) => {
 					caches.open (`${name}-v${version}`).then (function add (cache) {
 						cache.put (event.request, cacheCopy);
 					});		
-					return response;
 				}
+				return response;
 			}
 
 			function unableToResolve () {

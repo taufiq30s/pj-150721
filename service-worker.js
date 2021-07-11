@@ -295,7 +295,12 @@ const files = [
 	'assets/sounds/pelayan nyapu.mp3',
 	'assets/sounds/telpon dari m-chan.mp3',
 	'assets/sounds/Running_On_Tile_Iofi_Dibentak.mp3',
-	'assets/sounds/Walk_On_Concrete_Ratu_Bawa_Putri_K2.mp3',
+	'assets/sounds/Walk_On_Concrete_Ratu_Bawa_Putri_K2.mp3',	
+	'assets/sounds/city.mp3',	
+	'assets/sounds/heartbeat.mp3',	
+	'assets/sounds/lamp_switch.mp3',	
+	'assets/sounds/metal_door.mp3',	
+	'assets/sounds/object_drop.mp3',	
 ];
 
 self.addEventListener ('install', (event) => {

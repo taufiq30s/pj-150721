@@ -9,7 +9,7 @@ monogatari.label("enPart2", "English", [
   "show character ratu sad at right with fadeIn",
   "play voice King_11",
   "king My daughter, hear me, I have something really important. A few days ago an envoy came from the Galactic Emperor to propose to you, the Emperor wants you as one of His mistresses.",
-  "show character ratu cemas at right with fadeIn",
+  "show character ratu cemas at right",
   "play voice Queen_02",
   "queen But My King...",
   "hide character raja closeeye at left with fadeOut",
@@ -60,12 +60,12 @@ monogatari.label("enPart2", "English", [
   "show character raja tegas at right",
   "play voice King_17",
   "king My Queen, I think this is the right time for you and the Second Princess to evacuate to your original planet. At least your father is able to protect both of you.",
-  "show character ratu cemas at left with fadeIn",
+  "show character ratu cemas at left",
   "play voice Queen_04",
   "queen But My King, you will be lonely in here.",
   "play voice King_18",
   "king Bring this thing with you, I am unable to think clearly knowing that all of you will be in danger with me.",
-  "show character ratu bingung2 at left with fadeIn",
+  "show character ratu bingung2 at left",
   "play voice Queen_05",
   "queen Isn’t this thing coming in pairs? Did My King hold the other one?",
   "play voice King_19",
@@ -100,6 +100,7 @@ monogatari.label('coklat', 'English', [
   "show character putriPertama closeeye2",
   "play sound ObjectDropped",
   "firstPricess Hm?! What is this thing? I don’t remember bringing this with me.",
+  "stop sound ObjectDropped",
   "When the Princess takes the chocolate from a drawer, an unknown thing hits her head",
   "jump enPart2-2",
 ]);
@@ -108,6 +109,7 @@ monogatari.label('caloriebar', 'English', [
   "show character putriPertama closeeye2",
   "play sound ObjectDropped",
   "firstPricess Hm?! What is this thing? I don’t remember bringing this with me.",
+  "stop sound ObjectDropped",
   "When the Princess takes the calorie bar from a drawer, an unknown thing hits her head",
   "jump enPart2-2",
 ]);
@@ -343,6 +345,7 @@ monogatari.label('enPart2-2', 'English', [
   'hide image phone center hp with fadeOut',
   "With selling some valuable items that she brought from Iolyptos to Pasar Senen, Iofi intended to study as an art college student while learning all kinds of language that humans on Earth use.",
   "stop music IofiRoom with fade 5",
+  "show scene #000",
   "jump enPart3",
 ]);
 

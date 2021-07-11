@@ -146,6 +146,11 @@ monogatari.assets('sounds', {
 	"CallFromMChan": "telpon dari m-chan.mp3",
 	"IofiRun": "Running_On_Tile_Iofi_Dibentak.mp3",
 	"QueenTakeSecondPrincess": "Walk_On_Concrete_Ratu_Bawa_Putri_K2.mp3",
+	"ObjectDropped": "object_drop.mp3",
+	"door": "metal_door.mp3",
+	"lampon": "lamp_switch.mp3",
+	'heartbeat': "heartbeat.mp3",
+	'city': "city.mp3",
 });
 
 // Define the videos used in the game.

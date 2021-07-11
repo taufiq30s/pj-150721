@@ -1,7 +1,7 @@
 monogatari.script({
   Indonesia: {
     'Start': [
-      // "jump credit",
+      // "jump enPart3",
       "show scene galaxy with fadeIn",
       "play music Intro with loop volume 10",
       "Di sebuah Galaksi nun jauh disana, ada sebuah planet bernama Iolyptos.",
@@ -35,7 +35,9 @@ monogatari.script({
       "show character putriPertama tertawa with slideInLeft",
       "putriPertama Tangkap Aku kalau bisa.",
       "show character putriKedua panik at right with slideInRight",
-      "show character putriPertama talking with slideInLeft",
+      "show character putriPertama tertawa with slideInLeft",
+      "wait 1500",
+      "show character putriPertama talking",
       "putriPertama Oh adikku tersayang, makanya jadi orang jangan terlalu pendek.",
       "play voice Imouto_02",
       "show character putriKedua menggerutu at right",

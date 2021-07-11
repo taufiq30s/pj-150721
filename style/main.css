@@ -336,6 +336,10 @@ text-box [data-content="dialog"] {
 	left: 15vw;
 }
 
+[data-character].protect {
+	left: 25vw;
+}
+
 [data-screen="game"] [data-character].right {
 	right: 15vw;
 }

@@ -17,7 +17,7 @@ monogatari.component('main-screen').template(() => {
       </div>
       <div class="wrapper-version version-bg1" data-content="version">
         <p id="product-version">Version 1.0.0-pre1</p>
-        <p id="copy" data-content="author">Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a></p>
+        <p id="copy" data-content="author"></p>
       </div>
     </div>
   `;

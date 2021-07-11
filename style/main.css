@@ -767,32 +767,102 @@ hr {
 **/
 
 /* Use the background property to set a color for these */
-input[type=range]:focus::-webkit-slider-runnable-track {
+input[type=range] {
+	-webkit-appearance: none;
+	margin: 18px 0;
+	width: 100%;
+  }
 
+input[type=range]:focus {
+	outline: none;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background:  #ffb7ce;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
 }
 
-input[type=range]:focus::-ms-fill-upper {
-
+input[type=range]::-webkit-slider-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -14px;
 }
 
-input[type=range]:focus::-ms-fill-lower {
-
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background:  #ffb7ce;
 }
 
 input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background:  #ffb7ce;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
+}
 
+input[type=range]::-moz-range-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	border-width: 16px 0;
+	color: transparent;
 }
 
 input[type=range]::-ms-fill-lower {
-
+	background:  #ffb7ce;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 
 input[type=range]::-ms-fill-upper {
+	background:  #ffb7ce;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
 
+input[type=range]::-ms-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+	background:  #ffb7ce;
+}
+
+	input[type=range]:focus::-ms-fill-upper {
+	background:  #ffb7ce;
 }
 
 /** Phone Devices 5.5 inch **/
@@ -1309,4 +1379,70 @@ input[type=range]::-ms-fill-upper {
 input[data-content=context] {
 	color: #000;
 }
+
+
+[data-string="Close"], [data-action="quit"], [data-action="dismiss-alert"], [data-action="delete-slot"], [data-action="overwrite-slot"] {
+	border-radius: 35px;
+	background: linear-gradient(145deg, #ffd0d0, #dcafaf);
+	box-shadow:  5px 5px 10px #cfa5a5,
+				-5px -5px 10px #ffdfdf;
+	transition: box-shadow 1s;
+	color: #123622;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+}
+
+[data-string="Close"]:hover, [data-action="quit"]:hover, [data-action="dismiss-alert"]:hover, [data-action="delete-slot"]:hover, [data-action="overwrite-slot"]:hover {
+	box-shadow:  15px 15px 30px #cfa5a5,
+				-15px -15px 30px #ffdfdf;
+}
+
+
+[data-string="Close"]:active, [data-action="quit"]:active, [data-action="dismiss-alert"]:active, [data-action="delete-slot"]:active, [data-action="overwrite-slot"]:active {
+	background: linear-gradient(145deg, #dcafaf, #ffd0d0);
+	box-shadow:  15px 15px 30px #cfa5a5,
+				-15px -15px 30px #ffdfdf;
+	border: none;
+	outline: none;
+}
+
+
+[data-string="Close"]:focus, [data-action="quit"]:focus, [data-action="dismiss-alert"]:focus, [data-action="delete-slot"]:focus, [data-action="overwrite-slot"]:focus {
+	border: none;
+	outline: none;
+}
+
+[data-component="settings-screen"], [data-component="load-screen"], [data-component="save-screen"] {
+	background: url(../assets/images/paper-bg.webp);
+}
+
+[data-action="save"] {
+	background: linear-gradient(145deg, #dcafaf, #ffd0d0);
+	color: #123622;
+	transition: box-shadow 1s;
+}
+
+[data-action="save"]:hover {
+	box-shadow:  15px 15px 30px #cfa5a5,
+				-15px -15px 30px #ffdfdf;
+}
+
+[data-action="save"]:active {
+	background: linear-gradient(145deg, #dcafaf, #ffd0d0);
+	box-shadow:  15px 15px 30px #cfa5a5,
+				-15px -15px 30px #ffdfdf;
+	border: none;
+	outline: none;
+}
+
+[data-action="save"]:focus {
+	border: none;
+	outline: none;
+}
+
+[data-component="save-slot"] button:hover {
+	background: #c23b22;
+}
+
+
 

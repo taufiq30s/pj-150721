@@ -133,7 +133,7 @@ monogatari.settings({
 	},
 
 	// Show Iofi's Background in Main Menu
-	'isFinished': false,
+	'isFinished': true,
 });
 
 // Initial Settings

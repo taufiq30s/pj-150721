@@ -1,6 +1,7 @@
 monogatari.script({
   English: {
     'Start': [
+      // "jump credit",
       "show scene galaxy with fadeIn",
       "play music Intro with loop volume 10",
       "In a galaxy far away, there is a planet named Iolyptos.",
@@ -79,7 +80,7 @@ monogatari.script({
       "The First Princess has a dream to explore this vast world, hoping she could make lots of friends along the way.",
       "show character raja sedih1 with fadeIn",
       "play voice King_03",
-      "king <i>I'm sorry, my daughter. I am unable to fulfill your dreams; the outside world is not as good as you think.</i>",
+      "king <i>I'm sorry, my daughter. I am unable to fulfill your dreams. the outside world is not as good as you think.</i>",
       "hide character raja sedih1 with fadeOut",
       "The King accidentally overheard the conversation between his two daughters.",
       "stop music CastleGarden with fade 5",
@@ -127,7 +128,7 @@ monogatari.script({
       "hide character utusan panik with fadeOut",
       "show character kaisar normal with fadeIn",
       "play voice Emperor_06",
-      "emperor You have to go to the planet of Iolyptos and tell them, that I, the Emperor of the Galaxy, want to propose to the First Princess to become my mistress; if they refuse... ",
+      "emperor You have to go to the planet of Iolyptos and tell them, that I, the Emperor of the Galaxy, want to propose to the First Princess to become my mistress. if they refuse... ",
       "play voice Emperor_07",
       "emperor Tell them, that doing so is the same as disrespecting an Emperor and that means a clear declaration of war against us.",
       "hide character kaisar normal with fadeOut",
@@ -152,7 +153,7 @@ monogatari.script({
       "play voice King_05",
       "king Hmm....",
       "play voice King_06",
-      "king “Hmm... Poor reputation of your emperor is commonly known among aristocracy and people of various planets. I do not think my approval is possible.”)",
+      "king Hmm... Poor reputation of your emperor is commonly known among aristocracy and people of various planets.",
       "hide character raja normal with fadeOut",
       "show character utusan normal with fadeIn",
       "play voice Envoy_04",

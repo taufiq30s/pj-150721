@@ -98,7 +98,7 @@ monogatari.assets('voices', {
 	"King_08": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_9.ogg",
 	"King_09": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_11.ogg",
 	"King_10": "King/Raja_-_5_Ruang_Singgasana_Iolyptus_-_Line_13.ogg",
-	"King_11": "King/Raja_-_6_Suatu_pagi_Iolyptos_-_Line_1.ogg",
+	"King_11": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_1.ogg",
 	"King_12": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_4.ogg",
 	"King_13": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_6.ogg",
 	"King_14": "King/Raja_-_6_Suatu_pagi_di_Iolyptos_-_Line_8.ogg",

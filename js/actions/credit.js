@@ -7,7 +7,7 @@ class Credit extends Monogatari.Action {
         super();
         
         this.statement = statement.Credit;
-        this.fade_interval = 1600; // in ms
+        this.fade_interval = 1300; // in ms
         this.scroll_speed = 1000; // in ms, per 100 pixels
         this.quote_interval = 5000;
     }

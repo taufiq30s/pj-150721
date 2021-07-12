@@ -111,7 +111,7 @@ monogatari.label('jpPart3', '日本語', [
         {
           'title': "キャスト",
           'list': {
-            '王': "Jatmiko",
+            '王': "Miko 草ガキ",
             '王女': "Zuvanix",
             '次女': "ApiAtsu"
           }
@@ -120,7 +120,7 @@ monogatari.label('jpPart3', '日本語', [
           'title': "",
           'list': {
             '使節': "Khateas Raktea",
-            '皇帝': "Dr.Eronekoparagigante",
+            '皇帝': "Dr.Nergigante",
             'アドバイザー': "Iofi's Personal Chair",
           }
         },
@@ -145,10 +145,10 @@ monogatari.label('jpPart3', '日本語', [
         {
           'title': "キャスト",
           'list': {
-            '王': "Jatmiko",
+            '王': "Miko 草ガキ",
             '王女': "Zuvanix",
             '次女': "Api",
-            '皇帝': "Dokutah",
+            '皇帝': "Dr.Nergigante",
             'アドバイザー': "PunPun Iofi's Personal Chair",
             '使節': "Raktea",
             'クダエージェント': "Minyak Kuda",
@@ -170,7 +170,7 @@ monogatari.label('jpPart3', '日本語', [
             'エディターと品質チェック': [
               "Yuta Zoka",
               "Khateas Raktea",
-              "Dr. Nergigante",
+              "Dr.Nergigante",
               "Minyak Sayur",
               "Hitsuji",
               "LegoVW"
@@ -185,7 +185,7 @@ monogatari.label('jpPart3', '日本語', [
             "Laeventien",
             "PunPun Iofi's Personal Chair",
             "JeffriArt",
-            "Jatmiko",
+            "Miko 草ガキ",
             "Littlecrownie",
             "Hacto_17"
           ]
@@ -214,19 +214,16 @@ monogatari.label('jpPart3', '日本語', [
           'list' : [
             "Asukiri",
             "Chero",
-            "KucingLaut",
             "LegoVW",
             "Pika",
-            "Azu",
             "Azureos",
             "Arcana",
             "Chumacera",
-            "Feeltis catcus",
+            "Feeltis Catcus",
             "Kisaragi Ryuu",
             "Rad",
             "Rediffract",
             "Ryokhan",
-            "Yugen"
           ]
         },
         {
@@ -261,10 +258,10 @@ monogatari.label('jpPart3', '日本語', [
           'subtitle': "「Bersama Ioforia」",
           'list': {
             '歌詞': [
-              "Airani Iofifteen",
-              "Rikkaloid"
+              "Airani Iofifteen Channel hololive-ID",
+              "Rikka ch.律可"
             ],
-            '音楽': "Rikkaloid",
+            '音楽': "Rikka ch.律可",
             '配置': 'Zuvanix'
           }
         },

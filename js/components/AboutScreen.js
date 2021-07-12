@@ -10,7 +10,7 @@ class AboutScreen extends Monogatari.ScreenComponent {
       <h3>Licensing</h3>
       <p>A New Canvas is released under split licenses for various part of the visual novel, detailed below.</p>
       <p>The game source code is released under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL version 3</a>.</p>
-      <p>The story, "Bersama Ioforia" music arrangement and character sprites related to Hololive, including Airani Iofifteen, Yagoo and M-chan is released in accordance to <a href="https://en.hololive.tv/terms">Hololive Derivative Works Guidelines</a>.</p>
+      <p>The story, "Bersama Ioforia" music arrangement and character sprites related to Hololive, including Airani Iofifteen, Yagoo and M-chan are released in accordance to <a href="https://en.hololive.tv/terms">Hololive Derivative Works Guidelines</a>.</p>
       <p>The vector background images sourced from Freepik are released in accordance to Freepik Premium license.</p>
       <p>The background musics sourced from DOVA-SYNDROME are released in accordance to <a href="https://dova-s.jp/_contents/license/">DOVA-SYNDROME license</a>.</p>
       <p>Other background musics and sound effects are sourced from YouTube Audio Library.</p>

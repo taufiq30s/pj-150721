@@ -223,6 +223,47 @@ loading-screen div {
 
 /**
  * ===========================
+ * About US Styling
+ * ===========================
+**/
+
+[data-component="about-screen"] {
+	padding: 2rem 5rem;
+	overflow-y: scroll;
+}
+
+[data-component="about-screen"] [data-action="back"] {
+	margin: 0 1rem;
+}
+
+[data-component="about-screen"] h1 {
+	text-align: center;
+	margin: 0 0 3rem;
+}
+
+[data-component="about-screen"] h3 {
+	text-align: left;
+	margin: 0 0 2rem;
+}
+
+[data-component="about-screen"] p {
+	text-align: left;
+	line-height: 1.5em;
+	margin: 0 0 2rem;
+}
+
+[data-component="about-screen"] a {
+	color: #c75f5f;
+}
+
+[data-component="about-screen"] a:hover {
+	color: #f19c9c;
+	text-decoration: underline;
+}
+
+
+/**
+ * ===========================
  * Game Elements Styling
  * ===========================
 **/

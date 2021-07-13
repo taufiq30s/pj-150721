@@ -81,6 +81,7 @@ monogatari.label('jpPart3', '日本語', [
   'show character iofi normal at right',
   "play sound heartbeat loop",
   'iofiJP <i>合格…？不合格…？</i>',
+  "stop sound heartbeat",
   'mchanJP 当社で慎重に検討いたしましたが…',
   'show character iofi panik at right',
   'iofiJP ...',
@@ -281,7 +282,7 @@ monogatari.label('jpPart3', '日本語', [
         },
       ],
       'quote': {
-        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+        'content': [`"人生は油絵。間違いは消せないが修正は可能だ。"`],
         'source': "Agnes Jessica"
       }
     }

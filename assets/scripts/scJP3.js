@@ -227,7 +227,7 @@ monogatari.label('jpPart3', '日本語', [
           ]
         },
         {
-          'title': "Background Music",
+          'title': "バックグラウンドミュージック",
           'subtitle': "DOVA-SYNDROME",
           'class': "credit-bgm-section",
           'list': [

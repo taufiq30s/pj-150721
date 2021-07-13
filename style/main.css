@@ -92,6 +92,112 @@ dialog-log .modal__content [data-content=log] [data-spoke] {
 	border-bottom: 0px !important;
 }
 
+/**
+ * ===================================
+ * Language Selctor Screen Styling
+ * ===================================
+**/
+
+language-selection-screen {
+	background-color: #2c303a;
+	color: white;
+}
+
+language-selection-screen [data-content=wrapper] {
+	/* margin: 0 auto; */
+}
+
+language-selection-screen [data-content=buttons] {
+	text-decoration: none !important;
+	gap: 5vmin;
+}
+
+language-selection-screen button {
+	border: 0px;
+	text-decoration: none !important;
+	color: white;
+}
+
+language-selection-screen  button:hover [data-content="language"], button:focus [data-content="language"] {
+	text-decoration: none !important;
+}
+
+language-selection-screen button:hover {
+	border: 0px;
+}
+
+language-selection-screen button:active {
+	border: 0px;
+}
+
+[data-language=Indonesia] {
+	background: rgb(249,163,203);
+	background: linear-gradient(169deg, rgba(249,163,203,1) 7%, rgba(229,106,179,1) 98%);
+	transition: box-shadow 0.5s ease-in-out;
+}
+
+[data-language=Indonesia]:hover {
+	background: rgb(249,163,203);
+	background: linear-gradient(169deg, rgba(249,163,203,1) 7%, rgba(229,106,179,1) 98%);
+	box-shadow: 10px 23px 55px 0px rgba(239,135,190,0.36);
+	-webkit-box-shadow: 10px 23px 55px 0px rgba(239,135,190,0.36);
+	-moz-box-shadow: 10px 23px 55px 0px rgba(239,135,190,0.36);
+}
+
+[data-language=Indonesia]:focus {
+	background: rgb(249,163,203);
+	background: linear-gradient(169deg, rgba(249,163,203,1) 7%, rgba(229,106,179,1) 98%);
+	box-shadow: 23px 23px 40px 0px rgba(239,135,190,0.26);
+	-webkit-box-shadow: 23px 23px 40px 0px rgba(239,135,190,0.26);
+	-moz-box-shadow: 23px 23px 40px 0px rgba(239,135,190,0.26);
+	border: 0px;
+}
+
+[data-language=English] {
+	background: rgb(156,230,124);
+	background: linear-gradient(38deg, rgba(156,230,124,1) 0%, rgba(32,159,94,1) 92%);
+	transition: box-shadow 0.5s ease-in-out;
+}
+
+[data-language=English]:hover {
+	background: rgb(156,230,124);
+	background: linear-gradient(38deg, rgba(156,230,124,1) 0%, rgba(32,159,94,1) 92%);
+	box-shadow: 10px 23px 55px 0px rgba(156,230,124,0.36);
+	-webkit-box-shadow: 10px 23px 55px 0px rgba(156,230,124,0.36);
+	-moz-box-shadow: 10px 23px 55px 0px rgba(156,230,124,0.36);
+}
+
+[data-language=English]:focus {
+	background: rgb(156,230,124);
+	background: linear-gradient(38deg, rgba(156,230,124,1) 0%, rgba(32,159,94,1) 92%);
+	box-shadow: 23px 23px 40px 0px rgba(156,230,124,0.26);
+	-webkit-box-shadow: 23px 23px 40px 0px rgba(156,230,124,0.26);
+	-moz-box-shadow: 23px 23px 40px 0px rgba(156,230,124,0.26);
+	border: 0px;
+}
+
+[data-language=日本語] {
+	background: rgb(124,183,230);
+	background: linear-gradient(38deg, rgba(124,183,230,1) 0%, rgba(32,90,159,1) 92%);
+	transition: box-shadow 0.5s ease-in-out;
+}
+
+[data-language=日本語]:hover {
+	background: rgb(124,183,230);
+	background: linear-gradient(38deg, rgba(124,183,230,1) 0%, rgba(32,90,159,1) 92%);
+	box-shadow: 10px 23px 55px 0px rgba(124,183,230,0.36);
+	-webkit-box-shadow: 10px 23px 55px 0px rgba(124,183,230,0.36);
+	-moz-box-shadow: 10px 23px 55px 0px rgba(124,183,230,0.36);
+}
+
+[data-language=日本語]:focus {
+	background: rgb(124,183,230);
+	background: linear-gradient(38deg, rgba(124,183,230,1) 0%, rgba(32,90,159,1) 92%);
+	box-shadow: 23px 23px 40px 0px rgba(124,183,230,0.26);
+	-webkit-box-shadow: 23px 23px 40px 0px rgba(124,183,230,0.26);
+	-moz-box-shadow: 23px 23px 40px 0px rgba(124,183,230,0.26);
+	border: 0px;
+}
 
 /**
  * ===========================

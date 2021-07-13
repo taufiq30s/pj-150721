@@ -57,9 +57,7 @@ monogatari.component('loading-screen').template(() => {
     </div>
     <div data-content="loading wrapper">
       <h5 data-string="Loading" data-content="title">Loading Assets</h5>
-      <div class="progress progress-moved">
-        <progress value="0" max="100" data-content="progress"></progress>
-      </div>
+      <progress value="0" max="100" data-content="progress"></progress>
     </div>
   `;
 });

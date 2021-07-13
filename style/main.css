@@ -116,6 +116,7 @@ language-selection-screen button {
 	border: 0px;
 	text-decoration: none !important;
 	color: white;
+	width: 10vmax;
 }
 
 language-selection-screen  button:hover [data-content="language"], button:focus [data-content="language"] {

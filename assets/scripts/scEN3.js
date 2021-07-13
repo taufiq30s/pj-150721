@@ -512,6 +512,7 @@ monogatari.label('credit', 'English', [
             "Zuvanix", 
             "Kyarudesu",
             "Mas Ittou",
+            "<img src='../images/holoid.png'>",
             "And All Beloved Ioforia..."
           ]
         },

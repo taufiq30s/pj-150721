@@ -175,6 +175,8 @@ const files = [
 	'assets/images/next.webp',
 	'assets/images/textbox-splash-sprite.webp',
 	'assets/images/paper-bg.webp',
+	'assets/images/holoid.png',
+	'assets/images/hrid.png',
 	'assets/cursor/chiyopi.cur',
 
 	// Voices

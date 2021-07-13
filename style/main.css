@@ -363,6 +363,10 @@ loading-screen div {
  * ===========================
 **/
 
+[data-component="load-screen"] {
+	overflow-y: auto;
+}
+
 /* Slots Style */
 [data-component="save-slot"] figure {
 
@@ -385,13 +389,25 @@ loading-screen div {
 
 /**
  * ===========================
+ * Help Styling
+ * ===========================
+**/
+
+[data-component="help-screen"] {
+	padding: 2rem 5rem;
+	overflow-y: auto;
+}
+
+
+/**
+ * ===========================
  * About US Styling
  * ===========================
 **/
 
 [data-component="about-screen"] {
 	padding: 2rem 5rem;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 [data-component="about-screen"] [data-action="back"] {
@@ -973,6 +989,10 @@ hr {
  * Range Styling
  * ===========================
 **/
+
+[data-component="settings-screen"] {
+	overflow-y: auto;
+}
 
 /* Use the background property to set a color for these */
 input[type=range] {

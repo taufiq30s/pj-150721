@@ -298,12 +298,14 @@ monogatari.label('enPart3', 'English', [
             "Zuvanix", 
             "Kyarudesu",
             "Mas Ittou",
+            "hrid",
+            "holoid",
             "And All Beloved Ioforia..."
           ]
         },
       ],
       'quote': {
-        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+        'content': [`"Life is like an oil painting. The error can't be erased, but it can be fixed."`],
         'source': "Agnes Jessica"
       }
     }
@@ -339,193 +341,194 @@ monogatari.label('enPart3', 'English', [
   'end'
 ]);
 
-monogatari.label('credit', 'English', [
-  "play music CreditsSong volume 10",
-  {
-    'Credit': {
-      'fade' : [
-        {
-          'title': "Project Initiator",
-          'content': "Para Haluforia"
-        },
-        {
-          'title': "Cast",
-          'list': {
-            'King': "Miko 草ガキ",
-            'Queen': "Zuvanix",
-            'Second Princess': "Api Atsu"
-          }
-        },
-        {
-          'title': "",
-          'list': {
-            'Envoy': "Khateas Raktea",
-            'Advisor': "Iofi's Personal Chair",
-            'Emperor': "Dr.Nergigante"
-          }
-        },
-        {
-          'title': "",
-          'list': {
-            'M-chan': "ApiAtsu",
-            'Agent Kuda': "Minyak Sayur",
-            'Agent Kecoa': "Vesera"
-          }
-        },
-        {
-          'title': "",
-          'list': {
-            'MIB 1': "Yuta",
-            'MIB 2': "Enterprise",
-            'YAGOO': "Hitsuji(cpp)"
-          }
-        }
-      ],
-      'scroll': [
-        {
-          'title': "Cast",
-          'list': {
-            'King': "Miko 草ガキ",
-            'Queen': "Zuvanix",
-            'Second Princess': "ApiAtsu",
-            'Emperor': "Dr.Nergigante",
-            'Advisor': "PunPun Iofi's Personal Chair",
-            'Envoy': "Raktea",
-            'Agent Kuda': "Minyak Sayur",
-            'Agent Kecoa': "Vesera",
-            'MIB 1': "Yuta",
-            'MIB 2': "Enterprise",
-            'Yagoo': "Hitsuji(cpp)",
-            'M-chan': "ApiAtsu",
-          }
-        },
-        {
-          'title': "Story",
-          'list': {
-            'Originally Written By': "Rudi TM",
-            'Translated By': [
-              "Vesera (EN)",
-              "Reiko (JP)"
-            ],
-            'Editor and Quality Check': [
-              "Yuta Zoka",
-              "Khateas Raktea",
-              "Dr.Nergigante",
-              "Minyak Sayur",
-              "Hitsuji(cpp)",
-              "LegoVW"
-            ]
-          }
-        },
-        {
-          'title': "Background and Illustration",
-          'list': [
-            "Transenponsan",
-            "Yugen",
-            "Laeventien",
-            "PunPun Iofi's Personal Chair",
-            "JeffriArt",
-            "Miko 草ガキ",
-            "Littlecrownie",
-            "Hacto_17"
-          ]
-        },
-        {
-          'title': "Character Design",
-          'list': [
-            "JeffriArt",
-            "Chassy Sant",
-            "Laeventien",
-            "Haloclo 18",
-          ]
-        },
-        {
-          'title': "Programming" ,
-          'list': [
-            "Moonchild",
-            "JeffriArt",
-            "Zainokta Rakei",
-            "KucingLaut",
-          ]
-        },
-        {
-          'title': "Tester",
-          'list' : [
-            "Asukiri",
-            "Chero",
-            "LegoVW",
-            "Pika",   
-            "Azureos",
-            "Arcana",
-            "Chumacera",
-            "Feeltis Catcus",
-            "Kisaragi Ryuu",
-            "Rad",
-            "Rediffract",
-            "Ryokhan",
-          ]
-        },
-        {
-          'title': "Background Music",
-          'subtitle': "DOVA-SYNDROME",
-          'class': "credit-bgm-section",
-          'list': [
-            {
-              "[Machina]": "だんご工房",
-              "[珊瑚礁]": "伊藤ケイス",
-              "[隠された遺跡の中へ]": "秦暁",
-              "[Clouded Stage]": "MFP [Marron Fields Production]",
-              "[淵に立つ背中を押すのは...的なBGM]": "鷹尾まさき[タカオマサキ]",
-              "[哀愁漂うホラー的なBGM]": "鷹尾まさき[タカオマサキ]",
-              "[Digital Space]": "Shimtone",
-              "[Painted from Memory ～想いは調べにのって～]": "田中芳典"
-            },
-            {
-              "[閉ざされた海底都市]": "ハヤシユウ",
-              "[堕ちる]": "もっぴーさうんど",
-              "[Ruins]": "Motomuge",
-              "[Tension]": "こおろぎ",
-              "[帰ろう]": "T12ya",
-              "[日曜の午後]": "KK",
-              "[Funny Life]": "T.tam",
-              "[South Wind]": "FLASH☆BEAT"
-            }
-          ]
-        },
-        {
-          'title': "Ending Music Theme",
-          'subtitle': "「Bersama Ioforia」",
-          'list': {
-            'Lyrics': [
-              "Airani Iofifteen Channel hololive-ID",
-              "Rikka ch.律可"
-            ],
-            'Music': "Rikka ch.律可",
-            'Arrangement': 'Zuvanix'
-          }
-        },
-        {
-          'title': "Special Thanks",
-          'list': [
-            "holoid",
-            "Zad",
-            "Binyo Boss", 
-            "GrilledCheez",
-            "Melon Juice", 
-            "Rarana", 
-            "Zuvanix", 
-            "Kyarudesu",
-            "Mas Ittou",
-            "And All Beloved Ioforia..."
-          ]
-        },
-      ],
-      'quote': {
-        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
-        'source': "Agnes Jessica"
-      }
-    }
-  },
-  "stop music CreditsSong",
+// monogatari.label('credit', 'English', [
+//   "play music CreditsSong volume 10",
+//   {
+//     'Credit': {
+//       'fade' : [
+//         {
+//           'title': "Project Initiator",
+//           'content': "Para Haluforia"
+//         },
+//         {
+//           'title': "Cast",
+//           'list': {
+//             'King': "Miko 草ガキ",
+//             'Queen': "Zuvanix",
+//             'Second Princess': "Api Atsu"
+//           }
+//         },
+//         {
+//           'title': "",
+//           'list': {
+//             'Envoy': "Khateas Raktea",
+//             'Advisor': "Iofi's Personal Chair",
+//             'Emperor': "Dr.Nergigante"
+//           }
+//         },
+//         {
+//           'title': "",
+//           'list': {
+//             'M-chan': "ApiAtsu",
+//             'Agent Kuda': "Minyak Sayur",
+//             'Agent Kecoa': "Vesera"
+//           }
+//         },
+//         {
+//           'title': "",
+//           'list': {
+//             'MIB 1': "Yuta",
+//             'MIB 2': "Enterprise",
+//             'YAGOO': "Hitsuji(cpp)"
+//           }
+//         }
+//       ],
+//       'scroll': [
+//         {
+//           'title': "Cast",
+//           'list': {
+//             'King': "Miko 草ガキ",
+//             'Queen': "Zuvanix",
+//             'Second Princess': "ApiAtsu",
+//             'Emperor': "Dr.Nergigante",
+//             'Advisor': "PunPun Iofi's Personal Chair",
+//             'Envoy': "Raktea",
+//             'Agent Kuda': "Minyak Sayur",
+//             'Agent Kecoa': "Vesera",
+//             'MIB 1': "Yuta",
+//             'MIB 2': "Enterprise",
+//             'Yagoo': "Hitsuji(cpp)",
+//             'M-chan': "ApiAtsu",
+//           }
+//         },
+//         {
+//           'title': "Story",
+//           'list': {
+//             'Originally Written By': "Rudi TM",
+//             'Translated By': [
+//               "Vesera (EN)",
+//               "Reiko (JP)"
+//             ],
+//             'Editor and Quality Check': [
+//               "Yuta Zoka",
+//               "Khateas Raktea",
+//               "Dr.Nergigante",
+//               "Minyak Sayur",
+//               "Hitsuji(cpp)",
+//               "LegoVW"
+//             ]
+//           }
+//         },
+//         {
+//           'title': "Background and Illustration",
+//           'list': [
+//             "Transenponsan",
+//             "Yugen",
+//             "Laeventien",
+//             "PunPun Iofi's Personal Chair",
+//             "JeffriArt",
+//             "Miko 草ガキ",
+//             "Littlecrownie",
+//             "Hacto_17"
+//           ]
+//         },
+//         {
+//           'title': "Character Design",
+//           'list': [
+//             "JeffriArt",
+//             "Chassy Sant",
+//             "Laeventien",
+//             "Haloclo 18",
+//           ]
+//         },
+//         {
+//           'title': "Programming" ,
+//           'list': [
+//             "Moonchild",
+//             "JeffriArt",
+//             "Zainokta Rakei",
+//             "KucingLaut",
+//           ]
+//         },
+//         {
+//           'title': "Tester",
+//           'list' : [
+//             "Asukiri",
+//             "Chero",
+//             "LegoVW",
+//             "Pika",   
+//             "Azureos",
+//             "Arcana",
+//             "Chumacera",
+//             "Feeltis Catcus",
+//             "Kisaragi Ryuu",
+//             "Rad",
+//             "Rediffract",
+//             "Ryokhan",
+//           ]
+//         },
+//         {
+//           'title': "Background Music",
+//           'subtitle': "DOVA-SYNDROME",
+//           'class': "credit-bgm-section",
+//           'list': [
+//             {
+//               "[Machina]": "だんご工房",
+//               "[珊瑚礁]": "伊藤ケイス",
+//               "[隠された遺跡の中へ]": "秦暁",
+//               "[Clouded Stage]": "MFP [Marron Fields Production]",
+//               "[淵に立つ背中を押すのは...的なBGM]": "鷹尾まさき[タカオマサキ]",
+//               "[哀愁漂うホラー的なBGM]": "鷹尾まさき[タカオマサキ]",
+//               "[Digital Space]": "Shimtone",
+//               "[Painted from Memory ～想いは調べにのって～]": "田中芳典"
+//             },
+//             {
+//               "[閉ざされた海底都市]": "ハヤシユウ",
+//               "[堕ちる]": "もっぴーさうんど",
+//               "[Ruins]": "Motomuge",
+//               "[Tension]": "こおろぎ",
+//               "[帰ろう]": "T12ya",
+//               "[日曜の午後]": "KK",
+//               "[Funny Life]": "T.tam",
+//               "[South Wind]": "FLASH☆BEAT"
+//             }
+//           ]
+//         },
+//         {
+//           'title': "Ending Music Theme",
+//           'subtitle': "「Bersama Ioforia」",
+//           'list': {
+//             'Lyrics': [
+//               "Airani Iofifteen Channel hololive-ID",
+//               "Rikka ch.律可"
+//             ],
+//             'Music': "Rikka ch.律可",
+//             'Arrangement': 'Zuvanix'
+//           }
+//         },
+//         {
+//           'title': "Special Thanks",
+//           'list': [
+//             "Zad",
+//             "Binyo Boss", 
+//             "GrilledCheez",
+//             "Melon Juice", 
+//             "Rarana", 
+//             "Zuvanix", 
+//             "Kyarudesu",
+//             "Mas Ittou",
+//             "hrid",
+//             "holoid",
+//             "And All Beloved Ioforia..."
+//           ]
+//         },
+//       ],
+//       'quote': {
+//         'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+//         'source': "Agnes Jessica"
+//       }
+//     }
+//   },
+//   "stop music CreditsSong",
 
-]);
+// ]);

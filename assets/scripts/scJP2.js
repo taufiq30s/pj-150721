@@ -215,7 +215,7 @@ monogatari.label('jpPart2-2', '日本語', [
   "firstPrincessJP いやああ！！",
   "hide character putriPertama kagethijau with fadeOut",
   "play sound AgenKudaShoots",
-  "DORRR!!!!",
+  "バン！!!",
   "その時、透明な何かがその銃弾をねじ伏せた",
   "stop sound AgenKudaShoots",
   "show character kuda closeeye at left with fadeIn",

@@ -164,15 +164,15 @@ $_ready (() => {
 			}
 		});	
 		
-		// Add Issue button
-		monogatari.component('main-menu').addButton({
-			string: "Feedback"
-		});
+		// // Add Issue button
+		// monogatari.component('main-menu').addButton({
+		// 	string: "Feedback"
+		// });
 
-		monogatari.component('quick-menu').addButton({
-			icon: "ri-feedback-fill",
-			string: "Feedback"
-		});
+		// monogatari.component('quick-menu').addButton({
+		// 	icon: "ri-feedback-fill",
+		// 	string: "Feedback"
+		// });
 
 		monogatari.on('click', '[string="Feedback"]', () => {			
 			window.open('https://s.id/bug-issue');

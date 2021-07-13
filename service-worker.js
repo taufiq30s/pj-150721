@@ -5,7 +5,7 @@ const name = 'A New Canvas';
 
 // The version of the cache, changing this will force everything to be cached
 // again.
-const version = '0.3.0-beta.3';
+const version = '1.0.0-pre2';
 
 const files = [
 

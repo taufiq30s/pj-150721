@@ -7,8 +7,8 @@ class Credit extends Monogatari.Action {
         super();
         
         this.statement = statement.Credit;
-        this.fade_interval = 1300; // in ms
-        this.scroll_speed = 1000; // in ms, per 100 pixels
+        this.fade_interval = 1400; // in ms
+        this.scroll_speed = 1400; // in ms, per 100 pixels
         this.quote_interval = 5000;
     }
     
@@ -198,7 +198,7 @@ class Credit extends Monogatari.Action {
         }
         
         let duration = Math.round( this.wrapper.clientHeight / 100 * this.scroll_speed );
-        let end_position = Math.round( this.wrapper.clientHeight + window.innerHeight );
+        let end_position = Math.round( this.wrapper.clientHeight + window.innerHeight ) + 100;
         
         this.wrapper.style.setProperty( 'transition', 'transform ' + duration + 'ms linear' );
         this.wrapper.style.setProperty( 'transform', 'translateY(-' + end_position + 'px)' );

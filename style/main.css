@@ -23,6 +23,10 @@
  * ===========================
 **/
 
+body {
+	background-color: #2c303a;
+}
+
 /* Change Cusor to Chiyopi */
 body, main-menu, button, button:hover, [data-action], span, svg, game-screen, credits-screen,  save-screen, settings-screen, help-screen{
 	cursor: url('../assets/cursor/chiyopi.cur'), none !important;

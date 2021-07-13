@@ -296,12 +296,13 @@ monogatari.label('idPart3-1', 'Indonesia', [
             "Zuvanix", 
             "Kyarudesu",
             "Mas Ittou",
+            "holoid",
             "And All Beloved Ioforia..."
           ]
         },
       ],
       'quote': {
-        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahanya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
+        'content': [`"Kehidupan sama dengan lukisan cat minyak. Kesalahannya memang tidak bisa dihapus, tapi bisa diperbaiki."`],
         'source': "Agnes Jessica"
       }
     }

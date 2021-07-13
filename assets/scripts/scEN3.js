@@ -121,7 +121,7 @@ monogatari.label('enPart3', 'English', [
   "stop music M-chan with fade 10",
   'show scene #000',
   'wait 1000',
-  "play music CreditsSong volume 10",
+  "play music CreditsSong loop volume 10",
   {
     'Credit': {
       'fade' : [
@@ -134,15 +134,15 @@ monogatari.label('enPart3', 'English', [
           'list': {
             'King': "Miko 草ガキ",
             'Queen': "Zuvanix",
-            'Second Princess': "Api Atsu"
+            'Second Princess': "ApiAtsu"
           }
         },
         {
           'title': "",
           'list': {
             'Envoy': "Khateas Raktea",
-            'Advisor': "Iofi's Personal Chair",
-            'Emperor': "Dr.Nergigante"
+            'Emperor': "Dr.Nergigante",
+            'Advisor': "Iofi's Personal Chair"
           }
         },
         {
@@ -218,6 +218,7 @@ monogatari.label('enPart3', 'English', [
             "Chassy Sant",
             "Laeventien",
             "Haloclo 18",
+            "Hacto_17"
           ]
         },
         {
@@ -248,7 +249,7 @@ monogatari.label('enPart3', 'English', [
         },
         {
           'title': "Background Music",
-          'subtitle': "DOVA",
+          'subtitle': "DOVA-SYNDROME",
           'class': "credit-bgm-section",
           'list': [
             {
@@ -287,7 +288,8 @@ monogatari.label('enPart3', 'English', [
         },
         {
           'title': "Special Thanks",
-          'content': [
+          'list': [
+            "holoid",
             "Zad",
             "Binyo Boss", 
             "GrilledCheez",
@@ -306,6 +308,7 @@ monogatari.label('enPart3', 'English', [
       }
     }
   },
+  "stop music CreditsSong fade 10",
   'centered Several months later',
   'show scene galaxy with fadeIn',
   'show character raja takut with fadeIn',
@@ -464,7 +467,7 @@ monogatari.label('credit', 'English', [
         },
         {
           'title': "Background Music",
-          'subtitle': "DOVA",
+          'subtitle': "DOVA-SYNDROME",
           'class': "credit-bgm-section",
           'list': [
             {
@@ -503,7 +506,8 @@ monogatari.label('credit', 'English', [
         },
         {
           'title': "Special Thanks",
-          'content': [
+          'list': [
+            "holoid",
             "Zad",
             "Binyo Boss", 
             "GrilledCheez",

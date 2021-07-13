@@ -162,6 +162,7 @@ monogatari.assets('videos', {
 // Define the images used in the game.
 monogatari.assets('images', {
 	'phone' : 'phone.webp',
+	'holoid': 'holoid.png'
 });
 
 // Define the backgrounds for each scene.

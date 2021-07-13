@@ -627,6 +627,7 @@ credits-container {
 	z-index: 50;
 	color: #fff;
 	font-size: 20px;
+	line-height: 2rem;
 }
 
 credits-container.credit-fade {
@@ -657,6 +658,10 @@ credits-container .credit-section h3 {
 
 credits-container .credit-section div {
 	flex: 1 100%;
+}
+
+credits-container .credit-section img {
+	max-height: 8rem;
 }
 
 credits-container .credit-section dl {

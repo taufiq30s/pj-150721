@@ -208,6 +208,29 @@ class Credit extends Monogatari.Action {
         } );
     }
     
+    createImageElement ( asset ) {
+        let image = false;
+        if ( asset.match(/^[A-Za-z0-9_-]+$/) ) {
+            image = this.engine.asset( 'images', asset );
+        }
+        if ( image ) {
+            let img_element = document.createElement( 'img' );
+            let path = this.engine.setting( 'AssetsPath' );
+            img_element.src = path.root + '/' + path.images + '/' + image;
+            return img_element;
+        }
+        return false;
+    }
+    
+    createContentElement ( content ) {
+        let img_element = this.createImageElement( content );
+        if ( false !== img_element ) return img_element;
+        
+        let p_element = document.createElement( 'p' );
+        p_element.textContent = content;
+        return p_element;
+    }
+    
     createElementContent ( title, content, classnames = '' ) {
         let content_arr = Array.isArray( content ) ? content : [ content ];
         let element = document.createElement( 'div' );
@@ -219,9 +242,8 @@ class Credit extends Monogatari.Action {
         title_element.textContent = title;
 
         for ( const i in content_arr ) {
-            let p_element = document.createElement( 'p' );
-            p_element.textContent = content_arr[i];
-            content_element.append( p_element );
+            let each_content_element = this.createContentElement( content_arr[i] );
+            content_element.append( each_content_element );
         }
 
         element.append( title_element );
@@ -275,13 +297,18 @@ class Credit extends Monogatari.Action {
                 let dd_element = document.createElement( 'dd' );
                 if ( Array.isArray(list[i]) ) {
                     for ( const l in list[i] ) {
-                        let p_element = document.createElement( 'p' );
-                        p_element.textContent = list[i][l];
-                        dd_element.append( p_element );
+                        let each_content_element = this.createContentElement( list[i][l] );
+                        dd_element.append( each_content_element );
                     }
                 }
                 else {
-                    dd_element.textContent = list[i];
+                    let img_element = this.createImageElement( list[i] );
+                    if ( img_element ) {
+                        dd_element.append( img_element );
+                    }
+                    else {
+                        dd_element.textContent = list[i];
+                    }
                 }
                 list_element.append( dd_element );
             }

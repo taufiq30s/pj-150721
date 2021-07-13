@@ -129,7 +129,7 @@ monogatari.label('jpPart3', '日本語', [
           'title': "",
           'list': {
             'Mちゃん': "ApiAtsu",
-            'クダエージェント': "Minyak Kuda",
+            'クダエージェント': "Minyak Sayur",
             'ゴキエージェント': "Vesera"
           }
         },
@@ -138,7 +138,7 @@ monogatari.label('jpPart3', '日本語', [
           'list': {
             '黒服の人一号': "Yuta",
             '黒服の人二号': "Enterprise",
-            'YAGOO': "Hitsuji-san"
+            'YAGOO': "Hitsuji(cpp)"
           }
         }
       ],
@@ -148,22 +148,22 @@ monogatari.label('jpPart3', '日本語', [
           'list': {
             '王': "Miko 草ガキ",
             '王女': "Zuvanix",
-            '次女': "Api",
+            '次女': "ApiAtsu",
             '皇帝': "Dr.Nergigante",
             'アドバイザー': "PunPun Iofi's Personal Chair",
             '使節': "Raktea",
-            'クダエージェント': "Minyak Kuda",
+            'クダエージェント': "Minyak Sayur",
             'ゴキエージェント': "Vesera",
             '黒服の人一号': "Yuta",
             '黒服の人二号': "Enterprise",
-            'YAGOO': "Hitsuji-san",
-            'Mちゃん': "Api",
+            'YAGOO': "Hitsuji(cpp)",
+            'Mちゃん': "ApiAtsu",
           }
         },
         {
           'title': "物語",
           'list': {
-            'もともと書かれた': "Rudi Hermawan",
+            'もともと書かれた': "Rudi TM",
             '翻訳者': [
               "Vesera (EN)",
               "Reiko (JP)"
@@ -173,7 +173,7 @@ monogatari.label('jpPart3', '日本語', [
               "Khateas Raktea",
               "Dr.Nergigante",
               "Minyak Sayur",
-              "Hitsuji",
+              "Hitsuji(cpp)",
               "LegoVW"
             ]
           }
@@ -228,8 +228,8 @@ monogatari.label('jpPart3', '日本語', [
           ]
         },
         {
-          'title': "Background Music",
-          'subtitle': "DOVA",
+          'title': "バックグラウンドミュージック",
+          'subtitle': "DOVA-SYNDROME",
           'class': "credit-bgm-section",
           'list': [
             {
@@ -269,6 +269,7 @@ monogatari.label('jpPart3', '日本語', [
         {
           'title': "特別な感謝",
           'list': [
+            "holoid",
             "Zad",
             "Binyo Boss", 
             "GrilledCheez",

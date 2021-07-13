@@ -247,7 +247,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
         },
         {
           'title': "Background Music",
-          'subtitle': "DOVA",
+          'subtitle': "DOVA-SYNDROME",
           'class': "credit-bgm-section",
           'list': [
             {
@@ -287,6 +287,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
         {
           'title': "Special Thanks",
           'list': [
+            "holoid",
             "Zad",
             "Binyo Boss", 
             "GrilledCheez",

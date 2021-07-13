@@ -1,7 +1,6 @@
 monogatari.script({
   English: {
     'Start': [
-      "jump credit",
       "show scene galaxy with fadeIn",
       "play music Intro with loop volume 10",
       "In a galaxy far away, there is a planet named Iolyptos.",

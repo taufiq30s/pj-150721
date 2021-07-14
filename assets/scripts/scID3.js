@@ -296,6 +296,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
             "Zuvanix", 
             "Kyarudesu",
             "Mas Ittou",
+            "hrid",
             "holoid",
             "And All Beloved Ioforia..."
           ]

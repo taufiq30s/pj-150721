@@ -278,13 +278,15 @@ monogatari.label('jpPart3', '日本語', [
             "Zuvanix", 
             "Kyarudesu",
             "Mas Ittou",
+            "hrid",
+            "holoid",
             "And All Beloved Ioforia..."
           ]
         },
       ],
       'quote': {
         'content': [`"人生は油絵。間違いは消せないが修正は可能だ。"`],
-        'source': "Agnes Jessica"
+        'source': "Agnes Jessica、インドネシアのノベリスト"
       }
     }
   },

@@ -174,9 +174,9 @@ $_ready (() => {
 		// 	string: "Feedback"
 		// });
 
-		monogatari.on('click', '[string="Feedback"]', () => {			
-			window.open('https://s.id/bug-issue');
-		});
+		// monogatari.on('click', '[string="Feedback"]', () => {			
+		// 	window.open('https://s.id/bug-issue');
+		// });
 
 		// Remove action on left key shortcut
 		monogatari.unregisterListener("back");

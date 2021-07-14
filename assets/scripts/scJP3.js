@@ -269,7 +269,6 @@ monogatari.label('jpPart3', '日本語', [
         {
           'title': "特別な感謝",
           'list': [
-            "holoid",
             "Zad",
             "Binyo Boss", 
             "GrilledCheez",

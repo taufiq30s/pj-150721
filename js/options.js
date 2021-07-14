@@ -20,7 +20,7 @@ monogatari.settings({
 	'Name': 'A New Canvas',
 
 	// The version of your game in semantic versioning (https://semver.org/).
-	'Version': '1.0.0-pre2',
+	'Version': '1.0.0-pre3',
 
 	// Initial Label *
 	'Label': 'Start',

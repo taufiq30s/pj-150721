@@ -289,7 +289,6 @@ monogatari.label('enPart3', 'English', [
         {
           'title': "Special Thanks",
           'list': [
-            "holoid",
             "Zad",
             "Binyo Boss", 
             "GrilledCheez",

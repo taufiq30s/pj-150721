@@ -16,7 +16,7 @@ monogatari.component('main-screen').template(() => {
         <p id="product-version">This game using multiple license. See About for details.</p>
       </div>
       <div class="wrapper-version version-bg1" data-content="version">
-        <p id="product-version">Version 1.0.0-pre1</p>
+        <p id="product-version">Version ${monogatari.settings().Version}</p>
         <p id="copy" data-content="author"></p>
       </div>
     </div>

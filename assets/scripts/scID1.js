@@ -1,6 +1,7 @@
 monogatari.script({
   Indonesia: {
     'Start': [
+      // "jump idPart3-1",
       "show scene galaxy with fadeIn",
       "play music Intro with loop volume 10",
       "Di sebuah Galaksi nun jauh disana, ada sebuah planet bernama Iolyptos.",

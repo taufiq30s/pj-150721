@@ -287,7 +287,6 @@ monogatari.label('idPart3-1', 'Indonesia', [
         {
           'title': "Special Thanks",
           'list': [
-            "holoid",
             "Zad",
             "Binyo Boss", 
             "GrilledCheez",

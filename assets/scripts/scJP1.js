@@ -94,7 +94,7 @@ monogatari.script({
       "show character penasihat licik at right with fadeIn",
       "advisorJP 陛下、しばしお待ちを・・・情報によると、かの惑星はたしかに資源で溢れています。また、軍備もきわめて弱いとのことです。",
       "advisorJP あの弱い惑星なら陛下直属の近衛軍でも征服できるでしょう。",
-      "show character kaisar menyeringai with fadeIn",
+      "show character kaisar menyeringai at left with fadeIn",
       "emperorJP ふむ…では問題ないということだな",
       "hide character kaisar menyeringai at left with fadeOut",
       "hide character penasihat licik at right with fadeOut",

@@ -109,7 +109,7 @@ monogatari.script({
       "play voice Advisor_03",
       "penasihat Yang Mulia dapat menaklukan planet lemah ini dengan mudah.",
       "play voice Emperor_04",
-      "show character kaisar menyeringai with fadeIn",
+      "show character kaisar menyeringai at left with fadeIn",
       "kaisar Kau benar, tapi Aku punya rencana lain untuk planet itu.",
       "hide character kaisar menyeringai at left with fadeOut",
       "hide character penasihat licik at right with fadeOut",

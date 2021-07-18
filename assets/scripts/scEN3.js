@@ -156,7 +156,7 @@ monogatari.label('enPart3', 'English', [
         {
           'title': "",
           'list': {
-            'MIB 1': "Yuta",
+            'MIB 1': "Yuta Zoka",
             'MIB 2': "Enterprise",
             'YAGOO': "Hitsuji(cpp)"
           }
@@ -174,7 +174,7 @@ monogatari.label('enPart3', 'English', [
             'Envoy': "Raktea",
             'Agent Kuda': "Minyak Sayur",
             'Agent Kecoa': "Vesera",
-            'MIB 1': "Yuta",
+            'MIB 1': "Yuta Zoka",
             'MIB 2': "Enterprise",
             'Yagoo': "Hitsuji(cpp)",
             'M-chan': "ApiAtsu",

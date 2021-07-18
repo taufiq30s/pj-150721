@@ -136,7 +136,7 @@ monogatari.label('jpPart3', '日本語', [
         {
           'title': "",
           'list': {
-            '黒服の人一号': "Yuta",
+            '黒服の人一号': "Yuta Zoka",
             '黒服の人二号': "Enterprise",
             'YAGOO': "Hitsuji(cpp)"
           }
@@ -154,7 +154,7 @@ monogatari.label('jpPart3', '日本語', [
             '使節': "Raktea",
             'クダエージェント': "Minyak Sayur",
             'ゴキエージェント': "Vesera",
-            '黒服の人一号': "Yuta",
+            '黒服の人一号': "Yuta Zoka",
             '黒服の人二号': "Enterprise",
             'YAGOO': "Hitsuji(cpp)",
             'Mちゃん': "ApiAtsu",

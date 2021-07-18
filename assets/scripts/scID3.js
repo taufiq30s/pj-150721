@@ -154,7 +154,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
         {
           'title': "",
           'list': {
-            'MIB 1': "Yuta",
+            'MIB 1': "Yuta Zoka",
             'MIB 2': "Enterprise",
             'YAGOO': "Hitsuji(cpp)"
           }
@@ -172,7 +172,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
             'Utusan': "Raktea",
             'Agen Kuda': "Minyak Sayur",
             'Agen Kecoa': "Vesera",
-            'MIB 1': "Yuta",
+            'MIB 1': "Yuta Zoka",
             'MIB 2': "Enterprise",
             'Yagoo': "Hitsuji(cpp)",
             'M-chan': "ApiAtsu",

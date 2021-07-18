@@ -171,7 +171,7 @@ monogatari.label('enPart3', 'English', [
             'Second Princess': "ApiAtsu",
             'Emperor': "Dr.Nergigante",
             'Advisor': "PunPun Iofi's Personal Chair",
-            'Envoy': "Raktea",
+            'Envoy': "Khateas Raktea",
             'Agent Kuda': "Minyak Sayur",
             'Agent Kecoa': "Vesera",
             'MIB 1': "Yuta Zoka",
@@ -203,7 +203,7 @@ monogatari.label('enPart3', 'English', [
           'list': [
             "Transenponsan",
             "Yugen",
-            "Laeventien",
+            "Laeventein",
             "PunPun Iofi's Personal Chair",
             "JeffriArt",
             "Miko 草ガキ",
@@ -216,7 +216,7 @@ monogatari.label('enPart3', 'English', [
           'list': [
             "JeffriArt",
             "Chassy Sant",
-            "Laeventien",
+            "Laeventein",
             "Haloclo 18",
             "Hacto_17"
           ]

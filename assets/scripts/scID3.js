@@ -169,7 +169,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
             'Putri Kedua': "ApiAtsu",
             'Kaisar': "Dr.Nergigante",
             'Penasihat': "PunPun Iofi's Personal Chair",
-            'Utusan': "Raktea",
+            'Utusan': "Khateas Raktea",
             'Agen Kuda': "Minyak Sayur",
             'Agen Kecoa': "Vesera",
             'MIB 1': "Yuta Zoka",
@@ -201,7 +201,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
           'list': [
             "Transenponsan",
             "Yugen",
-            "Laeventien",
+            "Laeventein",
             "PunPun Iofi's Personal Chair",
             "JeffriArt",
             "Miko 草ガキ",
@@ -214,7 +214,7 @@ monogatari.label('idPart3-1', 'Indonesia', [
           'list': [
             "JeffriArt",
             "Chassy Sant",
-            "Laeventien",
+            "Laeventein",
             "Haloclo 18",
             "Hacto_17"
           ]

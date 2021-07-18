@@ -151,7 +151,7 @@ monogatari.label('jpPart3', '日本語', [
             '次女': "ApiAtsu",
             '皇帝': "Dr.Nergigante",
             'アドバイザー': "PunPun Iofi's Personal Chair",
-            '使節': "Raktea",
+            '使節': "Khateas Raktea",
             'クダエージェント': "Minyak Sayur",
             'ゴキエージェント': "Vesera",
             '黒服の人一号': "Yuta Zoka",
@@ -183,7 +183,7 @@ monogatari.label('jpPart3', '日本語', [
           'list': [
             "Transenponsan",
             "Yugen",
-            "Laeventien",
+            "Laeventein",
             "PunPun Iofi's Personal Chair",
             "JeffriArt",
             "Miko 草ガキ",
@@ -196,7 +196,7 @@ monogatari.label('jpPart3', '日本語', [
           'list': [
             "JeffriArt",
             "Chassy Sant",
-            "Laeventien",
+            "Laeventein",
             "Haloclo 18",
             "Hacto_17"
           ]

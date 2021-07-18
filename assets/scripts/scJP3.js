@@ -73,7 +73,7 @@ monogatari.label('jpPart3', '日本語', [
   'show character mchan normal at left with slideInLeft',
   "play music M-chan with loop volume 5",
   'mchanJP はい、そうです。私はホロライブIDのMちゃんと申します',
-  'show character iofi senyum',
+  'show character iofi senyum at right',
   'iofiJP あ、あぁ！すみません！あの…どうしましたか？　私に連絡なんて…',  
   'mchanJP イオフィ様にオーディションの件で報告したい事がありまして…',
   "stop music M-chan with fade 10",

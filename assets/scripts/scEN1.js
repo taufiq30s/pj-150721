@@ -182,7 +182,7 @@ monogatari.script({
       "play voice King_09",
       "king I’m aware of that.",
       "hide character raja marah with fadeOut",
-      "The king of Iolyptos, after receiving message from emperor's envoy, decidedes to make a plan: to create an escape route for his daughter.",
+      "The king of Iolyptos, after receiving message from emperor's envoy, decided to make a plan: to create an escape route for his daughter.",
       "show character raja marah with fadeIn",
       "play voice King_10",
       "king ...",

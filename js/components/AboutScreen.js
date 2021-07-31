@@ -6,8 +6,9 @@ class AboutScreen extends Monogatari.ScreenComponent {
       <h1>About Us</h1>
       <p>A New Canvas is a fan-made web visual novel that tells an unofficial and non-canon lore of Hololive talent, Airani Iofifteen. It is built using <a href="https://monogatari.io/">Monogatari visual novel engine</a>.</p>
       <p>We are a group of Ioforia (Airani Iofifteen's fandom name) that has assembled together with one goal in mind, to give Airani Iofifteen a memorable present for her birthday.</p>
+      <p>You can see the source code of this project via <a href="https://github.com/taufiq30s/pj-150721" target="_blank">Github</a>.</p>
       
-      <h3>Licensing</h3>
+      <h3>License</h3>
       <p>A New Canvas is released under split licenses for various part of the visual novel, detailed below.</p>
       <p>The game source code is released under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL version 3</a>.</p>
       <p>The story, "Bersama Ioforia" music arrangement and character sprites related to Hololive, including Airani Iofifteen, Yagoo and M-chan are released in accordance to <a href="https://en.hololive.tv/terms">Hololive Derivative Works Guidelines</a>.</p>

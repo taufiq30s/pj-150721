@@ -361,6 +361,15 @@ loading-screen div {
 	font-weight: bold;
 }
 
+#ehehe {
+	font-size: 1vmin;
+}
+
+#nc-license {
+	font-size: 1.3vmin;
+	margin: 0;
+}
+
 /**
  * ===========================
  * Save and Load Menus Styling

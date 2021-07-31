@@ -16,7 +16,7 @@ monogatari.component('main-screen').template(() => {
         <p id="product-version">This game using multiple license. See About for details.</p>
       </div>
       <div class="wrapper-version version-bg1" data-content="version">
-        <p id="product-version">Version ${monogatari.settings().Version}</p>
+        <p id="product-version">Version ${monogatari.settings().Version} <span id="ehehe">cm</span></p>
         <p id="copy" data-content="author"></p>
       </div>
     </div>
@@ -46,6 +46,11 @@ monogatari.distractionFree = () => {
       monogatari.global ('distraction_free', true);
     }
   }
+}
+
+function showNCBg(status) {
+  monogatari.settings().isFinished = !status;
+  monogatari.showMainScreen();
 }
 
 // Change Loading Screen
@@ -139,7 +144,7 @@ monogatari.showMainScreen = () => {
       }
     }
     else {
-      $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a>`;
+      $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a> <p id="nc-license">This Illustration using <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 License </a></p>`;
       $_('main-screen').style ('background-image', 'url(assets/images/main1.webp)');
       $_('[data-content="copyright"]').addClass ('copy-bg1');
         $_('[data-content="version"]').addClass ('version-bg1');

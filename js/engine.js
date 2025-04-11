@@ -49,7 +49,7 @@ monogatari.distractionFree = () => {
 }
 
 function showNCBg(status) {
-  monogatari.settings().isFinished = !status;
+  monogatari.settings().showSpecialBg = !status;
   monogatari.showMainScreen();
 }
 
@@ -114,6 +114,10 @@ monogatari.component('settings-screen').template(() => {
 						<h3 data-string="Language">Language</h3>
 						<div class="horizontal horizontal--center" data-content="wrapper"></div>
 					</div>
+          <div data-settings="special-main-menu">
+            <input type="checkbox" id="special-bg" data-action="set-special-main-menu" data-content="set-special-main-menu">
+            <p for="special-bg" data-string="SpecialMainMenuBackground">Show Special Main Menu Background</p>
+          </div>
 					<div data-settings="resolution" data-platform="electron">
 						<h3 data-string="Resolution">Resolution</h3>
 						<div class="horizontal">
@@ -127,6 +131,22 @@ monogatari.component('settings-screen').template(() => {
 });
 
 // Show Main screen and change bg when player finished the game
+function changeMainMenuBackground(isShowSpecialBg) {
+  if(!isShowSpecialBg) {
+    $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/hacto_17" target="_blank">Hacto_17</a> from <a href="https://twitter.com/SMiaww19" target="_blank">FluffyART Studio</a>`;
+    $_('main-screen').style ('background-image', 'url(assets/images/main2.webp)');
+    if($_('[data-content="copyright"]').hasClass ('copy-bg1')) {
+      $_('[data-content="copyright"]').removeClass ('copy-bg1');
+      $_('[data-content="version"]').removeClass ('version-bg1');
+    }
+  }
+  else {
+    $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a> <p id="nc-license">This Illustration using <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 License </a></p>`;
+    $_('main-screen').style ('background-image', 'url(assets/images/main1.webp)');
+    $_('[data-content="copyright"]').addClass ('copy-bg1');
+      $_('[data-content="version"]').addClass ('version-bg1');
+  }
+}
 monogatari.showMainScreen = () => {
   monogatari.global ('on_splash_screen', false);
 
@@ -135,20 +155,7 @@ monogatari.showMainScreen = () => {
     monogatari.showScreen ('game');
     monogatari.run (this.monogatari ()[this.monogatari ('step')]);
   } else {
-    if(monogatari.setting ('isFinished')) {
-      $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/hacto_17" target="_blank">Hacto_17</a> from <a href="https://twitter.com/SMiaww19" target="_blank">FluffyART Studio</a>`;
-      $_('main-screen').style ('background-image', 'url(assets/images/main2.webp)');
-      if($_('[data-content="copyright"]').hasClass ('copy-bg1')) {
-        $_('[data-content="copyright"]').removeClass ('copy-bg1');
-        $_('[data-content="version"]').removeClass ('version-bg1');
-      }
-    }
-    else {
-      $_('[data-content="author"]').get (0).innerHTML = `Illust by <a href="https://twitter.com/littlecrownie" target="_blank">Littlecrownie</a> <p id="nc-license">This Illustration using <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 License </a></p>`;
-      $_('main-screen').style ('background-image', 'url(assets/images/main1.webp)');
-      $_('[data-content="copyright"]').addClass ('copy-bg1');
-        $_('[data-content="version"]').addClass ('version-bg1');
-    }
+    changeMainMenuBackground(monogatari.setting('showSpecialBg'))
     monogatari.showScreen ('main');
   }
 }

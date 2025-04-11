@@ -90,24 +90,38 @@ $_ready (() => {
 	
 
 	// Register Some data-string to Translation System
-	monogatari.translation('Indonesia')["About"] = "Tentang";
-	monogatari.translation('English')["About"] = "About";
-	monogatari.translation('日本語')["About"] = "について";
-	monogatari.translation('Indonesia')["Feedback"] = "Send Issue";
-	monogatari.translation('English')["Feedback"] = "Send Issue";
-	monogatari.translation('日本語')["Feedback"] = "課題の送信";
-	monogatari.translation('Indonesia')["Loading"] = "Memuat Aset";
-	monogatari.translation('English')["Loading"] = "Loading Assets";
-	monogatari.translation('日本語')["Loading"] = "アセットの読み込み";
-	monogatari.translation('Indonesia')["disclaimer"] = "Pemberitahuan";
-	monogatari.translation('English')["disclaimer"] = "Disclaimer";
-	monogatari.translation('日本語')["disclaimer"] = "免責";
-	monogatari.translation('Indonesia')["disclaimer-message"] = "Game ini adalah fan work.";
-	monogatari.translation('English')["disclaimer-message"] = "This is a fan work.";
-	monogatari.translation('日本語')["disclaimer-message"] = "このゲームは同人作品です。";
+	monogatari.translation('Indonesia', {
+		'About': 'Tentang',
+		'Feedback': 'Send Issue',
+		'Loading': 'Memuat Aset',
+		'disclaimer': 'Pemberitahuan',
+		'disclaimer-message': 'Game ini adalah fan work.',
+		'SpecialMainMenuBackground': 'Tampilkan gambar latar spesial untuk menu utama'
+	});
+	
+	monogatari.translation('English', {
+		'About': 'About',
+		'Feedback': 'Send Issue',
+		'Loading': 'Loading Assets',
+		'disclaimer': 'Disclaimer',
+		'disclaimer-message': 'This is a fan work.',
+		'SpecialMainMenuBackground': 'Show Special Main Menu Background'
+	});
+	
+	monogatari.translation('日本語', {
+		'About': 'について',
+		'Feedback': '課題の送信',
+		'Loading': 'アセットの読み込み',
+		'disclaimer': '免責',
+		'disclaimer-message': 'このゲームは同人作品です。',
+		'SpecialMainMenuBackground': '特別メインメニューの背景を表示'
+	});
 
 	monogatari.init ('#monogatari').then (() => {		
 		// 3. Inside the init function:		
+
+		// Set show special background's value
+		$_('[data-content="set-special-main-menu"]').get(0).checked = monogatari.setting('showSpecialBg')
 
 		// Check browser suport WebP format
 		// @see https://developers.google.com/speed/webp/faq#in_your_own_javascript
@@ -227,6 +241,19 @@ $_ready (() => {
 			$_('#next').style('display', 'block');
 			$_('#next').addClass('animated');
 			$_('#next').addClass('fadeIn');
+		});
+
+		monogatari.on('change', '[data-content="set-special-main-menu"]', () => {
+			const checked = $_('[data-content="set-special-main-menu"]').get(0).checked;
+			monogatari.settings().showSpecialBg = checked;
+			changeMainMenuBackground(checked)
+		});
+
+		monogatari.on('click', '[data-settings="special-main-menu"] p', () => {
+			const checked = !$_('[data-content="set-special-main-menu"]').get(0).checked;
+			$_('[data-content="set-special-main-menu"]').get(0).checked = checked;
+			monogatari.settings().showSpecialBg = checked;
+			changeMainMenuBackground(checked)
 		});
 	});
 });

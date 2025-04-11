@@ -32,18 +32,6 @@ body, main-menu, button, button:hover, [data-action], span, svg, game-screen, cr
 	cursor: url('../assets/cursor/chiyopi.cur'), none !important;
 }
 
-/* General Style */
-body {
-}
-
-/* Simple Button styles*/
-button {
-}
-
-/* Simple Button Style on Hover */
-button:hover {
-}
-
 /* General Styling for Menu Screens */
 [data-screen] {
 	overflow: hidden;
@@ -105,10 +93,6 @@ dialog-log .modal__content [data-content=log] [data-spoke] {
 language-selection-screen {
 	background-color: #2c303a;
 	color: white;
-}
-
-language-selection-screen [data-content=wrapper] {
-	/* margin: 0 auto; */
 }
 
 language-selection-screen [data-content=buttons] {
@@ -380,26 +364,6 @@ loading-screen div {
 	overflow-y: auto;
 }
 
-/* Slots Style */
-[data-component="save-slot"] figure {
-
-}
-
-/* Slot's Image Style */
-[data-component="save-slot"] img {
-
-}
-
-/* Slots Title Style */
-[data-component="save-slot"] figcaption {
-
-}
-
-/* Slots Delete Button Style */
-[data-component="save-slot"] button {
-
-}
-
 /**
  * ===========================
  * Help Styling
@@ -496,11 +460,6 @@ help-screen [data-content='symbols'] [data-content='shortcut'] {
 [data-component="choice-container"] button:focus {
 	border: none;
 	outline: none;
-}
-
-/* Choice Button Style on Hover */
-[data-component="choice-container"] button:hover {
-
 }
 
 /* Text Box styling */
@@ -647,11 +606,6 @@ text-box [data-content="dialog"] {
 	height: 113.7vh; /* 180cm */
 }
 
-/* Other Images Styles */
-[data-screen="game"] [data-image] {
-
-}
-
 /* Credit Styles */
 credits-container {
 	position: fixed;
@@ -791,11 +745,6 @@ credits-container.credit-scroll .credit-section {
 	padding: 0 2rem 0 0;
 	background: none;
 	justify-content: center;
-}
-
-/* Quick Menu Buttons Style */
-[data-component="quick-menu"] span {
-
 }
 
 [data-component="quick-menu"] > button {
@@ -1016,10 +965,9 @@ hr {
 
 /* Use the background property to set a color for these */
 input[type=range] {
-	-webkit-appearance: none;
 	margin: 18px 0;
 	width: 100%;
-  }
+}
 
 input[type=range]:focus {
 	outline: none;
@@ -1113,6 +1061,36 @@ input[type=range]:focus::-ms-fill-lower {
 	background:  #ffb7ce;
 }
 
+[data-settings="special-main-menu"] {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-component="settings-screen"] input[type=checkbox] {
+	appearance: none;
+	-webkit-appearance: none;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	border: 0.15em solid currentColor;
+	border-radius: 0.15em;
+}
+
+[data-component="settings-screen"] input[type="checkbox"]::before {
+	content: "";
+	width: 1.15rem;
+	height: 1.15rem;
+	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+	transform: scale(0);
+	transition: transform 0.2s ease-in-out;
+	background-color: #ffb7ce;
+}
+
+[data-component="settings-screen"] input[type="checkbox"]:checked::before {
+	transform: scale(1);
+}
+
 /** Phone Devices 5.5 inch **/
 @media screen and (max-width: 37.56254em) {
 	[data-component="text-box"] {
@@ -1155,18 +1133,9 @@ input[type=range]:focus::-ms-fill-lower {
 		bottom: 1rem;
 	}
 
-	/* Quick Menu Buttons Style */
-	[data-component="quick-menu"] span {
-
-	}
 	
 	[data-component="quick-menu"] span[data-string] {
 		display: none;
-	}
-
-	/* Quick Menu Buttons Style on Hover */
-	[data-component="quick-menu"] span:hover {
-
 	}
 
 	[data-component="quick-menu"] > button {
@@ -1247,9 +1216,6 @@ input[type=range]:focus::-ms-fill-lower {
 		height: 2.25rem;
 	}
 	
-	[data-content="text"] {
-	}
-	
 	text-box [data-content="dialog"] {
 		font-size: 1rem;
 	}
@@ -1259,19 +1225,9 @@ input[type=range]:focus::-ms-fill-lower {
 	[data-component="quick-menu"] {
 		bottom: 1rem;
 	}
-
-	/* Quick Menu Buttons Style */
-	[data-component="quick-menu"] span {
-
-	}
 	
 	[data-component="quick-menu"] span[data-string] {
 		display: none;
-	}
-
-	/* Quick Menu Buttons Style on Hover */
-	[data-component="quick-menu"] span:hover {
-
 	}
 
 	[data-component="quick-menu"] > button {

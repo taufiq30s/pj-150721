@@ -20,7 +20,7 @@ monogatari.settings({
 	'Name': 'A New Canvas',
 
 	// The version of your game in semantic versioning (https://semver.org/).
-	'Version': '1.0.4 - Build 145',
+	'Version': '1.0.5 - Build 145',
 
 	// Initial Label *
 	'Label': 'Start',
@@ -133,7 +133,7 @@ monogatari.settings({
 	},
 
 	// Show Iofi's Background in Main Menu
-	'showSpecialBg': false,
+	'showSpecialBg': true,
 });
 
 // Initial Settings

@@ -1,7 +1,7 @@
 {
   "name": "a-new-canvas",
   "productName": "A New Canvas",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "main": "engine/electron/index.js",
   "description": "Iofi's Lore Visual Novel",
   "author": "pj-150721 Team",
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "electron": "^35.1.5",
+    "electron": "^41.2.0",
     "electron-builder": "^26.0.12",
     "electron-notarize": "^1.0.0",
     "http-server": "^14.1.1",
